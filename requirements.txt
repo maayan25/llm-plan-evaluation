@@ -1,0 +1,14 @@
+transformers~=4.45.2     # LLM inference
+torch~=2.4.1             # LLM inference
+accelerate~=1.0.0        # LLM inference
+bitsandbytes~=0.44.1     # LLM Quantization
+spacy~=3.7.5             # NER
+ipython~=8.29.0          # NER ??
+huggingface-hub~=0.26.1  # Llama inference
+nltk~=3.9.1              # NER
+# pddlpy~=0.4.4            # KG construction
+# unified-planning~=1.2.0  # KG construction Antlr version incompatible with Tarski
+pandas~=2.2.3            # KG construction
+PyQt6~=6.7.1             # KG visualisation
+plotly~=5.24.1           # KG visualisation
+tarski~=0.8.2            # Plan Recovery
