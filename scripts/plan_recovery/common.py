@@ -3,7 +3,7 @@
 
 from utils import parse_plan
 from nltk.corpus import wordnet as wn
-
+import numpy as np
 
 def get_largest_subsequence(curr_plan, gt_plan) -> list[str]:
     """
@@ -105,20 +105,68 @@ def check_special_states(curr_plan, gt_plan) -> tuple[float, float]:
 
     return init, goal
 
-def calculate_semantic_similarity(act1, act2):
+def best_synset_similarity(word1, word2) -> float:
     """
-    Calculate the semantic similarity between two actions names
-    :param act1:
-    :param act2:
-    :return:
+    :param word1: first word
+    :param word2: second word
+    :return: best Wu-Palmer similarity between synsets of two words.
     """
-    syn1 = wn.synsets(act1, pos=wn.VERB)
-    syn2 = wn.synsets(act2, pos=wn.VERB)
+    synsets1 = wn.synsets(word1, pos=wn.VERB) + wn.synsets(word1, pos=wn.NOUN)
+    synsets2 = wn.synsets(word2, pos=wn.VERB) + wn.synsets(word2, pos=wn.NOUN)
+    best = 0.0
+    for s1 in synsets1:
+        for s2 in synsets2:
+            sim = s1.wup_similarity(s2)
+            if sim is not None and sim > best:
+                best = sim
+    return best
 
-    if len(syn1) == 0 or len(syn2) == 0:
-        return 0.0
 
-    return syn1[0].wup_similarity(syn2[0])
+def normalise_action_name(action_name: str) -> str:
+    """
+    Normalises an action name and provides a syonym for actions not covered by WordNet.
+    :param action_name: the action name to normalise
+    :return: the normalised action name
+    """
+    SYNONYM_MAP = {
+        "unstack": "remove",
+    }
+    norm = action_name.lower().replace("_", " ").replace("-", " ")
+    return SYNONYM_MAP.get(norm, norm)
+
+def calculate_semantic_similarity(act1, act2) -> float:
+    """
+    Computes semantic similarity between two action names.
+    :param act1: first action name
+    :param act2: second action name
+    :return: similarity score between 0 and 1
+    """
+    act1 = act1.lower().replace("_", " ").replace("-", " ")
+    act2 = act2.lower().replace("_", " ").replace("-", " ")
+
+    # Try whole phrase first
+    syn1 = wn.synsets(act1, pos=wn.VERB) + wn.synsets(act1, pos=wn.NOUN)
+    syn2 = wn.synsets(act2, pos=wn.VERB) + wn.synsets(act2, pos=wn.NOUN)
+    if syn1 and syn2:
+        sim = syn1[0].wup_similarity(syn2[0])
+        if sim is not None and sim > 0:
+            return sim
+
+    words1 = act1.split()
+    words2 = act2.split()
+
+    scores = []
+    for w1 in words1:
+        best = 0.0
+        for w2 in words2:
+            sim = best_synset_similarity(w1, w2)
+            if sim > best:
+                best = sim
+        scores.append(best)
+
+    if scores:
+        return float(np.mean(scores))
+    return 0.0
 
 def parse_goal_state(problem):
     """

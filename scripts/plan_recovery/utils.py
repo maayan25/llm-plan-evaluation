@@ -197,7 +197,8 @@ def get_config_dir(config_name):
         "mystery_blocksworld_3": "blocksworld/mystery",
         "random_blocksworld_3": "blocksworld",
         "logistics": "logistics",
-        "obfuscated_randomized_logistics": "obfuscated_randomized_logistics"
+        "obfuscated_randomized_logistics": "obfuscated_randomized_logistics",
+        "office_robot": "office_robot"
     }
 
     return os.path.join(parent_dir, f"LLM-Planning-PlanBench/llm_planning_analysis/instances/{domain_dirs[config_name]}")
@@ -216,7 +217,8 @@ def get_instance_from_config(config_name, domain_path, inst_num) -> str:
         "mystery_blocksworld_3": "generated_basic_3",
         "random_blocksworld_3": "generated_basic_3",
         "logistics": "generated_basic",
-        "obfuscated_randomized_logistics": "generated_basic"
+        "obfuscated_randomized_logistics": "generated_basic",
+        "office_robot": "generated_basic"
     }
 
     return os.path.join(domain_path, os.path.join(instance_dirs[config_name], f"instance-{inst_num}.pddl"))

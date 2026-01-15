@@ -35,7 +35,8 @@ class AnalyseResults:
     def __init__(self, results_file, results_dir):
         self.results_file = results_file
         self.results = pd.read_csv(results_file)
-        self.global_results = pd.read_csv(f"{results_dir}/full_evaluation.csv")
+        self.global_results_dir = f"{results_dir}/.." if "office_robot" in args.domain else results_dir
+        self.global_results = pd.read_csv(f"{self.global_results_dir}/full_evaluation.csv")
         self.results = postprocess_results(self.results, self.global_results)
 
         # Split the results by success rate
@@ -70,6 +71,7 @@ class AnalyseResults:
 
         analysis_df.to_csv(f"{tables_dir}/analysis_results.csv", index=False)
 
+        # Print success rates for pi_0 and pi_3 by length of the plan
         if "blocksworld" in domain:
             self.extract_success_rates_at_lengths(df, "gt_plan", "curr_validity",
                                                   "cdt_subseq_validity")  # DONE TABLE for BW
@@ -83,9 +85,6 @@ class AnalyseResults:
         mean_plan_length = df.groupby(["task", "domain"])["curr_plan_length"].mean().reset_index()
 
         mean_plan_length.to_csv(f"{tables_dir}/mean_plan_length_by_task_domain.csv", index=False)
-        self.debug_invlid_improved_plan(df)
-        # self.debug_score_normalisation(df)
-        # self.check_for_better_nlp_manipulation(df)
 
     def run_plots(self, df):
         """
@@ -99,33 +98,45 @@ class AnalyseResults:
         self.core_metrics_across_tasks_latex_table(df, group_by="model") # DONE TABLE
 
         # LAST EXECUTABLE ACTION ANALYSIS
-        self.last_exec_frequency_relative_to_length_high_and_low("curr_last_act", "curr_plan", 10) # DONE PDF
+        if domain == "office_robot":
+            self.last_exec_frequency_relative_to_length(df, "curr_last_act", "curr_plan", 10) # DONE PDF
+        else:
+            self.last_exec_frequency_relative_to_length_high_and_low("curr_last_act", "curr_plan", 10) # DONE PDF
 
-        # PLAN TRACE ACTION QUALITY ANALYSIS # DONE
-        self.plot_percentage_distribution_with_lines_high_and_low() # DONE PDF
-        self.plot_percentage_distribution_with_lines_high_and_low(plan_column="nr_plan_trace") # DONE PDF
-        #
-        # self.complemenary_length_out_of_gt_length(df) # DONE PDF
-        self.complemenary_length_out_of_gt_length_high_and_low() # DONE PDF
+        # # PLAN TRACE ACTION QUALITY ANALYSIS # DONE
+        if domain == "office_robot":
+            self.plot_percentage_distribution_with_lines(df) # DONE BW: Spearman rho=-0.43, p=0.0000 PDF
+            self.plot_percentage_distribution_with_lines(df, plan_column="nr_plan_trace") # DONE BW: Spearman rho=-0.12, p=0.0000 PDF
+        else:
+            self.plot_percentage_distribution_with_lines_high_and_low() # DONE PDF
+            self.plot_percentage_distribution_with_lines_high_and_low(plan_column="nr_plan_trace") # DONE PDF
+
+        if domain != "office_robot":
+            # self.complemenary_length_out_of_gt_length(df) # DONE PDF
+            self.complemenary_length_out_of_gt_length_high_and_low() # DONE PDF
 
         #
-        #### APPENDIX ######
+        # # #### APPENDIX ######
         self.plot_plan_length_distributions_by_domain(df) # DONE APPENDIX PDF
-
+        # self.success_rate_comparison_across_plan_types(df) # DONE APPENDIX PDF
         # BIG TABLE
         if "o4-mini" in args.domain or args.domain == "":
             self.latex_one_summary_table_per_experiment_by_domain(df) # 1 TABLE FOR ALL RESULTS (APPENDIX)
         else:
             self.latex_one_summary_table_per_experiment(df) # 1 TABLE FOR ALL RESULTS (APPENDIX)
-
+        #
         # EXECUTABILITY ANALYSIS
         self.plot_executability_validity_stacked(df, "curr_validity", "executability", "curr_plan") # DONE APPENDIX
-        self.plot_success_vs_last_executable(df)
-
+        # stats_df = self.validate_claims(df) # per experiment NOT USED
+        # self.plot_p_valid_given_exec_histogram(stats_df) # NOT USED
+        if domain != "office_robot":
+            self.plot_success_vs_last_executable(df)
+        # self.plot_valid_given_exec_vs_success() # NOT USED
+        #
         # O4 mini
-        self.get_performance_by_problem_difficulty(df, "blocksworld")
-        self.get_performance_by_problem_difficulty(df, "logistics")
-
+        if domain != "office_robot":
+            self.get_performance_by_problem_difficulty(df, "blocksworld")
+            self.get_performance_by_problem_difficulty(df, "logistics")
         self.mathematical_analysis(df)
 
     def mathematical_analysis(self, results):
@@ -193,9 +204,7 @@ class AnalyseResults:
         total_avg_cdt_subseq_lea = df["cdt_subseq_last_act"].mean()
         print(f"Total average Last Executable Action (LEA) for CDT Subsequent Plan: {total_avg_cdt_subseq_lea}")
 
-    def get_non_matching(self, gt_plan, improved_plan):
-        return [a for a, b in zip(gt_plan, improved_plan) if a != b]
-
+    # Visualisation functions
     def split_results_by_success_rate(self, success_column, group_by="model") -> tuple[pd.DataFrame, pd.DataFrame]:
         """
         Split the results by success rate (validity) into 2 separate dataframes
@@ -227,8 +236,6 @@ class AnalyseResults:
     """
     Success rate analysis
     """
-
-    # Visualisation functions
     def validity_steps_across_tasks_latex_table(self, results):
         """
         Generate a LaTeX table of success rates and average steps per task for all plan types throughout recovery.
@@ -273,7 +280,7 @@ class AnalyseResults:
             df = self.map_config_in_results(df, group_by="model")
 
         metrics = [
-            "curr_validity", "curr_score", "trace_score", "curr_steps", "curr_last_act",
+            "curr_validity", "executability", "curr_score", "trace_score", "curr_steps", "curr_last_act",
             "cdt_validity", "subseq_validity", "cdt_subseq_validity", "cdt_subseq_steps", "cdt_subseq_last_act", "improved_validity",
         ]
         col_map = self.get_column_names_map()
@@ -301,6 +308,7 @@ class AnalyseResults:
             minimise = metric == "curr_steps" or metric == "cdt_subseq_steps"
             formatted[col_map[metric]] = bold_best(grouped[metric], minimise)
 
+        # Reorder columns and format
         formatted = formatted[[col_map[metric] for metric in metrics]]
         formatted = formatted.reset_index()
 
@@ -333,7 +341,7 @@ class AnalyseResults:
 
     def plot_metric_by_group(self, results, goals_df, group_by="num_goals", domain="", metric="general"):
         """
-        Plots multiple metrics (SR, LEA, StV, Score, AQM) grouped by goal count or ground truth length.
+        Plots multiple metrics (SR, EXEC, LEA, StV, Score, AQM) grouped by goal count or ground truth length.
 
         :param results: DataFrame containing the results.
         :param goals_df: DataFrame with columns ["domain", "instance_id", "num_goals"]
@@ -354,14 +362,16 @@ class AnalyseResults:
 
         df = pd.merge(results_df, goals_df, on=["domain", "instance_id"], how="inner")
 
+        # Add GT plan length if needed
         df["gt_length"] = df["gt_plan"].apply(lambda x: len(ast.literal_eval(x)) if isinstance(x, str) else len(x))
         df = df.dropna(subset=[group_by])
 
-        for col in ["curr_validity", "curr_last_act", "curr_steps", "curr_score", "trace_score", "gt_plan"]:
+        for col in ["curr_validity", "executability", "curr_last_act", "curr_steps", "curr_score", "trace_score", "gt_plan"]:
             if col in df.columns:
                 df[col] = df[col].apply(lambda x: ast.literal_eval(x) if isinstance(x, str) else x)
 
-        df = df.dropna(subset=["curr_validity", "curr_last_act", "curr_steps", "curr_score", "trace_score"])
+        # Drop rows where any metric is missing
+        df = df.dropna(subset=["curr_validity", "executability", "curr_last_act", "curr_steps", "curr_score", "trace_score"])
 
         # df["LEA"] = df["curr_last_act"] / df["gt_length"]
         # invalid_df = df[df["curr_validity"] == False]
@@ -369,6 +379,7 @@ class AnalyseResults:
 
         grouped = df.groupby(group_by).agg({
             "curr_validity": "mean",
+            "executability": "mean",
             # "LEA": "mean",
             "curr_score": "mean",
             "curr_steps": "mean",
@@ -376,6 +387,7 @@ class AnalyseResults:
             "instance_id": "count"
         }).rename(columns={
             "curr_validity": "SR",
+            "executability": "EXEC",
             # "LEA": "LEA/GT",
             "curr_score": "Score",
             "curr_steps": "StV",
@@ -458,6 +470,109 @@ class AnalyseResults:
         df[column_name] = df[column_name].apply(lambda x: ast.literal_eval(x) if isinstance(x, str) else x)
 
         return values, column_name, df
+
+    def plot_percentage_distribution_with_lines(self, results, cap=-1, plan_column="plan_trace"):
+        """
+        Plot the distribution of values across indices, as a percentage normalised by the number of occurrences
+        of each index. Also computes Spearman correlation between index and label percentages.
+        If cap is -1, use the 95th percentile index value as a cap.
+        """
+        df = results.copy()
+
+        values, column_name, df = self.map_values_to_scores(df, plan_column)
+        if plan_column == "nr_plan_trace":
+            possible_values = ["correct", "same_act", "diff_act", "redundant"]
+        else:
+            possible_values = ["correct", "same_act", "diff_act", "redundant", "misplaced"]
+
+        # Determine dynamic cap if cap == -1
+        all_indices_flat = []
+        for dict_data in df[column_name]:
+            if isinstance(dict_data, dict):
+                all_indices_flat.extend(dict_data.keys())
+        if cap == -1 and all_indices_flat:
+            all_indices_flat = np.array(all_indices_flat).astype(int)
+            cap = int(np.percentile(all_indices_flat, 95))
+            # print(f"Capping at 95th percentile: index {cap}")
+
+        value_counts = {}
+        index_occurrences = {}
+
+        for dict_data in df[column_name]:
+            if isinstance(dict_data, dict):
+                for index, value in dict_data.items():
+                    if index >= cap:
+                        continue
+                    if plan_column == "nr_plan_trace" and value == "misplaced": # shouldn't happen anymore
+                        value = "correct"
+                    if value == "position":
+                        value = "correct"
+                    if index not in value_counts:
+                        value_counts[index] = {v: 0 for v in possible_values}
+                        index_occurrences[index] = 0
+                    value_counts[index][value] += 1
+                    index_occurrences[index] += 1
+
+        percentage_distribution = {
+            idx: {value: (value_counts[idx][value] / index_occurrences[idx]) * 100 for value in possible_values}
+            for idx in value_counts
+        }
+
+        sorted_indices = sorted(percentage_distribution.keys())
+        values_matrix = {value: [percentage_distribution[idx].get(value, 0) for idx in sorted_indices] for value in
+                         possible_values}
+
+        # Map qualitative labels to ordinal values
+        label_to_score = {
+            "correct": 4,
+            "misplaced": 3,
+            "same_act": 2,
+            "diff_act": 1,
+            "redundant": 0,
+        }
+
+        all_indices = []
+        all_scores = []
+
+        for dict_data in df[column_name]:
+            if isinstance(dict_data, dict):
+                for index, label in dict_data.items():
+                    if index >= cap:
+                        continue
+                    if plan_column == "nr_plan_trace" and label == "misplaced":
+                        label = "correct"
+                    score = label_to_score.get(label)
+                    if score is not None:
+                        all_indices.append(index)
+                        all_scores.append(score)
+
+        if all_indices:
+            rho, p = spearmanr(all_indices, all_scores)
+            print(f"\nOverall Spearman correlation between index and label score: rho = {rho:.2f}, p = {p:.4f}")
+        else:
+            rho, p = None, None
+            print("No valid data to compute overall correlation.")
+
+        plt.figure(figsize=(10, 5))
+        for value in possible_values:
+            plt.plot(sorted_indices, values_matrix[value], marker='o', linestyle='-', label=value)
+
+        plt.xlabel("Index", fontsize=20)
+        plt.ylabel("Percentage (%)", fontsize=20)
+
+        # title = f"NP-AQM" if plan_column == "nr_plan_trace" else "AQM"
+        # title += f": first {cap} indices; Spearman: $\\rho={rho:.2f}, $p$={p:.4f}$"
+        title = f"Spearman: $\\rho={rho:.2f}, $p$={p:.4f}$"
+        plt.title(title, fontsize=22)
+
+        filename = f"{figures_dir}/percentage_distribution_with_lines_{plan_column}_{cap}.pdf"
+        plt.legend(title="Value", fontsize=16)
+        plt.grid(True, linestyle="--", alpha=0.6)
+        plt.xticks(sorted_indices, fontsize=16)
+        plt.yticks(fontsize=16)
+        plt.tight_layout()
+        plt.savefig(filename, format="pdf", dpi="figure")
+        # plt.show()
 
     def plot_percentage_distribution_with_lines_high_and_low(self, cap=-1, plan_column="plan_trace"):
         """
@@ -599,14 +714,68 @@ class AnalyseResults:
     """
     Plan recovery analysis
     """
+    def last_exec_frequency_relative_to_length(self, results, last_exec_column, plan_column, group=5):
+        """
+        Plot the frequency of each last executable action as a percentage of the total plan length,
+        grouped into percentage levels.
+
+        :param results: The dataframe to use
+        :param last_exec_column: The column containing the last executable action index
+        :param plan_column: The column containing the full plan (stored as a list in CSV)
+        :param group: The size of the percentage bins (default is 5%)
+        """
+        df = results.copy()
+
+        # Convert plan from string to list if needed
+        # df[plan_column] = df[plan_column].apply(lambda x: eval(x) if isinstance(x, str) else x)
+        df[plan_column] = df[plan_column].apply(lambda x: ast.literal_eval(x) if isinstance(x, str) else x)
+        df["gt_plan"] = df["gt_plan"].apply(lambda x: ast.literal_eval(x) if isinstance(x, str) else x)
+
+        # Filter out empty plans
+        for col in [plan_column, "gt_plan"]:
+            if col in df.columns:
+                df = df[df[col].apply(lambda x: isinstance(x, list) and len(x) > 0)]
+
+        # df = df[df[plan_column].apply(lambda x: len(x) > 0)]
+
+        # Compute relative percentage position
+        def compute_relative_position(row):
+            if len(row[plan_column]) == 0:
+                return 0  # Set to 0% if the plan is empty
+            return ((row[last_exec_column]) / len(row[plan_column])) * 100
+
+        df["relative_position"] = df.apply(compute_relative_position, axis=1)
+
+        bins = list(range(0, 101, group))
+        labels = [f"{i}-{i + group}%" for i in bins[:-1]]
+
+        df["grouped_position"] = pd.cut(df["relative_position"], bins=bins, labels=labels, include_lowest=True)
+        value_counts = df["grouped_position"].value_counts(normalize=True) * 100
+        value_counts = value_counts.sort_index()
+
+        # Plot
+        plt.figure(figsize=(9, 5))
+        plt.bar(value_counts.index, value_counts.values, color="blue", alpha=0.7, width=0.7)
+        plt.xlabel("Portion of executable part from full $\\pi_0$", fontsize=18)
+        plt.ylabel("Frequency (%)", fontsize=18)
+        # plt.title("Relative Position of Last Executable Action in Plans", fontsize=20)
+        plt.xticks(rotation=45, ha="right", fontsize=16)
+        plt.grid(axis="y", linestyle="--", alpha=0.6)
+
+        plt.tight_layout()
+        plt.savefig(f"{figures_dir}/last_exec_frequency_relative_to_length.pdf", dpi="figure", format="pdf")
+        # plt.show()
+
     def last_exec_frequency_relative_to_length_high_and_low(self, last_exec_column, plan_column, group=5):
         """
         Plot the frequency of each last executable action as a percentage of the total plan length,
         grouped into percentage levels, comparing high and low success models.
         """
+        # Prepare the datasets
         value_counts_high = self.prepare_data(self.high_success, last_exec_column, plan_column, group)
         value_counts_low = self.prepare_data(self.low_success, last_exec_column, plan_column, group)
 
+        # Plot
         plt.figure(figsize=(10, 5))
         x = np.arange(len(value_counts_high.index))
         width = 0.35
@@ -648,6 +817,77 @@ class AnalyseResults:
         value_counts = df["grouped_position"].value_counts(normalize=True) * 100
         value_counts = value_counts.sort_index()
         return value_counts
+
+    # No REASONING
+    def complemenary_length_out_of_gt_length(self, results):
+        """
+        Plots the mean proportion of complementary_plan length relative to gt_plan length as a smooth line
+        with variance shading, grouped by last executable action.
+        It includes both cases: with and without last executable action.
+
+        :param results: The dataframe to use.
+        """
+        df = results.copy()
+
+        df["gt_plan"] = df["gt_plan"].apply(lambda x: ast.literal_eval(x) if isinstance(x, str) else x)
+        df["complementary_plan"] = df["complementary_plan"].apply(lambda x: ast.literal_eval(x) if isinstance(x, str) else x)
+        df["improved_plan"] = df["improved_plan"].apply(lambda x: ast.literal_eval(x) if isinstance(x, str) else x)
+        df["correct_part"] = df["correct_part"].apply(lambda x: ast.literal_eval(x) if isinstance(x, str) else x)
+
+        df["gt_length"] = df["gt_plan"].apply(len)
+        df["complementary_length"] = df["complementary_plan"].apply(len)
+        df["improved_length"] = df["improved_plan"].apply(len)
+        df["correct_part_length"] = df["correct_part"].apply(len)
+
+        # Filter to only where a complementary plan was generated # and a correct part exists (other cases are: goal in plan, or GT had to be generated)
+        df = df[df["complementary_length"] > 0]
+        df = df[df["correct_part_length"] > 0]
+
+        # Compute both ratios with and without last executable action
+        df["length_ratio_no_exec"] = df["complementary_length"] / df["gt_length"]
+        df["length_ratio_with_exec"] = (df["complementary_length"] + df["curr_last_act"]) / df["gt_length"]
+        df["length_ratio_correct_part"] = df["correct_part_length"] / df["gt_length"]
+
+        # Cap curr_last_act at 99th percentile to avoid long-tail noise
+        cap_value = int(np.percentile(df["curr_last_act"], 99.5))
+        df = df[df["curr_last_act"] <= cap_value]
+
+        # Group by last executable action for smoothing
+        grouped_df_no_exec = df.groupby("curr_last_act")["length_ratio_no_exec"].agg(["mean", "std"]).reset_index()
+        grouped_df_with_exec = df.groupby("curr_last_act")["length_ratio_with_exec"].agg(["mean", "std"]).reset_index()
+        grouped_df_correct_part = df.groupby("curr_last_act")["length_ratio_correct_part"].agg(["mean", "std"]).reset_index()
+
+        # Plot
+        plt.figure(figsize=(9, 5))
+
+        # Without last executable
+        plt.plot(grouped_df_no_exec["curr_last_act"], grouped_df_no_exec["mean"],
+                 color="royalblue", marker="o", linestyle="-", label="$\\pi_{\\text{comp}}$ / $\\pi_{\\text{GT}}$ Ratio")
+        plt.fill_between(grouped_df_no_exec["curr_last_act"],
+                         grouped_df_no_exec["mean"] - grouped_df_no_exec["std"],
+                         grouped_df_no_exec["mean"] + grouped_df_no_exec["std"],
+                         color="royalblue", alpha=0.3)
+
+        # Correct part only
+        plt.plot(grouped_df_correct_part["curr_last_act"], grouped_df_correct_part["mean"],
+                    color="green", marker="^", linestyle=":", label="$\\pi_{\\text{corr}}$ / $\\pi_{\\text{GT}}$ Ratio")
+        plt.fill_between(grouped_df_correct_part["curr_last_act"],
+                            grouped_df_correct_part["mean"] - grouped_df_correct_part["std"],
+                            grouped_df_correct_part["mean"] + grouped_df_correct_part["std"],
+                            color="green", alpha=0.3)
+
+        plt.xlabel("Last Executable Action Index", fontsize=20)
+        plt.ylabel("Portion from $\\pi_{\\text{GT}}$", fontsize=20)
+        # plt.title("Comparison of contribution: LLM vs. Planner", fontsize=20)
+        plt.ylim(0, 2)
+        plt.grid(True, linestyle="--", alpha=0.6)
+        plt.legend(fontsize=16)
+        plt.xticks(fontsize=16)
+        plt.yticks(fontsize=16)
+
+        plt.tight_layout()
+        plt.savefig(f"{figures_dir}/complementary_length_out_of_gt_length.pdf", format="pdf", dpi="figure")
+        # plt.show()
 
     def complemenary_length_out_of_gt_length_high_and_low(self):
         """
@@ -762,6 +1002,7 @@ class AnalyseResults:
         print(f"Spearman correlation between {executability_column} and {validity_column}: "
                 f"rho = {spearman_corr:.2f}, p = {pval:.3f}")
 
+        # Per-instance group
         df = self.abbreviate_config_names(df)
         instance_df = df.groupby(["instance_id", f"{group_by_column}_name"]).agg({
             executability_column: "mean",
@@ -777,6 +1018,7 @@ class AnalyseResults:
             Validity_std=(validity_column, 'std')
         ).reset_index()
 
+        # Convert to %
         for col in ["Executability", "Validity", "Executability_std", "Validity_std"]:
             plot_df[col] *= 100
 
@@ -791,6 +1033,8 @@ class AnalyseResults:
         upper_valid = np.clip(plot_df["Validity"] + plot_df["Validity_std"], 0, 100)
         valid_errors = [plot_df["Validity"] - lower_valid, upper_valid - plot_df["Validity"]]
 
+
+        # Plot
         fig, ax = plt.subplots(figsize=(10, 5) if group_by_column == "model" else (8, 6))
         bar_width = 0.6 if group_by_column == "model" else 0.5
         x = np.arange(len(plot_df))
@@ -876,10 +1120,12 @@ class AnalyseResults:
         high_grouped = prepare_data(self.high_success)
         results_grouped = prepare_data(results.copy())
 
+        # Stats
         rho_low, p_low = print_stats(low_grouped, "Low Success")
         rho_high, p_high = print_stats(high_grouped, "High Success")
         rho_total, p_total = print_stats(results_grouped, "Total Success")
 
+        # Plotting
         fig, axs = plt.subplots(1, 2, figsize=(14, 5), sharey=True)
 
         for ax, grouped, title, rho, p in zip(
@@ -961,6 +1207,8 @@ class AnalyseResults:
             ("Random BW", "LLM-Generated"): "#ff9896",
             ("Random Logistics", "Ground Truth"): "#9467bd",
             ("Random Logistics", "LLM-Generated"): "#c5b0d5",
+            ("Office Robot", "Ground Truth"): "#8c564b",
+            ("Office Robot", "LLM-Generated"): "#c49c94",
         }
 
         plt.figure(figsize=(9, 5))
@@ -999,6 +1247,7 @@ class AnalyseResults:
             "random_blocksworld_3": "Random BW",
             "logistics": "Logistics",
             "obfuscated_randomized_logistics": "Random Logistics",
+            "office_robot": "Office Robot",
         }
         return domain_map.get(domain, domain)
 
@@ -1016,6 +1265,7 @@ class AnalyseResults:
         df = self.map_config_in_results(df, group_by="task")
 
         df["curr_validity"] = df["curr_validity"].astype(float)
+        df["executability"] = df["executability"].astype(float)
         df["cdt_validity"] = df["cdt_validity"].astype(float)
         df["subseq_validity"] = df["subseq_validity"].astype(float)
         df["cdt_subseq_validity"] = df["cdt_subseq_validity"].astype(float)
@@ -1025,7 +1275,7 @@ class AnalyseResults:
 
         # Metrics and column names
         metrics = [
-            "curr_validity", "curr_score", "trace_score", "curr_steps", "correct_part_len", "curr_last_act",
+            "curr_validity", "executability", "curr_score", "trace_score", "curr_steps", "correct_part_len", "curr_last_act",
             "cdt_validity", "cdt_last_act", "subseq_validity", "cdt_subseq_validity", "cdt_subseq_steps", "improved_validity"
         ]
         col_map = self.get_column_names_map()
@@ -1052,6 +1302,7 @@ class AnalyseResults:
         df = self.map_config_in_results(df, group_by="domain")
 
         df["curr_validity"] = df["curr_validity"].astype(float)
+        df["executability"] = df["executability"].astype(float)
         df["cdt_validity"] = df["cdt_validity"].astype(float)
         df["subseq_validity"] = df["subseq_validity"].astype(float)
         df["cdt_subseq_validity"] = df["cdt_subseq_validity"].astype(float)
@@ -1061,7 +1312,7 @@ class AnalyseResults:
 
         # Metrics and column names
         metrics = [
-            "curr_validity", "curr_score", "trace_score", "curr_steps", "correct_part_len", "curr_last_act",
+            "curr_validity", "executability", "curr_score", "trace_score", "curr_steps", "correct_part_len", "curr_last_act",
             "cdt_validity", "cdt_last_act", "subseq_validity", "cdt_subseq_validity", "cdt_subseq_steps", "improved_validity"
         ]
         col_map = self.get_column_names_map()
@@ -1075,9 +1326,67 @@ class AnalyseResults:
             group_by=["domain_name", "model_name", "task_name"]
         )
 
+    ### HELPER functions
+    def format_latex_table(self, df, metrics, col_map, caption, label, file_path, group_by=["model_name", "task_name"]):
+        summary = df.groupby(group_by)[metrics].mean().reset_index()
+
+        # Build LaTeX table
+        lines = []
+        groups: str = "\\small Model & \\small Prompt Type & " if group_by == ["model_name", "task_name"] else "\\small Domain & \\small Model & \\small Prompt Type & "
+        header = (
+                "\\begin{table}[ht]\n\\centering\n"
+                f"\\caption{{{caption}}}\n"
+                f"\\label{{{label}}}\n"
+                "\\resizebox{\\textwidth}{!}{%\n"
+                "\\begin{tabular}{ll" + "c" * len(metrics) + "}\n"
+                                                             "\\toprule\n" + groups + " & \\small ".join(
+            [f"\\textbf{{{col_map[col]}}}" for col in metrics]) + " \\\\\n"
+                                                                  "\\midrule"
+        )
+        lines.append(header)
+
+        for model in summary["model_name"].unique():
+            model_df = summary[summary["model_name"] == model].copy()
+            # Columns where lower is better
+            minimise_cols = {"curr_steps", "cdt_subseq_steps"}
+
+            bold_vals = {}
+            for col in metrics:
+                if col in minimise_cols:
+                    bold_vals[col] = model_df[col].min()
+                else:
+                    bold_vals[col] = model_df[col].max()
+
+            for _, row in model_df.iterrows():
+                if group_by == ["model_name", "task_name"]:
+                    line = f"{row['model_name']} & {row['task_name']}"
+                else:
+                    line = f"{row['domain_name']} & {row['model_name']} & {row['task_name']}"
+                for col in metrics:
+                    val = row[col]
+                    if pd.isna(val):
+                        formatted = "--"
+                    elif val == bold_vals[col]:
+                        formatted = f"\\textbf{{{val:.2f}}}"
+                    else:
+                        formatted = f"{val:.2f}"
+                    line += f" & {formatted}"
+                line += " \\\\"
+                lines.append(line)
+
+            lines.append("\\midrule")
+
+        footer = "\\bottomrule\n\\end{tabular}%\n}\\end{table}"
+        lines.append(footer)
+
+        with open(file_path, "w") as f:
+            f.write("\n".join(lines))
+        return "\n".join(lines)
+
     def get_column_names_map(self):
         return {
             "curr_validity": "$\\pi_0$ SR $\\uparrow$",
+            "executability": "$\\pi_0$ Exec $\\uparrow$",
             "curr_score": "Score $\\uparrow$",
             "trace_score": "AQM $\\uparrow$",
             "curr_steps": "StV $\\downarrow$",
@@ -1167,6 +1476,7 @@ class AnalyseResults:
             "random_blocksworld_3": "Random BW",
             "logistics": "Logistics",
             "obfuscated_randomized_logistics": "Random Logistics",
+            "office_robot": "Office Robot",
         }
 
         if group_by == "task":
@@ -1180,11 +1490,11 @@ class AnalyseResults:
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Analyse plan recovery results")
-    parser.add_argument("--missing_instances", action="store_true", default=False, help="Whether to include missing instances in the analysis")
-    parser.add_argument("--domain", type=str, default="o4-mini", choices=["mystery" "random" "blocksworld", "logistics", "o4-mini", ""], help="Domain to filter results by (blocksworld or logistics)")
+    parser.add_argument("--missing_instances", action="store_true", default=True, help="Whether to include missing instances in the analysis")
+    parser.add_argument("--domain", type=str, default="o4-mini", choices=["office_robot", "mystery" "random" "blocksworld", "logistics", "o4-mini", ""], help="Domain to filter results by (blocksworld or logistics)")
     parser.add_argument("--success_rate", type=str, default="", choices=["high_success", "low_success", ""],
                         help="Success level to filter results by (high_success, low_success, or all)")
-    # parser.add_argument("--LRMs", alction="store_true", default=True, help="Whether to evaluate LLMs or LRMs (default: LLMs)")
+    # parser.add_argument("--LRMs", action="store_true", default=True, help="Whether to evaluate LLMs or LRMs (default: LLMs)")
     return parser.parse_args()
 
 if __name__ == "__main__":
@@ -1198,6 +1508,8 @@ if __name__ == "__main__":
     project_dir = os.path.abspath(os.path.join(current_dir, os.pardir, os.pardir))
     # eval_dir = "_LRMs" if LRMs else ""
     results_dir = f"{project_dir}/results/plan_recovery/final_evaluation/"
+    if domain == "office_robot":
+        results_dir = f"{project_dir}/results/plan_recovery/final_evaluation/office_robot/"
     # results_dir = f"{project_dir}/results/plan_recovery/from_hpc/50_instances/"
     if not os.path.exists(results_dir):
         os.makedirs(results_dir)
