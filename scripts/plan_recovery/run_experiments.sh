@@ -6,6 +6,8 @@ models=("o4-mini_chat") # After fix: "o3-mini_chat" "o4-mini_chat" zero-shot pdd
 #tasks=("_zero_shot") # Finish "claude_3-7_sonnet"
 tasks=("" "_pddl" "_zero_shot")
 
+mkdir -p logs
+
 for task in "${tasks[@]}"; do
     for model in "${models[@]}"; do
         for domain in "${domains[@]}"; do
