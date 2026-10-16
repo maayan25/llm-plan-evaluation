@@ -1,6 +1,7 @@
 
 #### Plan retrieval
-This project has been developed with Python 3.12
+This project has been developed with Python 3.12.
+You can use [our fork](https://github.com/maayan25/LLMs-Planning) of PlanBench to get LLM-generated plans.
 
 #### Setup instructions
 Create and activate a virtual environment:
@@ -21,14 +22,11 @@ python3
 > import nltk
 > nltk.download('wordnet')
 ```
-Modify path and configuration:
-1. path to LLM-Planning-PlanBench repository in `scripts/plan-recovery/check_plan_validity.py`
-2. name of model used for generation
-3. name of results file
 
-Run the evaluation script to run the full pipeline on all model/task combinations:
+Run the evaluation script to run the full pipeline for your chosen model/task combinations:
 ```bash
 cd scripts/plan_recovery
+python3 summarise_results.py
 ./run_experiments.sh
 ```
 Or run the evaluation script directly for a specific model/task combination:`
