@@ -1,0 +1,712 @@
+{
+    "config": "blocksworld_3",
+    "instances": {
+        "43": [
+            "(unstack a b)\n(put-down a)\n(unstack b c)\n(put-down b)\n(pick-up a)\n(stack a c)",
+            "(unstack a b)\n(put-down a)\n(unstack b c)\n(put-down b)\n(pick-up a)\n(stack a c)\n(pick-up b)",
+            "(unstack a b)\n(put-down a)\n(pick-up a)\n(put-down a)\n(unstack b c)\n(put-down b)\n(pick-up a)\n(stack a c)",
+            "(unstack a b)\n(put-down a)\n(unstack b c)\n(put-down b)\n(pick-up a)\n(put-down a)\n(pick-up a)\n(stack a c)",
+            "(unstack a b)\n(put-down a)\n(unstack b c)\n(put-down b)\n(pick-up a)\n(stack a b)\n(unstack a b)\n(stack a c)"
+        ],
+        "65": [
+            "(unstack a c)\n(put-down a)\n(pick-up b)\n(stack b a)\n(pick-up c)\n(stack c b)",
+            "(pick-up b)\n(put-down b)\n(unstack a c)\n(put-down a)\n(pick-up b)\n(stack b a)\n(pick-up c)\n(stack c b)",
+            "(unstack a c)\n(put-down a)\n(pick-up a)\n(put-down a)\n(pick-up b)\n(stack b a)\n(pick-up c)\n(stack c b)",
+            "(unstack a c)\n(put-down a)\n(pick-up b)\n(put-down b)\n(pick-up b)\n(stack b a)\n(pick-up c)\n(stack c b)",
+            "(unstack a c)\n(put-down a)\n(pick-up b)\n(stack b c)\n(unstack b c)\n(stack b a)\n(pick-up c)\n(stack c b)"
+        ],
+        "54": [
+            "(unstack b a)\n(put-down b)\n(unstack a c)\n(stack a b)\n(pick-up c)\n(stack c a)",
+            "(unstack b a)\n(put-down b)\n(pick-up b)\n(put-down b)\n(unstack a c)\n(stack a b)\n(pick-up c)\n(stack c a)",
+            "(unstack b a)\n(put-down b)\n(unstack a c)\n(put-down a)\n(pick-up a)\n(stack a b)\n(pick-up c)\n(stack c a)",
+            "(unstack b a)\n(put-down b)\n(unstack a c)\n(stack a b)\n(pick-up c)\n(put-down c)\n(pick-up c)\n(stack c a)",
+            "(unstack b a)\n(put-down b)\n(unstack a c)\n(stack a b)\n(pick-up c)\n(stack c a)\n(unstack c a)\n(stack c a)"
+        ],
+        "39": [
+            "(unstack b c)\n(put-down b)\n(unstack c a)\n(put-down c)\n(pick-up a)\n(stack a b)\n(pick-up c)\n(stack c a)",
+            "(unstack b c)\n(put-down b)\n(pick-up b)\n(put-down b)\n(unstack c a)\n(put-down c)\n(pick-up a)\n(stack a b)\n(pick-up c)\n(stack c a)",
+            "(unstack b c)\n(put-down b)\n(unstack c a)\n(put-down c)\n(pick-up a)\n(put-down a)\n(pick-up a)\n(stack a b)\n(pick-up c)\n(stack c a)",
+            "(unstack b c)\n(put-down b)\n(unstack c a)\n(put-down c)\n(pick-up a)\n(stack a b)\n(pick-up c)\n(put-down c)\n(pick-up c)\n(stack c a)",
+            "(unstack b c)\n(put-down b)\n(unstack c a)\n(put-down c)\n(pick-up a)\n(stack a b)\n(pick-up c)\n(stack c a)\n(unstack c a)\n(stack c a)"
+        ],
+        "67": [
+            "(unstack a c)\n(put-down a)\n(pick-up b)\n(stack b c)",
+            "(unstack a c)\n(put-down a)\n(pick-up b)\n(stack b c)\n(pick-up a)",
+            "(pick-up b)\n(put-down b)\n(unstack a c)\n(put-down a)\n(pick-up b)\n(stack b c)",
+            "(unstack a c)\n(put-down a)\n(pick-up a)\n(put-down a)\n(pick-up b)\n(stack b c)",
+            "(unstack a c)\n(put-down a)\n(pick-up b)\n(put-down b)\n(pick-up b)\n(stack b c)"
+        ],
+        "57": [
+            "(unstack b a)\n(put-down b)\n(unstack a c)\n(put-down a)\n(pick-up b)\n(stack b c)\n(pick-up a)\n(stack a b)",
+            "(unstack b a)\n(put-down b)\n(pick-up b)\n(put-down b)\n(unstack a c)\n(put-down a)\n(pick-up b)\n(stack b c)\n(pick-up a)\n(stack a b)",
+            "(unstack b a)\n(put-down b)\n(unstack a c)\n(put-down a)\n(pick-up a)\n(put-down a)\n(pick-up b)\n(stack b c)\n(pick-up a)\n(stack a b)",
+            "(unstack b a)\n(put-down b)\n(unstack a c)\n(put-down a)\n(pick-up c)\n(put-down c)\n(pick-up b)\n(stack b c)\n(pick-up a)\n(stack a b)",
+            "(unstack b a)\n(put-down b)\n(unstack a c)\n(put-down a)\n(pick-up b)\n(put-down b)\n(pick-up b)\n(stack b c)\n(pick-up a)\n(stack a b)"
+        ],
+        "77": [
+            "(pick-up b)\n(stack b c)",
+            "(pick-up b)\n(stack b c)\n(pick-up a)",
+            "(pick-up a)\n(put-down a)\n(pick-up b)\n(stack b c)",
+            "(pick-up c)\n(put-down c)\n(pick-up b)\n(stack b c)",
+            "(pick-up c)\n(stack c a)\n(pick-up b)\n(stack b c)"
+        ],
+        "30": [
+            "(unstack c a)\n(put-down c)\n(pick-up a)\n(stack a c)",
+            "(unstack c a)\n(stack c b)\n(pick-up a)\n(stack a c)",
+            "(unstack c a)\n(put-down c)\n(pick-up a)\n(stack a c)\n(pick-up b)",
+            "(pick-up b)\n(put-down b)\n(unstack c a)\n(put-down c)\n(pick-up a)\n(stack a c)",
+            "(pick-up b)\n(put-down b)\n(unstack c a)\n(stack c b)\n(pick-up a)\n(stack a c)"
+        ],
+        "101": [
+            "(unstack b c)\n(put-down b)\n(unstack c a)\n(put-down c)\n(pick-up b)\n(stack b a)",
+            "(unstack b c)\n(put-down b)\n(unstack c a)\n(put-down c)\n(pick-up b)\n(stack b a)\n(pick-up c)",
+            "(unstack b c)\n(put-down b)\n(pick-up b)\n(put-down b)\n(unstack c a)\n(put-down c)\n(pick-up b)\n(stack b a)",
+            "(unstack b c)\n(put-down b)\n(unstack c a)\n(put-down c)\n(pick-up a)\n(put-down a)\n(pick-up b)\n(stack b a)",
+            "(unstack b c)\n(put-down b)\n(unstack c a)\n(put-down c)\n(pick-up a)\n(stack a c)\n(pick-up b)\n(stack b a)"
+        ],
+        "51": [
+            "(unstack c a)\n(put-down c)\n(unstack a b)\n(stack a c)\n(pick-up b)\n(stack b a)",
+            "(unstack c a)\n(put-down c)\n(pick-up c)\n(put-down c)\n(unstack a b)\n(stack a c)\n(pick-up b)\n(stack b a)",
+            "(unstack c a)\n(put-down c)\n(unstack a b)\n(put-down a)\n(pick-up a)\n(stack a c)\n(pick-up b)\n(stack b a)",
+            "(unstack c a)\n(put-down c)\n(unstack a b)\n(stack a b)\n(unstack a b)\n(stack a c)\n(pick-up b)\n(stack b a)",
+            "(unstack c a)\n(put-down c)\n(unstack a b)\n(stack a c)\n(pick-up b)\n(put-down b)\n(pick-up b)\n(stack b a)"
+        ],
+        "99": [
+            "(unstack c a)\n(put-down c)\n(unstack a b)\n(put-down a)\n(pick-up c)\n(stack c b)\n(pick-up a)\n(stack a c)",
+            "(unstack c a)\n(put-down c)\n(pick-up c)\n(put-down c)\n(unstack a b)\n(put-down a)\n(pick-up c)\n(stack c b)\n(pick-up a)\n(stack a c)",
+            "(unstack c a)\n(put-down c)\n(unstack a b)\n(put-down a)\n(pick-up a)\n(put-down a)\n(pick-up c)\n(stack c b)\n(pick-up a)\n(stack a c)",
+            "(unstack c a)\n(put-down c)\n(unstack a b)\n(put-down a)\n(pick-up c)\n(put-down c)\n(pick-up c)\n(stack c b)\n(pick-up a)\n(stack a c)",
+            "(unstack c a)\n(put-down c)\n(unstack a b)\n(put-down a)\n(pick-up c)\n(stack c a)\n(unstack c a)\n(stack c b)\n(pick-up a)\n(stack a c)"
+        ],
+        "34": [
+            "(unstack c b)\n(put-down c)\n(pick-up b)\n(stack b c)",
+            "(unstack c b)\n(stack c a)\n(pick-up b)\n(stack b c)",
+            "(unstack c b)\n(put-down c)\n(pick-up b)\n(stack b c)\n(pick-up a)",
+            "(pick-up a)\n(put-down a)\n(unstack c b)\n(put-down c)\n(pick-up b)\n(stack b c)",
+            "(pick-up a)\n(put-down a)\n(unstack c b)\n(stack c a)\n(pick-up b)\n(stack b c)"
+        ],
+        "28": [
+            "(unstack c a)\n(put-down c)\n(unstack a b)\n(put-down a)\n(pick-up b)\n(stack b c)\n(pick-up a)\n(stack a b)",
+            "(unstack c a)\n(put-down c)\n(pick-up c)\n(put-down c)\n(unstack a b)\n(put-down a)\n(pick-up b)\n(stack b c)\n(pick-up a)\n(stack a b)",
+            "(unstack c a)\n(put-down c)\n(unstack a b)\n(put-down a)\n(pick-up a)\n(put-down a)\n(pick-up b)\n(stack b c)\n(pick-up a)\n(stack a b)",
+            "(unstack c a)\n(put-down c)\n(unstack a b)\n(put-down a)\n(pick-up c)\n(put-down c)\n(pick-up b)\n(stack b c)\n(pick-up a)\n(stack a b)",
+            "(unstack c a)\n(put-down c)\n(unstack a b)\n(put-down a)\n(pick-up b)\n(put-down b)\n(pick-up b)\n(stack b c)\n(pick-up a)\n(stack a b)"
+        ],
+        "73": [
+            "(pick-up b)\n(stack b c)",
+            "(pick-up b)\n(put-down b)\n(pick-up b)\n(stack b c)",
+            "(pick-up b)\n(stack b c)\n(unstack b c)\n(stack b c)",
+            "(unstack c a)\n(put-down c)\n(pick-up b)\n(stack b c)",
+            "(unstack c a)\n(stack c a)\n(pick-up b)\n(stack b c)"
+        ],
+        "49": [
+            "(unstack b c)\n(put-down b)\n(pick-up a)\n(stack a c)\n(pick-up b)\n(stack b a)",
+            "(pick-up a)\n(put-down a)\n(unstack b c)\n(put-down b)\n(pick-up a)\n(stack a c)\n(pick-up b)\n(stack b a)",
+            "(unstack b c)\n(put-down b)\n(pick-up a)\n(put-down a)\n(pick-up a)\n(stack a c)\n(pick-up b)\n(stack b a)",
+            "(unstack b c)\n(put-down b)\n(pick-up a)\n(stack a b)\n(unstack a b)\n(stack a c)\n(pick-up b)\n(stack b a)",
+            "(unstack b c)\n(put-down b)\n(pick-up a)\n(stack a c)\n(pick-up b)\n(put-down b)\n(pick-up b)\n(stack b a)"
+        ],
+        "64": [
+            "(unstack a c)\n(put-down a)\n(pick-up c)\n(stack c a)\n(pick-up b)\n(stack b c)",
+            "(pick-up b)\n(put-down b)\n(unstack a c)\n(put-down a)\n(pick-up c)\n(stack c a)\n(pick-up b)\n(stack b c)",
+            "(unstack a c)\n(put-down a)\n(pick-up a)\n(put-down a)\n(pick-up c)\n(stack c a)\n(pick-up b)\n(stack b c)",
+            "(unstack a c)\n(put-down a)\n(pick-up b)\n(put-down b)\n(pick-up c)\n(stack c a)\n(pick-up b)\n(stack b c)",
+            "(unstack a c)\n(put-down a)\n(pick-up c)\n(put-down c)\n(pick-up c)\n(stack c a)\n(pick-up b)\n(stack b c)"
+        ],
+        "37": [
+            "(unstack c a)\n(put-down c)\n(pick-up b)\n(stack b a)\n(pick-up c)\n(stack c b)",
+            "(pick-up b)\n(put-down b)\n(unstack c a)\n(put-down c)\n(pick-up b)\n(stack b a)\n(pick-up c)\n(stack c b)",
+            "(unstack c a)\n(put-down c)\n(pick-up a)\n(put-down a)\n(pick-up b)\n(stack b a)\n(pick-up c)\n(stack c b)",
+            "(unstack c a)\n(put-down c)\n(pick-up b)\n(put-down b)\n(pick-up b)\n(stack b a)\n(pick-up c)\n(stack c b)",
+            "(unstack c a)\n(put-down c)\n(pick-up b)\n(stack b c)\n(unstack b c)\n(stack b a)\n(pick-up c)\n(stack c b)"
+        ],
+        "19": [
+            "(unstack a b)\n(stack a c)\n(pick-up b)\n(stack b a)",
+            "(pick-up c)\n(put-down c)\n(unstack a b)\n(stack a c)\n(pick-up b)\n(stack b a)",
+            "(unstack a b)\n(put-down a)\n(pick-up a)\n(stack a c)\n(pick-up b)\n(stack b a)",
+            "(unstack a b)\n(stack a b)\n(unstack a b)\n(stack a c)\n(pick-up b)\n(stack b a)",
+            "(unstack a b)\n(stack a c)\n(pick-up b)\n(put-down b)\n(pick-up b)\n(stack b a)"
+        ],
+        "6": [
+            "(unstack a c)\n(put-down a)\n(unstack c b)\n(stack c a)\n(pick-up b)\n(stack b c)",
+            "(unstack a c)\n(put-down a)\n(pick-up a)\n(put-down a)\n(unstack c b)\n(stack c a)\n(pick-up b)\n(stack b c)",
+            "(unstack a c)\n(put-down a)\n(unstack c b)\n(put-down c)\n(pick-up c)\n(stack c a)\n(pick-up b)\n(stack b c)",
+            "(unstack a c)\n(put-down a)\n(unstack c b)\n(stack c a)\n(pick-up b)\n(put-down b)\n(pick-up b)\n(stack b c)",
+            "(unstack a c)\n(put-down a)\n(unstack c b)\n(stack c a)\n(pick-up b)\n(stack b c)\n(unstack b c)\n(stack b c)"
+        ],
+        "52": [
+            "(unstack c a)\n(put-down c)\n(pick-up a)\n(stack a b)",
+            "(unstack c a)\n(put-down c)\n(pick-up a)\n(stack a b)\n(pick-up c)",
+            "(pick-up b)\n(put-down b)\n(unstack c a)\n(put-down c)\n(pick-up a)\n(stack a b)",
+            "(unstack c a)\n(put-down c)\n(pick-up a)\n(put-down a)\n(pick-up a)\n(stack a b)",
+            "(unstack c a)\n(put-down c)\n(pick-up a)\n(stack a b)\n(pick-up c)\n(put-down c)"
+        ],
+        "13": [
+            "(unstack b a)\n(put-down b)\n(pick-up c)\n(stack c a)\n(pick-up b)\n(stack b c)",
+            "(pick-up c)\n(put-down c)\n(unstack b a)\n(put-down b)\n(pick-up c)\n(stack c a)\n(pick-up b)\n(stack b c)",
+            "(unstack b a)\n(put-down b)\n(pick-up a)\n(put-down a)\n(pick-up c)\n(stack c a)\n(pick-up b)\n(stack b c)",
+            "(unstack b a)\n(put-down b)\n(pick-up b)\n(put-down b)\n(pick-up c)\n(stack c a)\n(pick-up b)\n(stack b c)",
+            "(unstack b a)\n(put-down b)\n(pick-up c)\n(put-down c)\n(pick-up c)\n(stack c a)\n(pick-up b)\n(stack b c)"
+        ],
+        "98": [
+            "(unstack c b)\n(put-down c)\n(unstack b a)\n(put-down b)\n(pick-up a)\n(stack a b)",
+            "(unstack c b)\n(put-down c)\n(unstack b a)\n(stack b c)\n(pick-up a)\n(stack a b)",
+            "(unstack c b)\n(put-down c)\n(unstack b a)\n(put-down b)\n(pick-up a)\n(stack a b)\n(pick-up c)",
+            "(unstack c b)\n(put-down c)\n(pick-up c)\n(put-down c)\n(unstack b a)\n(put-down b)\n(pick-up a)\n(stack a b)",
+            "(unstack c b)\n(put-down c)\n(pick-up c)\n(put-down c)\n(unstack b a)\n(stack b c)\n(pick-up a)\n(stack a b)"
+        ],
+        "8": [
+            "(pick-up a)\n(stack a c)",
+            "(pick-up a)\n(stack a c)\n(pick-up b)",
+            "(pick-up a)\n(put-down a)\n(pick-up a)\n(stack a c)",
+            "(pick-up a)\n(stack a b)\n(unstack a b)\n(stack a c)",
+            "(pick-up a)\n(stack a c)\n(pick-up b)\n(put-down b)"
+        ],
+        "1": [
+            "(unstack c b)\n(put-down c)\n(unstack b a)\n(put-down b)\n(pick-up a)\n(stack a b)\n(pick-up c)\n(stack c a)",
+            "(unstack c b)\n(put-down c)\n(pick-up c)\n(put-down c)\n(unstack b a)\n(put-down b)\n(pick-up a)\n(stack a b)\n(pick-up c)\n(stack c a)",
+            "(unstack c b)\n(put-down c)\n(unstack b a)\n(put-down b)\n(pick-up a)\n(put-down a)\n(pick-up a)\n(stack a b)\n(pick-up c)\n(stack c a)",
+            "(unstack c b)\n(put-down c)\n(unstack b a)\n(put-down b)\n(pick-up a)\n(stack a b)\n(pick-up c)\n(put-down c)\n(pick-up c)\n(stack c a)",
+            "(unstack c b)\n(put-down c)\n(unstack b a)\n(put-down b)\n(pick-up a)\n(stack a b)\n(pick-up c)\n(stack c a)\n(unstack c a)\n(stack c a)"
+        ],
+        "47": [
+            "(unstack a c)\n(stack a b)",
+            "(unstack a c)\n(stack a b)\n(pick-up c)",
+            "(pick-up b)\n(put-down b)\n(unstack a c)\n(stack a b)",
+            "(unstack a c)\n(put-down a)\n(pick-up a)\n(stack a b)",
+            "(unstack a c)\n(stack a b)\n(pick-up c)\n(put-down c)"
+        ],
+        "69": [
+            "(unstack b c)\n(put-down b)\n(pick-up c)\n(stack c a)\n(pick-up b)\n(stack b c)",
+            "(pick-up a)\n(put-down a)\n(unstack b c)\n(put-down b)\n(pick-up c)\n(stack c a)\n(pick-up b)\n(stack b c)",
+            "(unstack b c)\n(put-down b)\n(pick-up a)\n(put-down a)\n(pick-up c)\n(stack c a)\n(pick-up b)\n(stack b c)",
+            "(unstack b c)\n(put-down b)\n(pick-up b)\n(put-down b)\n(pick-up c)\n(stack c a)\n(pick-up b)\n(stack b c)",
+            "(unstack b c)\n(put-down b)\n(pick-up c)\n(put-down c)\n(pick-up c)\n(stack c a)\n(pick-up b)\n(stack b c)"
+        ],
+        "40": [
+            "(unstack a c)\n(put-down a)\n(unstack c b)\n(put-down c)\n(pick-up a)\n(stack a b)",
+            "(unstack a c)\n(put-down a)\n(unstack c b)\n(put-down c)\n(pick-up a)\n(stack a b)\n(pick-up c)",
+            "(unstack a c)\n(put-down a)\n(pick-up a)\n(put-down a)\n(unstack c b)\n(put-down c)\n(pick-up a)\n(stack a b)",
+            "(unstack a c)\n(put-down a)\n(unstack c b)\n(put-down c)\n(pick-up a)\n(put-down a)\n(pick-up a)\n(stack a b)",
+            "(unstack a c)\n(put-down a)\n(unstack c b)\n(put-down c)\n(pick-up a)\n(stack a b)\n(pick-up c)\n(put-down c)"
+        ],
+        "86": [
+            "(pick-up c)\n(stack c b)",
+            "(pick-up c)\n(put-down c)\n(pick-up c)\n(stack c b)",
+            "(pick-up c)\n(stack c b)\n(unstack c b)\n(stack c b)",
+            "(unstack b a)\n(put-down b)\n(pick-up c)\n(stack c b)",
+            "(unstack b a)\n(stack b a)\n(pick-up c)\n(stack c b)"
+        ],
+        "20": [
+            "(pick-up b)\n(stack b a)",
+            "(pick-up b)\n(put-down b)\n(pick-up b)\n(stack b a)",
+            "(pick-up b)\n(stack b a)\n(unstack b a)\n(stack b a)",
+            "(unstack a c)\n(put-down a)\n(pick-up b)\n(stack b a)",
+            "(unstack a c)\n(stack a c)\n(pick-up b)\n(stack b a)"
+        ],
+        "50": [
+            "(unstack a c)\n(put-down a)\n(unstack c b)\n(put-down c)\n(pick-up b)\n(stack b a)",
+            "(unstack a c)\n(put-down a)\n(unstack c b)\n(put-down c)\n(pick-up b)\n(stack b a)\n(pick-up c)",
+            "(unstack a c)\n(put-down a)\n(pick-up a)\n(put-down a)\n(unstack c b)\n(put-down c)\n(pick-up b)\n(stack b a)",
+            "(unstack a c)\n(put-down a)\n(unstack c b)\n(put-down c)\n(pick-up a)\n(put-down a)\n(pick-up b)\n(stack b a)",
+            "(unstack a c)\n(put-down a)\n(unstack c b)\n(put-down c)\n(pick-up a)\n(stack a c)\n(pick-up b)\n(stack b a)"
+        ],
+        "71": [
+            "(unstack c a)\n(put-down c)\n(pick-up b)\n(stack b a)",
+            "(unstack c a)\n(put-down c)\n(pick-up b)\n(stack b a)\n(pick-up c)",
+            "(pick-up b)\n(put-down b)\n(unstack c a)\n(put-down c)\n(pick-up b)\n(stack b a)",
+            "(unstack c a)\n(put-down c)\n(pick-up a)\n(put-down a)\n(pick-up b)\n(stack b a)",
+            "(unstack c a)\n(put-down c)\n(pick-up a)\n(stack a c)\n(pick-up b)\n(stack b a)"
+        ],
+        "75": [
+            "(unstack a b)\n(put-down a)\n(pick-up b)\n(stack b a)\n(pick-up c)\n(stack c b)",
+            "(pick-up c)\n(put-down c)\n(unstack a b)\n(put-down a)\n(pick-up b)\n(stack b a)\n(pick-up c)\n(stack c b)",
+            "(unstack a b)\n(put-down a)\n(pick-up a)\n(put-down a)\n(pick-up b)\n(stack b a)\n(pick-up c)\n(stack c b)",
+            "(unstack a b)\n(put-down a)\n(pick-up b)\n(put-down b)\n(pick-up b)\n(stack b a)\n(pick-up c)\n(stack c b)",
+            "(unstack a b)\n(put-down a)\n(pick-up b)\n(stack b c)\n(unstack b c)\n(stack b a)\n(pick-up c)\n(stack c b)"
+        ],
+        "41": [
+            "(pick-up c)\n(stack c b)",
+            "(pick-up c)\n(put-down c)\n(pick-up c)\n(stack c b)",
+            "(pick-up c)\n(stack c b)\n(unstack c b)\n(stack c b)",
+            "(unstack b a)\n(stack b a)\n(pick-up c)\n(stack c b)",
+            "(pick-up c)\n(put-down c)\n(pick-up c)\n(put-down c)\n(pick-up c)\n(stack c b)"
+        ],
+        "21": [
+            "(unstack c b)\n(put-down c)\n(pick-up a)\n(stack a c)\n(pick-up b)\n(stack b a)",
+            "(pick-up a)\n(put-down a)\n(unstack c b)\n(put-down c)\n(pick-up a)\n(stack a c)\n(pick-up b)\n(stack b a)",
+            "(unstack c b)\n(put-down c)\n(pick-up a)\n(put-down a)\n(pick-up a)\n(stack a c)\n(pick-up b)\n(stack b a)",
+            "(unstack c b)\n(put-down c)\n(pick-up a)\n(stack a b)\n(unstack a b)\n(stack a c)\n(pick-up b)\n(stack b a)",
+            "(unstack c b)\n(put-down c)\n(pick-up a)\n(stack a c)\n(pick-up b)\n(put-down b)\n(pick-up b)\n(stack b a)"
+        ],
+        "24": [
+            "(pick-up b)\n(stack b c)\n(pick-up a)\n(stack a b)",
+            "(pick-up a)\n(put-down a)\n(pick-up b)\n(stack b c)\n(pick-up a)\n(stack a b)",
+            "(pick-up c)\n(put-down c)\n(pick-up b)\n(stack b c)\n(pick-up a)\n(stack a b)",
+            "(pick-up b)\n(put-down b)\n(pick-up b)\n(stack b c)\n(pick-up a)\n(stack a b)",
+            "(pick-up b)\n(stack b a)\n(unstack b a)\n(stack b c)\n(pick-up a)\n(stack a b)"
+        ],
+        "18": [
+            "(unstack c b)\n(put-down c)\n(unstack b a)\n(put-down b)\n(pick-up c)\n(stack c b)\n(pick-up a)\n(stack a c)",
+            "(unstack c b)\n(put-down c)\n(pick-up c)\n(put-down c)\n(unstack b a)\n(put-down b)\n(pick-up c)\n(stack c b)\n(pick-up a)\n(stack a c)",
+            "(unstack c b)\n(put-down c)\n(unstack b a)\n(put-down b)\n(pick-up a)\n(put-down a)\n(pick-up c)\n(stack c b)\n(pick-up a)\n(stack a c)",
+            "(unstack c b)\n(put-down c)\n(unstack b a)\n(put-down b)\n(pick-up c)\n(put-down c)\n(pick-up c)\n(stack c b)\n(pick-up a)\n(stack a c)",
+            "(unstack c b)\n(put-down c)\n(unstack b a)\n(put-down b)\n(pick-up c)\n(stack c a)\n(unstack c a)\n(stack c b)\n(pick-up a)\n(stack a c)"
+        ],
+        "56": [
+            "(unstack b a)\n(put-down b)\n(unstack a c)\n(stack a b)",
+            "(unstack b a)\n(put-down b)\n(unstack a c)\n(stack a b)\n(pick-up c)",
+            "(unstack b a)\n(put-down b)\n(pick-up b)\n(put-down b)\n(unstack a c)\n(stack a b)",
+            "(unstack b a)\n(put-down b)\n(unstack a c)\n(put-down a)\n(pick-up a)\n(stack a b)",
+            "(unstack b a)\n(put-down b)\n(unstack a c)\n(stack a b)\n(pick-up c)\n(put-down c)"
+        ],
+        "63": [
+            "(unstack b a)\n(put-down b)\n(pick-up c)\n(stack c b)\n(pick-up a)\n(stack a c)",
+            "(pick-up c)\n(put-down c)\n(unstack b a)\n(put-down b)\n(pick-up c)\n(stack c b)\n(pick-up a)\n(stack a c)",
+            "(unstack b a)\n(put-down b)\n(pick-up a)\n(put-down a)\n(pick-up c)\n(stack c b)\n(pick-up a)\n(stack a c)",
+            "(unstack b a)\n(put-down b)\n(pick-up b)\n(put-down b)\n(pick-up c)\n(stack c b)\n(pick-up a)\n(stack a c)",
+            "(unstack b a)\n(put-down b)\n(pick-up c)\n(put-down c)\n(pick-up c)\n(stack c b)\n(pick-up a)\n(stack a c)"
+        ],
+        "4": [
+            "(unstack a b)\n(put-down a)\n(unstack b c)\n(stack b a)",
+            "(unstack a b)\n(put-down a)\n(unstack b c)\n(stack b a)\n(pick-up c)",
+            "(unstack a b)\n(put-down a)\n(pick-up a)\n(put-down a)\n(unstack b c)\n(stack b a)",
+            "(unstack a b)\n(put-down a)\n(unstack b c)\n(put-down b)\n(pick-up b)\n(stack b a)",
+            "(unstack a b)\n(put-down a)\n(unstack b c)\n(stack b a)\n(pick-up c)\n(put-down c)"
+        ],
+        "81": [
+            "(unstack c a)\n(put-down c)\n(pick-up a)\n(stack a c)\n(pick-up b)\n(stack b a)",
+            "(pick-up b)\n(put-down b)\n(unstack c a)\n(put-down c)\n(pick-up a)\n(stack a c)\n(pick-up b)\n(stack b a)",
+            "(unstack c a)\n(put-down c)\n(pick-up a)\n(put-down a)\n(pick-up a)\n(stack a c)\n(pick-up b)\n(stack b a)",
+            "(unstack c a)\n(put-down c)\n(pick-up a)\n(stack a b)\n(unstack a b)\n(stack a c)\n(pick-up b)\n(stack b a)",
+            "(unstack c a)\n(put-down c)\n(pick-up a)\n(stack a c)\n(pick-up b)\n(put-down b)\n(pick-up b)\n(stack b a)"
+        ],
+        "15": [
+            "(unstack c b)\n(put-down c)\n(pick-up a)\n(stack a b)",
+            "(unstack c b)\n(put-down c)\n(pick-up a)\n(stack a b)\n(pick-up c)",
+            "(pick-up a)\n(put-down a)\n(unstack c b)\n(put-down c)\n(pick-up a)\n(stack a b)",
+            "(unstack c b)\n(put-down c)\n(pick-up a)\n(put-down a)\n(pick-up a)\n(stack a b)",
+            "(unstack c b)\n(put-down c)\n(pick-up a)\n(stack a b)\n(pick-up c)\n(put-down c)"
+        ],
+        "89": [
+            "(pick-up b)\n(stack b a)",
+            "(pick-up b)\n(stack b a)\n(pick-up c)",
+            "(pick-up a)\n(put-down a)\n(pick-up b)\n(stack b a)",
+            "(pick-up a)\n(stack a c)\n(pick-up b)\n(stack b a)",
+            "(pick-up c)\n(put-down c)\n(pick-up b)\n(stack b a)"
+        ],
+        "90": [
+            "(pick-up c)\n(stack c a)\n(pick-up b)\n(stack b c)",
+            "(pick-up a)\n(put-down a)\n(pick-up c)\n(stack c a)\n(pick-up b)\n(stack b c)",
+            "(pick-up c)\n(put-down c)\n(pick-up c)\n(stack c a)\n(pick-up b)\n(stack b c)",
+            "(pick-up c)\n(stack c a)\n(pick-up b)\n(put-down b)\n(pick-up b)\n(stack b c)",
+            "(pick-up c)\n(stack c a)\n(pick-up b)\n(stack b c)\n(unstack b c)\n(stack b c)"
+        ],
+        "95": [
+            "(unstack a c)\n(put-down a)\n(unstack c b)\n(put-down c)\n(pick-up b)\n(stack b c)\n(pick-up a)\n(stack a b)",
+            "(unstack a c)\n(put-down a)\n(pick-up a)\n(put-down a)\n(unstack c b)\n(put-down c)\n(pick-up b)\n(stack b c)\n(pick-up a)\n(stack a b)",
+            "(unstack a c)\n(put-down a)\n(unstack c b)\n(put-down c)\n(pick-up a)\n(put-down a)\n(pick-up b)\n(stack b c)\n(pick-up a)\n(stack a b)",
+            "(unstack a c)\n(put-down a)\n(unstack c b)\n(put-down c)\n(pick-up c)\n(put-down c)\n(pick-up b)\n(stack b c)\n(pick-up a)\n(stack a b)",
+            "(unstack a c)\n(put-down a)\n(unstack c b)\n(put-down c)\n(pick-up b)\n(put-down b)\n(pick-up b)\n(stack b c)\n(pick-up a)\n(stack a b)"
+        ],
+        "60": [
+            "(unstack a c)\n(stack a b)\n(pick-up c)\n(stack c a)",
+            "(pick-up b)\n(put-down b)\n(unstack a c)\n(stack a b)\n(pick-up c)\n(stack c a)",
+            "(unstack a c)\n(put-down a)\n(pick-up a)\n(stack a b)\n(pick-up c)\n(stack c a)",
+            "(unstack a c)\n(stack a b)\n(pick-up c)\n(put-down c)\n(pick-up c)\n(stack c a)",
+            "(unstack a c)\n(stack a b)\n(pick-up c)\n(stack c a)\n(unstack c a)\n(stack c a)"
+        ],
+        "32": [
+            "(unstack b c)\n(stack b a)\n(pick-up c)\n(stack c b)",
+            "(pick-up a)\n(put-down a)\n(unstack b c)\n(stack b a)\n(pick-up c)\n(stack c b)",
+            "(unstack b c)\n(put-down b)\n(pick-up b)\n(stack b a)\n(pick-up c)\n(stack c b)",
+            "(unstack b c)\n(stack b a)\n(pick-up c)\n(put-down c)\n(pick-up c)\n(stack c b)",
+            "(unstack b c)\n(stack b a)\n(pick-up c)\n(stack c b)\n(unstack c b)\n(stack c b)"
+        ],
+        "96": [
+            "(unstack b a)\n(stack b c)",
+            "(unstack b a)\n(stack b c)\n(pick-up a)",
+            "(pick-up c)\n(put-down c)\n(unstack b a)\n(stack b c)",
+            "(unstack b a)\n(put-down b)\n(pick-up b)\n(stack b c)",
+            "(unstack b a)\n(stack b a)\n(unstack b a)\n(stack b c)"
+        ],
+        "29": [
+            "(unstack b a)\n(put-down b)\n(pick-up a)\n(stack a c)\n(pick-up b)\n(stack b a)",
+            "(pick-up c)\n(put-down c)\n(unstack b a)\n(put-down b)\n(pick-up a)\n(stack a c)\n(pick-up b)\n(stack b a)",
+            "(unstack b a)\n(put-down b)\n(pick-up a)\n(put-down a)\n(pick-up a)\n(stack a c)\n(pick-up b)\n(stack b a)",
+            "(unstack b a)\n(put-down b)\n(pick-up a)\n(stack a b)\n(unstack a b)\n(stack a c)\n(pick-up b)\n(stack b a)",
+            "(unstack b a)\n(put-down b)\n(pick-up a)\n(stack a c)\n(pick-up b)\n(put-down b)\n(pick-up b)\n(stack b a)"
+        ],
+        "22": [
+            "(unstack a c)\n(put-down a)\n(unstack c b)\n(put-down c)\n(pick-up b)\n(stack b c)",
+            "(unstack a c)\n(put-down a)\n(unstack c b)\n(stack c a)\n(pick-up b)\n(stack b c)",
+            "(unstack a c)\n(put-down a)\n(unstack c b)\n(put-down c)\n(pick-up b)\n(stack b c)\n(pick-up a)",
+            "(unstack a c)\n(put-down a)\n(pick-up a)\n(put-down a)\n(unstack c b)\n(put-down c)\n(pick-up b)\n(stack b c)",
+            "(unstack a c)\n(put-down a)\n(pick-up a)\n(put-down a)\n(unstack c b)\n(stack c a)\n(pick-up b)\n(stack b c)"
+        ],
+        "27": [
+            "(unstack b c)\n(put-down b)\n(unstack c a)\n(stack c b)\n(pick-up a)\n(stack a c)",
+            "(unstack b c)\n(put-down b)\n(pick-up b)\n(put-down b)\n(unstack c a)\n(stack c b)\n(pick-up a)\n(stack a c)",
+            "(unstack b c)\n(put-down b)\n(unstack c a)\n(put-down c)\n(pick-up c)\n(stack c b)\n(pick-up a)\n(stack a c)",
+            "(unstack b c)\n(put-down b)\n(unstack c a)\n(stack c a)\n(unstack c a)\n(stack c b)\n(pick-up a)\n(stack a c)",
+            "(unstack b c)\n(put-down b)\n(unstack c a)\n(stack c b)\n(pick-up a)\n(put-down a)\n(pick-up a)\n(stack a c)"
+        ],
+        "87": [
+            "(pick-up b)\n(stack b a)\n(pick-up c)\n(stack c b)",
+            "(pick-up a)\n(put-down a)\n(pick-up b)\n(stack b a)\n(pick-up c)\n(stack c b)",
+            "(pick-up c)\n(put-down c)\n(pick-up b)\n(stack b a)\n(pick-up c)\n(stack c b)",
+            "(pick-up b)\n(put-down b)\n(pick-up b)\n(stack b a)\n(pick-up c)\n(stack c b)",
+            "(pick-up b)\n(stack b a)\n(pick-up c)\n(put-down c)\n(pick-up c)\n(stack c b)"
+        ],
+        "7": [
+            "(unstack a c)\n(put-down a)\n(pick-up b)\n(stack b c)\n(pick-up a)\n(stack a b)",
+            "(pick-up b)\n(put-down b)\n(unstack a c)\n(put-down a)\n(pick-up b)\n(stack b c)\n(pick-up a)\n(stack a b)",
+            "(unstack a c)\n(put-down a)\n(pick-up a)\n(put-down a)\n(pick-up b)\n(stack b c)\n(pick-up a)\n(stack a b)",
+            "(unstack a c)\n(put-down a)\n(pick-up b)\n(put-down b)\n(pick-up b)\n(stack b c)\n(pick-up a)\n(stack a b)",
+            "(unstack a c)\n(put-down a)\n(pick-up b)\n(stack b c)\n(pick-up a)\n(put-down a)\n(pick-up a)\n(stack a b)"
+        ],
+        "70": [
+            "(unstack a b)\n(put-down a)\n(pick-up b)\n(stack b c)",
+            "(unstack a b)\n(put-down a)\n(pick-up b)\n(stack b c)\n(pick-up a)",
+            "(pick-up c)\n(put-down c)\n(unstack a b)\n(put-down a)\n(pick-up b)\n(stack b c)",
+            "(unstack a b)\n(put-down a)\n(pick-up a)\n(put-down a)\n(pick-up b)\n(stack b c)",
+            "(unstack a b)\n(put-down a)\n(pick-up b)\n(put-down b)\n(pick-up b)\n(stack b c)"
+        ],
+        "12": [
+            "(unstack b a)\n(put-down b)\n(pick-up a)\n(stack a b)\n(pick-up c)\n(stack c a)",
+            "(pick-up c)\n(put-down c)\n(unstack b a)\n(put-down b)\n(pick-up a)\n(stack a b)\n(pick-up c)\n(stack c a)",
+            "(unstack b a)\n(put-down b)\n(pick-up a)\n(put-down a)\n(pick-up a)\n(stack a b)\n(pick-up c)\n(stack c a)",
+            "(unstack b a)\n(put-down b)\n(pick-up a)\n(stack a b)\n(pick-up c)\n(put-down c)\n(pick-up c)\n(stack c a)",
+            "(unstack b a)\n(put-down b)\n(pick-up a)\n(stack a b)\n(pick-up c)\n(stack c a)\n(unstack c a)\n(stack c a)"
+        ],
+        "17": [
+            "(pick-up a)\n(stack a b)\n(pick-up c)\n(stack c a)",
+            "(pick-up a)\n(put-down a)\n(pick-up a)\n(stack a b)\n(pick-up c)\n(stack c a)",
+            "(pick-up a)\n(stack a b)\n(pick-up c)\n(put-down c)\n(pick-up c)\n(stack c a)",
+            "(pick-up a)\n(stack a b)\n(pick-up c)\n(stack c a)\n(unstack c a)\n(stack c a)",
+            "(pick-up a)\n(stack a b)\n(unstack a b)\n(stack a b)\n(pick-up c)\n(stack c a)"
+        ],
+        "2": [
+            "(pick-up a)\n(stack a c)\n(pick-up b)\n(stack b a)",
+            "(pick-up a)\n(put-down a)\n(pick-up a)\n(stack a c)\n(pick-up b)\n(stack b a)",
+            "(pick-up a)\n(stack a b)\n(unstack a b)\n(stack a c)\n(pick-up b)\n(stack b a)",
+            "(pick-up a)\n(stack a c)\n(pick-up b)\n(put-down b)\n(pick-up b)\n(stack b a)",
+            "(pick-up a)\n(stack a c)\n(pick-up b)\n(stack b a)\n(unstack b a)\n(stack b a)"
+        ],
+        "79": [
+            "(unstack b c)\n(put-down b)\n(unstack c a)\n(put-down c)\n(pick-up a)\n(stack a c)",
+            "(unstack b c)\n(put-down b)\n(unstack c a)\n(stack c b)\n(pick-up a)\n(stack a c)",
+            "(unstack b c)\n(put-down b)\n(unstack c a)\n(put-down c)\n(pick-up a)\n(stack a c)\n(pick-up b)",
+            "(unstack b c)\n(put-down b)\n(pick-up b)\n(put-down b)\n(unstack c a)\n(put-down c)\n(pick-up a)\n(stack a c)",
+            "(unstack b c)\n(put-down b)\n(pick-up b)\n(put-down b)\n(unstack c a)\n(stack c b)\n(pick-up a)\n(stack a c)"
+        ],
+        "68": [
+            "(unstack a b)\n(put-down a)\n(pick-up c)\n(stack c b)\n(pick-up a)\n(stack a c)",
+            "(pick-up c)\n(put-down c)\n(unstack a b)\n(put-down a)\n(pick-up c)\n(stack c b)\n(pick-up a)\n(stack a c)",
+            "(unstack a b)\n(put-down a)\n(pick-up a)\n(put-down a)\n(pick-up c)\n(stack c b)\n(pick-up a)\n(stack a c)",
+            "(unstack a b)\n(put-down a)\n(pick-up b)\n(put-down b)\n(pick-up c)\n(stack c b)\n(pick-up a)\n(stack a c)",
+            "(unstack a b)\n(put-down a)\n(pick-up c)\n(put-down c)\n(pick-up c)\n(stack c b)\n(pick-up a)\n(stack a c)"
+        ],
+        "93": [
+            "(pick-up c)\n(stack c a)",
+            "(pick-up c)\n(stack c a)\n(pick-up b)",
+            "(pick-up a)\n(put-down a)\n(pick-up c)\n(stack c a)",
+            "(pick-up a)\n(stack a b)\n(pick-up c)\n(stack c a)",
+            "(pick-up c)\n(put-down c)\n(pick-up c)\n(stack c a)"
+        ],
+        "84": [
+            "(unstack a b)\n(put-down a)\n(pick-up b)\n(stack b a)",
+            "(unstack a b)\n(stack a c)\n(pick-up b)\n(stack b a)",
+            "(unstack a b)\n(put-down a)\n(pick-up b)\n(stack b a)\n(pick-up c)",
+            "(pick-up c)\n(put-down c)\n(unstack a b)\n(put-down a)\n(pick-up b)\n(stack b a)",
+            "(pick-up c)\n(put-down c)\n(unstack a b)\n(stack a c)\n(pick-up b)\n(stack b a)"
+        ],
+        "80": [
+            "(unstack b a)\n(put-down b)\n(pick-up a)\n(stack a c)",
+            "(unstack b a)\n(put-down b)\n(pick-up a)\n(stack a c)\n(pick-up b)",
+            "(unstack b a)\n(put-down b)\n(pick-up a)\n(put-down a)\n(pick-up a)\n(stack a c)",
+            "(unstack b a)\n(put-down b)\n(pick-up a)\n(stack a b)\n(unstack a b)\n(stack a c)",
+            "(unstack b a)\n(put-down b)\n(pick-up a)\n(stack a c)\n(pick-up b)\n(put-down b)"
+        ],
+        "58": [
+            "(unstack b a)\n(put-down b)\n(pick-up c)\n(stack c a)",
+            "(unstack b a)\n(put-down b)\n(pick-up c)\n(stack c a)\n(pick-up b)",
+            "(pick-up c)\n(put-down c)\n(unstack b a)\n(put-down b)\n(pick-up c)\n(stack c a)",
+            "(unstack b a)\n(put-down b)\n(pick-up a)\n(put-down a)\n(pick-up c)\n(stack c a)",
+            "(unstack b a)\n(put-down b)\n(pick-up a)\n(stack a b)\n(pick-up c)\n(stack c a)"
+        ],
+        "72": [
+            "(unstack b c)\n(put-down b)\n(unstack c a)\n(put-down c)\n(pick-up a)\n(stack a b)",
+            "(unstack b c)\n(put-down b)\n(unstack c a)\n(put-down c)\n(pick-up a)\n(stack a b)\n(pick-up c)",
+            "(unstack b c)\n(put-down b)\n(pick-up b)\n(put-down b)\n(unstack c a)\n(put-down c)\n(pick-up a)\n(stack a b)",
+            "(unstack b c)\n(put-down b)\n(unstack c a)\n(put-down c)\n(pick-up a)\n(put-down a)\n(pick-up a)\n(stack a b)",
+            "(unstack b c)\n(put-down b)\n(unstack c a)\n(put-down c)\n(pick-up a)\n(stack a b)\n(pick-up c)\n(put-down c)"
+        ],
+        "59": [
+            "(unstack b a)\n(put-down b)\n(unstack a c)\n(put-down a)\n(pick-up c)\n(stack c a)",
+            "(unstack b a)\n(put-down b)\n(unstack a c)\n(stack a b)\n(pick-up c)\n(stack c a)",
+            "(unstack b a)\n(put-down b)\n(unstack a c)\n(put-down a)\n(pick-up c)\n(stack c a)\n(pick-up b)",
+            "(unstack b a)\n(put-down b)\n(pick-up b)\n(put-down b)\n(unstack a c)\n(put-down a)\n(pick-up c)\n(stack c a)",
+            "(unstack b a)\n(put-down b)\n(pick-up b)\n(put-down b)\n(unstack a c)\n(stack a b)\n(pick-up c)\n(stack c a)"
+        ],
+        "3": [
+            "(unstack b c)\n(put-down b)\n(unstack c a)\n(put-down c)\n(pick-up b)\n(stack b a)\n(pick-up c)\n(stack c b)",
+            "(unstack b c)\n(put-down b)\n(pick-up b)\n(put-down b)\n(unstack c a)\n(put-down c)\n(pick-up b)\n(stack b a)\n(pick-up c)\n(stack c b)",
+            "(unstack b c)\n(put-down b)\n(unstack c a)\n(put-down c)\n(pick-up a)\n(put-down a)\n(pick-up b)\n(stack b a)\n(pick-up c)\n(stack c b)",
+            "(unstack b c)\n(put-down b)\n(unstack c a)\n(put-down c)\n(pick-up c)\n(put-down c)\n(pick-up b)\n(stack b a)\n(pick-up c)\n(stack c b)",
+            "(unstack b c)\n(put-down b)\n(unstack c a)\n(put-down c)\n(pick-up b)\n(put-down b)\n(pick-up b)\n(stack b a)\n(pick-up c)\n(stack c b)"
+        ],
+        "78": [
+            "(unstack c a)\n(put-down c)\n(unstack a b)\n(put-down a)\n(pick-up b)\n(stack b c)",
+            "(unstack c a)\n(put-down c)\n(unstack a b)\n(put-down a)\n(pick-up b)\n(stack b c)\n(pick-up a)",
+            "(unstack c a)\n(put-down c)\n(pick-up c)\n(put-down c)\n(unstack a b)\n(put-down a)\n(pick-up b)\n(stack b c)",
+            "(unstack c a)\n(put-down c)\n(unstack a b)\n(put-down a)\n(pick-up a)\n(put-down a)\n(pick-up b)\n(stack b c)",
+            "(unstack c a)\n(put-down c)\n(unstack a b)\n(put-down a)\n(pick-up c)\n(put-down c)\n(pick-up b)\n(stack b c)"
+        ],
+        "88": [
+            "(unstack c b)\n(put-down c)\n(pick-up a)\n(stack a b)\n(pick-up c)\n(stack c a)",
+            "(pick-up a)\n(put-down a)\n(unstack c b)\n(put-down c)\n(pick-up a)\n(stack a b)\n(pick-up c)\n(stack c a)",
+            "(unstack c b)\n(put-down c)\n(pick-up a)\n(put-down a)\n(pick-up a)\n(stack a b)\n(pick-up c)\n(stack c a)",
+            "(unstack c b)\n(put-down c)\n(pick-up a)\n(stack a b)\n(pick-up c)\n(put-down c)\n(pick-up c)\n(stack c a)",
+            "(unstack c b)\n(put-down c)\n(pick-up a)\n(stack a b)\n(pick-up c)\n(stack c a)\n(unstack c a)\n(stack c a)"
+        ],
+        "92": [
+            "(unstack b c)\n(stack b a)",
+            "(unstack b c)\n(stack b a)\n(pick-up c)",
+            "(pick-up a)\n(put-down a)\n(unstack b c)\n(stack b a)",
+            "(unstack b c)\n(put-down b)\n(pick-up b)\n(stack b a)",
+            "(unstack b c)\n(stack b a)\n(pick-up c)\n(put-down c)"
+        ],
+        "61": [
+            "(unstack b c)\n(put-down b)\n(pick-up a)\n(stack a b)\n(pick-up c)\n(stack c a)",
+            "(pick-up a)\n(put-down a)\n(unstack b c)\n(put-down b)\n(pick-up a)\n(stack a b)\n(pick-up c)\n(stack c a)",
+            "(unstack b c)\n(put-down b)\n(pick-up a)\n(put-down a)\n(pick-up a)\n(stack a b)\n(pick-up c)\n(stack c a)",
+            "(unstack b c)\n(put-down b)\n(pick-up a)\n(stack a b)\n(pick-up c)\n(put-down c)\n(pick-up c)\n(stack c a)",
+            "(unstack b c)\n(put-down b)\n(pick-up a)\n(stack a b)\n(pick-up c)\n(stack c a)\n(unstack c a)\n(stack c a)"
+        ],
+        "82": [
+            "(unstack c a)\n(put-down c)\n(unstack a b)\n(put-down a)\n(pick-up c)\n(stack c a)\n(pick-up b)\n(stack b c)",
+            "(unstack c a)\n(put-down c)\n(pick-up c)\n(put-down c)\n(unstack a b)\n(put-down a)\n(pick-up c)\n(stack c a)\n(pick-up b)\n(stack b c)",
+            "(unstack c a)\n(put-down c)\n(unstack a b)\n(put-down a)\n(pick-up a)\n(put-down a)\n(pick-up c)\n(stack c a)\n(pick-up b)\n(stack b c)",
+            "(unstack c a)\n(put-down c)\n(unstack a b)\n(put-down a)\n(pick-up c)\n(put-down c)\n(pick-up c)\n(stack c a)\n(pick-up b)\n(stack b c)",
+            "(unstack c a)\n(put-down c)\n(unstack a b)\n(put-down a)\n(pick-up c)\n(stack c a)\n(pick-up b)\n(put-down b)\n(pick-up b)\n(stack b c)"
+        ],
+        "5": [
+            "(unstack a b)\n(put-down a)\n(unstack b c)\n(put-down b)\n(pick-up c)\n(stack c a)\n(pick-up b)\n(stack b c)",
+            "(unstack a b)\n(put-down a)\n(pick-up a)\n(put-down a)\n(unstack b c)\n(put-down b)\n(pick-up c)\n(stack c a)\n(pick-up b)\n(stack b c)",
+            "(unstack a b)\n(put-down a)\n(unstack b c)\n(put-down b)\n(pick-up a)\n(put-down a)\n(pick-up c)\n(stack c a)\n(pick-up b)\n(stack b c)",
+            "(unstack a b)\n(put-down a)\n(unstack b c)\n(put-down b)\n(pick-up c)\n(put-down c)\n(pick-up c)\n(stack c a)\n(pick-up b)\n(stack b c)",
+            "(unstack a b)\n(put-down a)\n(unstack b c)\n(put-down b)\n(pick-up c)\n(stack c a)\n(pick-up b)\n(put-down b)\n(pick-up b)\n(stack b c)"
+        ],
+        "42": [
+            "(unstack a b)\n(put-down a)\n(pick-up c)\n(stack c b)",
+            "(unstack a b)\n(put-down a)\n(pick-up c)\n(stack c b)\n(pick-up a)",
+            "(pick-up c)\n(put-down c)\n(unstack a b)\n(put-down a)\n(pick-up c)\n(stack c b)",
+            "(unstack a b)\n(put-down a)\n(pick-up a)\n(put-down a)\n(pick-up c)\n(stack c b)",
+            "(unstack a b)\n(put-down a)\n(pick-up b)\n(put-down b)\n(pick-up c)\n(stack c b)"
+        ],
+        "25": [
+            "(unstack c b)\n(put-down c)\n(pick-up b)\n(stack b a)\n(pick-up c)\n(stack c b)",
+            "(pick-up a)\n(put-down a)\n(unstack c b)\n(put-down c)\n(pick-up b)\n(stack b a)\n(pick-up c)\n(stack c b)",
+            "(unstack c b)\n(put-down c)\n(pick-up a)\n(put-down a)\n(pick-up b)\n(stack b a)\n(pick-up c)\n(stack c b)",
+            "(unstack c b)\n(put-down c)\n(pick-up b)\n(put-down b)\n(pick-up b)\n(stack b a)\n(pick-up c)\n(stack c b)",
+            "(unstack c b)\n(put-down c)\n(pick-up b)\n(stack b c)\n(unstack b c)\n(stack b a)\n(pick-up c)\n(stack c b)"
+        ],
+        "26": [
+            "(unstack b a)\n(put-down b)\n(unstack a c)\n(put-down a)\n(pick-up c)\n(stack c b)",
+            "(unstack b a)\n(put-down b)\n(unstack a c)\n(put-down a)\n(pick-up c)\n(stack c b)\n(pick-up a)",
+            "(unstack b a)\n(put-down b)\n(pick-up b)\n(put-down b)\n(unstack a c)\n(put-down a)\n(pick-up c)\n(stack c b)",
+            "(unstack b a)\n(stack b a)\n(unstack b a)\n(put-down b)\n(unstack a c)\n(put-down a)\n(pick-up c)\n(stack c b)",
+            "(unstack b a)\n(put-down b)\n(unstack a c)\n(put-down a)\n(pick-up a)\n(put-down a)\n(pick-up c)\n(stack c b)"
+        ],
+        "31": [
+            "(unstack b c)\n(put-down b)\n(pick-up c)\n(stack c b)",
+            "(unstack b c)\n(stack b a)\n(pick-up c)\n(stack c b)",
+            "(unstack b c)\n(put-down b)\n(pick-up c)\n(stack c b)\n(pick-up a)",
+            "(pick-up a)\n(put-down a)\n(unstack b c)\n(put-down b)\n(pick-up c)\n(stack c b)",
+            "(pick-up a)\n(put-down a)\n(unstack b c)\n(stack b a)\n(pick-up c)\n(stack c b)"
+        ],
+        "94": [
+            "(unstack a b)\n(put-down a)\n(pick-up c)\n(stack c a)\n(pick-up b)\n(stack b c)",
+            "(pick-up c)\n(put-down c)\n(unstack a b)\n(put-down a)\n(pick-up c)\n(stack c a)\n(pick-up b)\n(stack b c)",
+            "(unstack a b)\n(put-down a)\n(pick-up a)\n(put-down a)\n(pick-up c)\n(stack c a)\n(pick-up b)\n(stack b c)",
+            "(unstack a b)\n(put-down a)\n(pick-up b)\n(put-down b)\n(pick-up c)\n(stack c a)\n(pick-up b)\n(stack b c)",
+            "(unstack a b)\n(put-down a)\n(pick-up c)\n(put-down c)\n(pick-up c)\n(stack c a)\n(pick-up b)\n(stack b c)"
+        ],
+        "48": [
+            "(pick-up a)\n(stack a b)",
+            "(pick-up a)\n(put-down a)\n(pick-up a)\n(stack a b)",
+            "(pick-up a)\n(stack a b)\n(unstack a b)\n(stack a b)",
+            "(unstack b c)\n(stack b c)\n(pick-up a)\n(stack a b)",
+            "(pick-up a)\n(put-down a)\n(pick-up a)\n(put-down a)\n(pick-up a)\n(stack a b)"
+        ],
+        "23": [
+            "(unstack c a)\n(put-down c)\n(unstack a b)\n(put-down a)\n(pick-up c)\n(stack c b)",
+            "(unstack c a)\n(put-down c)\n(unstack a b)\n(put-down a)\n(pick-up c)\n(stack c b)\n(pick-up a)",
+            "(unstack c a)\n(put-down c)\n(pick-up c)\n(put-down c)\n(unstack a b)\n(put-down a)\n(pick-up c)\n(stack c b)",
+            "(unstack c a)\n(stack c a)\n(unstack c a)\n(put-down c)\n(unstack a b)\n(put-down a)\n(pick-up c)\n(stack c b)",
+            "(unstack c a)\n(put-down c)\n(unstack a b)\n(put-down a)\n(pick-up a)\n(put-down a)\n(pick-up c)\n(stack c b)"
+        ],
+        "14": [
+            "(unstack a c)\n(put-down a)\n(pick-up c)\n(stack c b)\n(pick-up a)\n(stack a c)",
+            "(pick-up b)\n(put-down b)\n(unstack a c)\n(put-down a)\n(pick-up c)\n(stack c b)\n(pick-up a)\n(stack a c)",
+            "(unstack a c)\n(put-down a)\n(pick-up a)\n(put-down a)\n(pick-up c)\n(stack c b)\n(pick-up a)\n(stack a c)",
+            "(unstack a c)\n(put-down a)\n(pick-up b)\n(put-down b)\n(pick-up c)\n(stack c b)\n(pick-up a)\n(stack a c)",
+            "(unstack a c)\n(put-down a)\n(pick-up c)\n(put-down c)\n(pick-up c)\n(stack c b)\n(pick-up a)\n(stack a c)"
+        ],
+        "44": [
+            "(unstack c a)\n(put-down c)\n(pick-up b)\n(stack b c)\n(pick-up a)\n(stack a b)",
+            "(pick-up b)\n(put-down b)\n(unstack c a)\n(put-down c)\n(pick-up b)\n(stack b c)\n(pick-up a)\n(stack a b)",
+            "(unstack c a)\n(put-down c)\n(pick-up a)\n(put-down a)\n(pick-up b)\n(stack b c)\n(pick-up a)\n(stack a b)",
+            "(unstack c a)\n(put-down c)\n(pick-up b)\n(put-down b)\n(pick-up b)\n(stack b c)\n(pick-up a)\n(stack a b)",
+            "(unstack c a)\n(put-down c)\n(pick-up b)\n(stack b c)\n(pick-up a)\n(put-down a)\n(pick-up a)\n(stack a b)"
+        ],
+        "76": [
+            "(unstack b a)\n(put-down b)\n(unstack a c)\n(put-down a)\n(pick-up b)\n(stack b c)",
+            "(unstack b a)\n(put-down b)\n(unstack a c)\n(put-down a)\n(pick-up b)\n(stack b c)\n(pick-up a)",
+            "(unstack b a)\n(put-down b)\n(pick-up b)\n(put-down b)\n(unstack a c)\n(put-down a)\n(pick-up b)\n(stack b c)",
+            "(unstack b a)\n(put-down b)\n(unstack a c)\n(put-down a)\n(pick-up a)\n(put-down a)\n(pick-up b)\n(stack b c)",
+            "(unstack b a)\n(put-down b)\n(unstack a c)\n(put-down a)\n(pick-up c)\n(put-down c)\n(pick-up b)\n(stack b c)"
+        ],
+        "36": [
+            "(unstack c a)\n(stack c b)",
+            "(unstack c a)\n(stack c b)\n(pick-up a)",
+            "(pick-up b)\n(put-down b)\n(unstack c a)\n(stack c b)",
+            "(unstack c a)\n(put-down c)\n(pick-up c)\n(stack c b)",
+            "(unstack c a)\n(stack c a)\n(unstack c a)\n(stack c b)"
+        ],
+        "10": [
+            "(unstack b c)\n(put-down b)\n(pick-up c)\n(stack c b)\n(pick-up a)\n(stack a c)",
+            "(pick-up a)\n(put-down a)\n(unstack b c)\n(put-down b)\n(pick-up c)\n(stack c b)\n(pick-up a)\n(stack a c)",
+            "(unstack b c)\n(put-down b)\n(pick-up a)\n(put-down a)\n(pick-up c)\n(stack c b)\n(pick-up a)\n(stack a c)",
+            "(unstack b c)\n(put-down b)\n(pick-up b)\n(put-down b)\n(pick-up c)\n(stack c b)\n(pick-up a)\n(stack a c)",
+            "(unstack b c)\n(put-down b)\n(pick-up c)\n(put-down c)\n(pick-up c)\n(stack c b)\n(pick-up a)\n(stack a c)"
+        ],
+        "66": [
+            "(unstack a b)\n(put-down a)\n(unstack b c)\n(put-down b)\n(pick-up a)\n(stack a c)\n(pick-up b)\n(stack b a)",
+            "(unstack a b)\n(put-down a)\n(pick-up a)\n(put-down a)\n(unstack b c)\n(put-down b)\n(pick-up a)\n(stack a c)\n(pick-up b)\n(stack b a)",
+            "(unstack a b)\n(put-down a)\n(unstack b c)\n(put-down b)\n(pick-up a)\n(put-down a)\n(pick-up a)\n(stack a c)\n(pick-up b)\n(stack b a)",
+            "(unstack a b)\n(put-down a)\n(unstack b c)\n(put-down b)\n(pick-up a)\n(stack a b)\n(unstack a b)\n(stack a c)\n(pick-up b)\n(stack b a)",
+            "(unstack a b)\n(put-down a)\n(unstack b c)\n(put-down b)\n(pick-up a)\n(stack a c)\n(pick-up b)\n(put-down b)\n(pick-up b)\n(stack b a)"
+        ],
+        "38": [
+            "(unstack c a)\n(put-down c)\n(unstack a b)\n(put-down a)\n(pick-up b)\n(stack b a)",
+            "(unstack c a)\n(put-down c)\n(unstack a b)\n(stack a c)\n(pick-up b)\n(stack b a)",
+            "(unstack c a)\n(put-down c)\n(unstack a b)\n(put-down a)\n(pick-up b)\n(stack b a)\n(pick-up c)",
+            "(unstack c a)\n(put-down c)\n(pick-up c)\n(put-down c)\n(unstack a b)\n(put-down a)\n(pick-up b)\n(stack b a)",
+            "(unstack c a)\n(put-down c)\n(pick-up c)\n(put-down c)\n(unstack a b)\n(stack a c)\n(pick-up b)\n(stack b a)"
+        ],
+        "11": [
+            "(unstack c a)\n(put-down c)\n(unstack a b)\n(put-down a)\n(pick-up b)\n(stack b a)\n(pick-up c)\n(stack c b)",
+            "(unstack c a)\n(put-down c)\n(pick-up c)\n(put-down c)\n(unstack a b)\n(put-down a)\n(pick-up b)\n(stack b a)\n(pick-up c)\n(stack c b)",
+            "(unstack c a)\n(put-down c)\n(unstack a b)\n(put-down a)\n(pick-up a)\n(put-down a)\n(pick-up b)\n(stack b a)\n(pick-up c)\n(stack c b)",
+            "(unstack c a)\n(put-down c)\n(unstack a b)\n(put-down a)\n(pick-up c)\n(put-down c)\n(pick-up b)\n(stack b a)\n(pick-up c)\n(stack c b)",
+            "(unstack c a)\n(put-down c)\n(unstack a b)\n(put-down a)\n(pick-up b)\n(put-down b)\n(pick-up b)\n(stack b a)\n(pick-up c)\n(stack c b)"
+        ],
+        "91": [
+            "(unstack b c)\n(put-down b)\n(pick-up c)\n(stack c a)",
+            "(unstack b c)\n(put-down b)\n(pick-up c)\n(stack c a)\n(pick-up b)",
+            "(pick-up a)\n(put-down a)\n(unstack b c)\n(put-down b)\n(pick-up c)\n(stack c a)",
+            "(unstack b c)\n(put-down b)\n(pick-up a)\n(put-down a)\n(pick-up c)\n(stack c a)",
+            "(unstack b c)\n(put-down b)\n(pick-up a)\n(stack a b)\n(pick-up c)\n(stack c a)"
+        ],
+        "53": [
+            "(unstack b a)\n(put-down b)\n(pick-up a)\n(stack a b)",
+            "(unstack b a)\n(stack b c)\n(pick-up a)\n(stack a b)",
+            "(unstack b a)\n(put-down b)\n(pick-up a)\n(stack a b)\n(pick-up c)",
+            "(unstack b a)\n(put-down b)\n(pick-up a)\n(put-down a)\n(pick-up a)\n(stack a b)",
+            "(unstack b a)\n(put-down b)\n(pick-up a)\n(stack a b)\n(pick-up c)\n(put-down c)"
+        ],
+        "35": [
+            "(unstack c b)\n(put-down c)\n(unstack b a)\n(put-down b)\n(pick-up a)\n(stack a c)\n(pick-up b)\n(stack b a)",
+            "(unstack c b)\n(put-down c)\n(pick-up c)\n(put-down c)\n(unstack b a)\n(put-down b)\n(pick-up a)\n(stack a c)\n(pick-up b)\n(stack b a)",
+            "(unstack c b)\n(put-down c)\n(unstack b a)\n(put-down b)\n(pick-up a)\n(put-down a)\n(pick-up a)\n(stack a c)\n(pick-up b)\n(stack b a)",
+            "(unstack c b)\n(put-down c)\n(unstack b a)\n(put-down b)\n(pick-up a)\n(stack a b)\n(unstack a b)\n(stack a c)\n(pick-up b)\n(stack b a)",
+            "(unstack c b)\n(put-down c)\n(unstack b a)\n(put-down b)\n(pick-up a)\n(stack a c)\n(pick-up b)\n(put-down b)\n(pick-up b)\n(stack b a)"
+        ],
+        "9": [
+            "(unstack a c)\n(put-down a)\n(pick-up c)\n(stack c a)",
+            "(unstack a c)\n(stack a b)\n(pick-up c)\n(stack c a)",
+            "(unstack a c)\n(put-down a)\n(pick-up c)\n(stack c a)\n(pick-up b)",
+            "(pick-up b)\n(put-down b)\n(unstack a c)\n(put-down a)\n(pick-up c)\n(stack c a)",
+            "(pick-up b)\n(put-down b)\n(unstack a c)\n(stack a b)\n(pick-up c)\n(stack c a)"
+        ],
+        "62": [
+            "(unstack a b)\n(put-down a)\n(pick-up b)\n(stack b c)\n(pick-up a)\n(stack a b)",
+            "(pick-up c)\n(put-down c)\n(unstack a b)\n(put-down a)\n(pick-up b)\n(stack b c)\n(pick-up a)\n(stack a b)",
+            "(unstack a b)\n(put-down a)\n(pick-up a)\n(put-down a)\n(pick-up b)\n(stack b c)\n(pick-up a)\n(stack a b)",
+            "(unstack a b)\n(put-down a)\n(pick-up b)\n(put-down b)\n(pick-up b)\n(stack b c)\n(pick-up a)\n(stack a b)",
+            "(unstack a b)\n(put-down a)\n(pick-up b)\n(stack b c)\n(pick-up a)\n(put-down a)\n(pick-up a)\n(stack a b)"
+        ],
+        "74": [
+            "(unstack a c)\n(put-down a)\n(unstack c b)\n(stack c a)",
+            "(unstack a c)\n(put-down a)\n(unstack c b)\n(stack c a)\n(pick-up b)",
+            "(unstack a c)\n(put-down a)\n(pick-up a)\n(put-down a)\n(unstack c b)\n(stack c a)",
+            "(unstack a c)\n(put-down a)\n(unstack c b)\n(put-down c)\n(pick-up c)\n(stack c a)",
+            "(unstack a c)\n(put-down a)\n(unstack c b)\n(stack c a)\n(pick-up b)\n(put-down b)"
+        ],
+        "85": [
+            "(unstack c a)\n(put-down c)\n(unstack a b)\n(stack a c)",
+            "(unstack c a)\n(put-down c)\n(unstack a b)\n(stack a c)\n(pick-up b)",
+            "(unstack c a)\n(put-down c)\n(pick-up c)\n(put-down c)\n(unstack a b)\n(stack a c)",
+            "(unstack c a)\n(put-down c)\n(unstack a b)\n(put-down a)\n(pick-up a)\n(stack a c)",
+            "(unstack c a)\n(put-down c)\n(unstack a b)\n(stack a b)\n(unstack a b)\n(stack a c)"
+        ],
+        "83": [
+            "(pick-up b)\n(stack b a)",
+            "(pick-up b)\n(put-down b)\n(pick-up b)\n(stack b a)",
+            "(pick-up b)\n(stack b a)\n(unstack b a)\n(stack b a)",
+            "(unstack a c)\n(stack a c)\n(pick-up b)\n(stack b a)",
+            "(pick-up b)\n(put-down b)\n(pick-up b)\n(put-down b)\n(pick-up b)\n(stack b a)"
+        ],
+        "97": [
+            "(unstack c b)\n(put-down c)\n(unstack b a)\n(put-down b)\n(pick-up c)\n(stack c a)",
+            "(unstack c b)\n(put-down c)\n(unstack b a)\n(put-down b)\n(pick-up c)\n(stack c a)\n(pick-up b)",
+            "(unstack c b)\n(put-down c)\n(pick-up c)\n(put-down c)\n(unstack b a)\n(put-down b)\n(pick-up c)\n(stack c a)",
+            "(unstack c b)\n(put-down c)\n(unstack b a)\n(put-down b)\n(pick-up a)\n(put-down a)\n(pick-up c)\n(stack c a)",
+            "(unstack c b)\n(put-down c)\n(unstack b a)\n(put-down b)\n(pick-up a)\n(stack a b)\n(pick-up c)\n(stack c a)"
+        ],
+        "55": [
+            "(unstack a c)\n(put-down a)\n(pick-up c)\n(stack c b)",
+            "(unstack a c)\n(put-down a)\n(pick-up c)\n(stack c b)\n(pick-up a)",
+            "(pick-up b)\n(put-down b)\n(unstack a c)\n(put-down a)\n(pick-up c)\n(stack c b)",
+            "(unstack a c)\n(put-down a)\n(pick-up a)\n(put-down a)\n(pick-up c)\n(stack c b)",
+            "(unstack a c)\n(put-down a)\n(pick-up b)\n(put-down b)\n(pick-up c)\n(stack c b)"
+        ],
+        "100": [
+            "(pick-up b)\n(stack b c)",
+            "(pick-up b)\n(put-down b)\n(pick-up b)\n(stack b c)",
+            "(pick-up b)\n(stack b c)\n(unstack b c)\n(stack b c)",
+            "(unstack c a)\n(stack c a)\n(pick-up b)\n(stack b c)",
+            "(pick-up b)\n(put-down b)\n(pick-up b)\n(put-down b)\n(pick-up b)\n(stack b c)"
+        ],
+        "46": [
+            "(unstack b a)\n(stack b c)\n(pick-up a)\n(stack a b)",
+            "(pick-up c)\n(put-down c)\n(unstack b a)\n(stack b c)\n(pick-up a)\n(stack a b)",
+            "(unstack b a)\n(put-down b)\n(pick-up b)\n(stack b c)\n(pick-up a)\n(stack a b)",
+            "(unstack b a)\n(stack b a)\n(unstack b a)\n(stack b c)\n(pick-up a)\n(stack a b)",
+            "(unstack b a)\n(stack b c)\n(pick-up a)\n(put-down a)\n(pick-up a)\n(stack a b)"
+        ],
+        "33": [
+            "(pick-up c)\n(stack c a)",
+            "(pick-up c)\n(put-down c)\n(pick-up c)\n(stack c a)",
+            "(pick-up c)\n(stack c a)\n(unstack c a)\n(stack c a)",
+            "(unstack a b)\n(put-down a)\n(pick-up c)\n(stack c a)",
+            "(unstack a b)\n(stack a b)\n(pick-up c)\n(stack c a)"
+        ],
+        "16": [
+            "(unstack b c)\n(put-down b)\n(unstack c a)\n(put-down c)\n(pick-up a)\n(stack a c)\n(pick-up b)\n(stack b a)",
+            "(unstack b c)\n(put-down b)\n(pick-up b)\n(put-down b)\n(unstack c a)\n(put-down c)\n(pick-up a)\n(stack a c)\n(pick-up b)\n(stack b a)",
+            "(unstack b c)\n(put-down b)\n(unstack c a)\n(put-down c)\n(pick-up a)\n(put-down a)\n(pick-up a)\n(stack a c)\n(pick-up b)\n(stack b a)",
+            "(unstack b c)\n(put-down b)\n(unstack c a)\n(put-down c)\n(pick-up a)\n(stack a b)\n(unstack a b)\n(stack a c)\n(pick-up b)\n(stack b a)",
+            "(unstack b c)\n(put-down b)\n(unstack c a)\n(put-down c)\n(pick-up a)\n(stack a c)\n(pick-up b)\n(put-down b)\n(pick-up b)\n(stack b a)"
+        ],
+        "45": [
+            "(pick-up a)\n(stack a c)",
+            "(pick-up a)\n(put-down a)\n(pick-up a)\n(stack a c)",
+            "(pick-up a)\n(stack a c)\n(unstack a c)\n(stack a c)",
+            "(unstack c b)\n(put-down c)\n(pick-up a)\n(stack a c)",
+            "(unstack c b)\n(stack c b)\n(pick-up a)\n(stack a c)"
+        ]
+    }
+}

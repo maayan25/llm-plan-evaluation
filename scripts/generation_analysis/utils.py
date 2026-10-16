@@ -1,6 +1,7 @@
 
 import csv
 import os
+from pathlib import Path
 
 import numpy as np
 from scipy import stats as stats
@@ -16,18 +17,188 @@ def postprocess_results(df, global_df):
     :param global_df: DataFrame with full evaluation results.
     :return: Processed DataFrame with deduplicated entries and numeric scores.
     """
-    exec_df = fix_executability(df)
-    dedup_df = deduplicate_results(exec_df)
+    dedup_df = deduplicate_results(df)
     label_df = change_label_names(dedup_df)
-    norm_df = normalise_scores(label_df, global_df)
-    # norm_df = label_df.copy()
+    # norm_df = normalise_scores(label_df, global_df)
+    norm_df = denormalise_lea(label_df)
+    print(f"Adding optimal plan for {len(norm_df)} rows...")
+    w_optimal_plan = add_optimal_plan(norm_df)
+    print(f"Optimal plan added for {len(w_optimal_plan)} rows.")
+    exec_df = fix_executability(w_optimal_plan)
 
-    # Add steps column for improved plan - if plan length is equal to GT, set steps to 0, otherwise set to the absolute differencein lengths
-    norm_df["improved_steps"] = norm_df.apply(
-        lambda x: 0 if len(ast.literal_eval(x["improved_plan"])) == len(ast.literal_eval(x["gt_plan"]))
-        else (abs(len(ast.literal_eval(x["improved_plan"])) - len(ast.literal_eval(x["gt_plan"])))), axis=1)
+    # Adds task_name and model_name columns to the results dataframe
+    final_df = abbreviate_config_names(exec_df)
+    final_df = map_config_in_results(final_df)
+    final_df = add_validity_capped_score(final_df)
 
-    return norm_df
+    # Drop all rows that have missing values
+    final_df = final_df.dropna()
+
+    # Add steps column for improved plan - if plan length is equal to optimal GT, set steps to 0, otherwise set to the absolute difference in lengths
+    final_df["improved_steps"] = final_df.apply(
+        lambda x: 0 if len(ast.literal_eval(x["improved_plan"])) == len(x["optimal_plan"])
+        else (abs(len(ast.literal_eval(x["improved_plan"])) - len(x["optimal_plan"]))), axis=1)
+
+    return final_df
+
+def add_validity_capped_score(df, score_col="final_score", validity_col="curr_validity",
+                               new_col="final_score_validity"):
+    """
+    Creates a version of score_col where the value is rescaled based on validity_col:
+    - valid (True):   rescaled into [0.5, 1.0]
+    - invalid (False): rescaled into [0.0, 0.5]
+    """
+    df = df.copy()
+
+    if df[validity_col].dtype == object:
+        df[validity_col] = df[validity_col].replace({"True": True, "False": False})
+    df[validity_col] = df[validity_col].astype(bool)
+
+    clipped_score = df[score_col].clip(0, 1)
+
+    def rescale(row_score, is_valid):
+        if is_valid:
+            return 0.5 + row_score * 0.5   # [0, 1] -> [0.5, 1.0]
+        else:
+            return row_score * 0.5          # [0, 1] -> [0.0, 0.5]
+
+    df[new_col] = [
+        rescale(score, valid) for score, valid in zip(clipped_score, df[validity_col])
+    ]
+
+    return df
+
+def denormalise_lea(df):
+    """
+    Denormalises the LEA scores in the DataFrame by multiplying them by plan length.
+    :param df:
+    :return:
+    """
+    df = df.copy()
+    lea_column = "curr_last_act"
+    plan_column = "curr_plan"
+
+    # Add plan_length column to the dataframe
+    df[plan_column] = df[plan_column].apply(lambda x: eval(x) if isinstance(x, str) else x)
+    df["plan_length"] = df[plan_column].apply(len)
+
+    df[lea_column] = df[lea_column].apply(pd.to_numeric, errors="coerce")
+    df["plan_length"] = df["plan_length"].apply(pd.to_numeric, errors="coerce")
+    df["denormalised_curr_lea"] = df[lea_column] * df["plan_length"]
+
+    return df
+
+def abbreviate_config_names(df):
+    model_map = {
+        "gpt-3.5-turbo_chat": "GPT-3.5",
+        "gpt-4": "GPT-4",
+        "o3-mini_chat": "O3",
+        "o4-mini_chat": "O4",
+        "gemini_2_flash": "Gn2F",
+        "gemini_2-5_flash": "Gn2.5F",
+        "gemini_2-5_pro": "Gn2.5P",
+        "claude_3_haiku": "C3H",
+        "claude_3-5_haiku": "C3.5H",
+        "claude_3-7_sonnet": "C3.7S",
+        "gemma-2-2b_it": "Gm2",
+        "qwen": "Q2.5",
+        "qcode": "Q2.5C",
+        "qwenl": "Q2.57B",
+        "qcodel": "Q2.514B",
+        "llama": "L3.2",
+        "dsqwen": "DSQ",
+        "claude-opus-4-8": "COpus4.8",
+        "claude-sonnet-4-6": "CSonnet4.6",
+        "gemini_3-8_flash": "Gi3.8Flash",
+        "gemini_3-1_pro": "Gi3.1Pro",
+        "gemma4-12b": "Gm4.12B",
+        "gemma4-26b-a4b_it": "Gm4.26B",
+        "gpt-6-col_chat": "GPT6Sol",
+        "qwen3-8b": "Q3.8B",
+        "qwen3-14b": "Q3.14B",
+        "qwen3-30b-a3b": "Q3.30B",
+    }
+
+    task_map = {
+        "_one_shot": "1S",
+        "_state_tracking": "CoT",
+        "_pddl": "PDDL",
+        "_zero_shot": "0S",
+    }
+
+    domain_map = {
+        "blocksworld": "BW",
+        "blocksworld_3": "BW3",
+        "elevator": "Elev",
+        "satellite": "Sat",
+        "mystery_blocksworld": "MBW",
+        "random_blocksworld": "RBW",
+        "logistics": "Log",
+        "obfuscated_deceptive_logistics": "ODL",
+        "obfuscated_randomized_logistics": "ORL",
+    }
+
+    df["task_name_abbv"] = df["task"].map(task_map).fillna(df["task"])
+    df["model_name_abbv"] = df["model"].map(model_map).fillna(df["model"])
+    df["domain_name_abbv"] = df["domain"].map(domain_map).fillna(df["domain"])
+
+    return df
+
+def map_config_in_results(df):
+    model_map = {
+        "gpt-3.5-turbo_chat": "GPT-3.5 Turbo",
+        "gpt-4": "GPT-4",
+        "o3-mini_chat": "O3 Mini",
+        "o4-mini_chat": "O4 Mini",
+        "gemini_2_flash": "Gemini 2 Flash",
+        "gemini_2-5_flash": "Gemini 2.5 Flash",
+        "gemini_2-5_pro": "Gemini 2.5 Pro",
+        "claude_3_haiku": "Claude 3 Haiku",
+        "claude_3-5_haiku": "Claude 3.5 Haiku",
+        "claude_3-7_sonnet": "Claude 3.7 Sonnet",
+        "gemma-2-2b_it": "Gemma 2 (2B)",
+        "qwen": "Qwen 2.5 (1.5B)",
+        "qcode": "Qwen 2.5 Coder (1.5B)",
+        "qwenl": "Qwen 2.5 (7B)",
+        "qcodel": "Qwen 2.5 Coder (14B)",
+        "llama": "Llama 3.2 (3B)",
+        "claude-opus-4-8": "Claude Opus 4.8",
+        "claude-sonnet-4-6": "Claude Sonnet 4.6",
+        "gemini_3-8_flash": "Gemini 3.8 Flash",
+        "gemini_3-1_pro": "Gemini 3.1 Pro",
+        "gemma4-12b": "Gemma 4 12B",
+        "gemma4-26b-a4b_it": "Gemma 4 26B",
+        "gpt-6-sol_chat": "GPT 6 Sol",
+        "qwen3-8b": "Qwen3 8B",
+        "qwen3-14b": "Qwen3 14B",
+        "qwen3-30b-a3b": "Qwen3 30B A3B",
+        # "dsqwen": "DeepSeek Qwen",
+    }
+
+    task_map = {
+        "_one_shot": "One-Shot",
+        "_state_tracking": "State Tracking",
+        "_pddl": "PDDL",
+        "_zero_shot": "Zero-Shot",
+    }
+
+    domain_map = {
+        "blocksworld": "Blocksworld",
+        "blocksworld_3": "Blocksworld",
+        "elevator": "Elevator",
+        "satellite": "Satellite",
+        "mystery_blocksworld_3": "Mystery BW",
+        "random_blocksworld_3": "Random BW",
+        "logistics": "Logistics",
+        "obfuscated_randomized_logistics": "Random Logistics",
+        "obfuscated_deceptive_logistics": "Obfuscated Deceptive Logistics",
+    }
+
+    df["task_name"] = df["task"].map(task_map).fillna(df["task"])
+    df["domain_name"] = df["domain"].map(domain_map).fillna(df["domain"])
+    df["model_name"] = df["model"].map(model_map).fillna(df["model"])
+
+    return df
 
 def normalise_scores(df, global_df, score_columns=["final_score", "curr_score", "trace_score", "cdt_score", "subseq_score", "cdt_subseq_score"]):
     """
@@ -62,38 +233,93 @@ def deduplicate_results(df, key_columns=["domain", "model", "task", "instance_id
     """
     df[score_column] = pd.to_numeric(df[score_column], errors="coerce")
     dedup_df = df.sort_values(score_column, ascending=False).drop_duplicates(subset=key_columns, keep="first")
+
     return dedup_df.reset_index(drop=True)
 
-def combine_csv_results(output_file, results_dir, result_filter = "") -> None:
+def parse_plan(plan_str):
     """
-    Combine the results from the evaluation of generated plans into a single csv file
+    Parse a plan string representation into a list of action strings.
+    :param plan_str: String representation of the plan (e.g., "['(action1)', '(action2)']")
+    :return: List of action strings
+    """
+    actions = [action.strip() for action in plan_str.split("\n") if action.strip()]
+    return actions
+
+def get_optimal_plan(domain, instance_id):
+    """
+    Get the optimal plan for a given domain and instance_id from the JSON GT plans file.
+    :param domain: The domain name (e.g., "logistics")
+    :param instance_id: The instance ID to look for
+    :return: List of strings representing the optimal plan
+    """
+    project_dir = os.path.abspath(os.path.join(os.getcwd(), os.pardir, os.pardir))
+    gt_plans_path = f"{project_dir}/results/gt_plans/{domain}/gt_plans.json"
+    with open(gt_plans_path, "r", encoding="utf-8") as f:
+        gt_data = json.load(f)
+
+    gt_plans = None
+    for instance in gt_data.get("instances", []).keys():
+        if int(instance) == instance_id:
+            gt_plans = gt_data["instances"][instance]
+            gt_plans = [parse_plan(plan_str) for plan_str in gt_plans]
+
+    if gt_plans is not None:
+        opt_plan = min(gt_plans, key=len)
+        # print(f"Optimal plan for instance_id {instance_id}: {opt_plan}, of length {len(opt_plan)}, and type {type(opt_plan)}")
+        return opt_plan
+    else:
+        raise ValueError(f"Optimal plan for instance_id {instance_id} not found in {gt_plans_path}")
+
+def add_optimal_plan(df):
+    """
+    Add the optimal plan for each instance in the DataFrame based on the domain and instance_id.
+    :param df: the DataFrame containing the results
+    :return: the DataFrame with the optimal plan added
+    """
+    df = df.copy()
+    df["optimal_plan"] = df.apply(lambda row: get_optimal_plan(row["domain"], row["instance_id"]), axis=1)
+    return df
+
+def combine_csv_results(output_file, results_dir, result_filter="") -> None:
+    """
+    Combine the results from the evaluation of generated plans into a single csv file.
+    Expects results_dir structured as:
+        results_dir/<domain>/<model>/evaluation__<task>.csv
+
     :param output_file: the path to the output csv file
     :param results_dir: the directory where the results are stored
     :param result_filter: the filter to apply to the results (e.g. model, domain, task)
     """
-    results_dir = results_dir + "o4-mini/" if "o4-mini" in result_filter else results_dir
-    result_filter = result_filter.replace("o4-mini", "") if "o4-mini" in result_filter else result_filter
-    files = os.listdir(results_dir)
+    results_dir = Path(results_dir)
+    csv_files = sorted(results_dir.glob("*/*/*.csv"))
 
-    if len(files) == 0:
+    if not csv_files:
         print("No csv files were found in this directory")
         return
 
-    combined_data = []
+    def matches_filter(path: Path) -> bool:
+        domain = path.parent.parent.name
+        model = path.parent.name
+        # filenames look like "evaluation__task.csv" -> extract the task part
+        stem = path.stem
+        task = stem.split("__", 1)[1] if "__" in stem else stem
+
+        if result_filter:
+            return result_filter in (domain, model, task)
+        # default (no filter)
+        return not path.name.startswith("full_evaluation_")
+
+    files = [f for f in csv_files if matches_filter(f)]
+
+    if not files:
+        print("No csv files matched the given filter")
+        return
+
     all_headers = set()
     file_data = []
 
-    # Filter out directories
-    files = [file for file in files if os.path.isfile(os.path.join(results_dir, file))]
-
-    # Filter and read files based on the result_filter
-    if result_filter: # Assuming filter is the domain
-        files = [file for file in files if file.startswith(result_filter) and file.endswith(".csv")]
-    else:
-        files = [file for file in files if file.endswith(".csv") and not file.startswith("full_evaluation_")]
-
     for file in files:
-        with open(os.path.join(results_dir, file), "r", encoding="utf-8") as f:
+        with open(file, "r", encoding="utf-8") as f:
             reader = csv.DictReader(f)
             data = list(reader)
             if not data:
@@ -105,6 +331,7 @@ def combine_csv_results(output_file, results_dir, result_filter = "") -> None:
     all_headers = sorted(all_headers)
 
     # Collect all rows, aligned to the combined header
+    combined_data = []
     for data in file_data:
         for row in data:
             aligned_row = [row.get(col, "") for col in all_headers]
@@ -118,7 +345,6 @@ def combine_csv_results(output_file, results_dir, result_filter = "") -> None:
         writer.writerows(combined_data)
 
 
-
 def fix_executability(df):
     """
     Ensure that plans with empty or missing content are marked as not executable.
@@ -130,8 +356,17 @@ def fix_executability(df):
     df["gt_plan"] = df["gt_plan"].apply(lambda x: x if isinstance(x, str) else '[]')
     df["improved_plan"] = df["improved_plan"].apply(lambda x: x if isinstance(x, str) else '[]')
     # Fix validity of improved plans - if improved plan is the same as GT plan, set improved validity to 1
-    df["improved_validity"] = df.apply(lambda x: 1 if x["improved_plan"] == x["gt_plan"] else x["improved_validity"],
-                                       axis=1)
+    df["improved_validity"] = df.apply(lambda x: True if (x["improved_plan"] == x["optimal_plan"] or x["improved_plan"] == x["gt_plan"]) else x["improved_validity"], axis=1)
+
+    # Find rows where improved_validity has an invalid value (not True, False, true, false, 1, 0) and set them to False
+    invalid_values = df[~df["improved_validity"].isin([True, False, "True", "False", "true", "false", 1, 0])]["improved_validity"].unique()
+    if len(invalid_values) > 0:
+        print(f"Warning: Found invalid values in 'improved_validity' column: {invalid_values}. Printing key_columns for the rows with invalid values:")
+        invalid_rows = df[~df["improved_validity"].isin([True, False, "True", "False", "true", "false", 1, 0])]
+        for _, row in invalid_rows.iterrows():
+            print(f"Domain: {row['domain']}, Model: {row['model']}, Task: {row['task']}, Instance ID: {row['instance_id']}, Improved Validity: {row['improved_validity']}")
+
+    df["improved_validity"] = df["improved_validity"].replace({"True": 1, "False": 0, "true": 1, "false": 0}).astype(float)
 
     def is_executable(plan, orig_flag):
         if plan in [None, '', [], '[]', 'nan']:
@@ -202,10 +437,13 @@ def get_default_values_for_csv(domain, instance_id):
     Returns a dictionary with default values for the CSV file.
     """
     # Get length of GT plan for this domain and instance
-    gt_plan = get_gt_plan_for_domain_instance(domain, instance_id)
-    # Convert from string to list
-    gt_plan = gt_plan.split("\n") if gt_plan else []
-    gt_length = len(gt_plan)
+    if domain == "office_robot":
+        gt_length = 20  # Approximate average length for office_robot
+    else:
+        gt_plan = get_gt_plan_for_domain_instance(domain, instance_id)
+        # Convert from string to list
+        gt_plan = gt_plan.split("\n") if gt_plan else []
+        gt_length = len(gt_plan)
 
     return {
         'gt_plan': '[]',
@@ -252,7 +490,8 @@ def get_gt_plan_for_domain_instance(domain, instance_id):
     """
     project_dir = os.path.abspath(os.path.join(os.getcwd(), os.pardir, os.pardir))
     llm_project_dir = os.path.join(project_dir, os.pardir, "LLM-Planning-PlanBench", "llm_planning_analysis")
-    prompt_filename = os.path.join(llm_project_dir, "prompts", domain, "task_1_plan_generation.json")
+    prompt_filename = os.path.join(llm_project_dir, "prompts", domain, "task_1_plan_generation_pddl.json")
+    gt_plan = ""
     if not os.path.exists(prompt_filename):
         raise FileNotFoundError(f"Prompt file for domain '{domain}' does not exist: {prompt_filename}")
     with open(prompt_filename, 'r', encoding='utf-8') as f:
@@ -262,7 +501,7 @@ def get_gt_plan_for_domain_instance(domain, instance_id):
                 gt_plan = instance['ground_truth_plan']
                 break
         if not gt_plan:
-            gt_plan = ""
+            print(f"Warning: GT plan for domain '{domain}' and instance '{instance_id}' not found in prompt file.")
 
     return gt_plan
 

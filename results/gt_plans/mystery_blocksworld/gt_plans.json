@@ -1,0 +1,2000 @@
+{
+    "config": "mystery_blocksworld",
+    "instances": {
+        "155": [
+            "(feast a d)\n(succumb a)\n(feast d b)\n(succumb d)\n(feast b c)\n(overcome b d)\n(attack a)\n(overcome a c)\n(feast b d)\n(overcome b a)",
+            "(feast a d)\n(succumb a)\n(feast d b)\n(succumb d)\n(feast b c)\n(succumb b)\n(attack a)\n(overcome a c)\n(attack b)\n(overcome b a)",
+            "(feast a d)\n(succumb a)\n(feast d b)\n(succumb d)\n(feast b c)\n(overcome b d)\n(attack a)\n(overcome a c)\n(feast b d)\n(overcome b a)\n(attack d)",
+            "(feast a d)\n(succumb a)\n(feast d b)\n(succumb d)\n(feast b c)\n(succumb b)\n(attack a)\n(overcome a c)\n(attack b)\n(overcome b a)\n(attack d)",
+            "(feast a d)\n(succumb a)\n(feast d b)\n(succumb d)\n(feast b c)\n(overcome b d)\n(attack a)\n(overcome a b)\n(feast a b)\n(overcome a c)\n(feast b d)\n(overcome b a)"
+        ],
+        "43": [
+            "(feast d a)\n(succumb d)\n(feast a b)\n(overcome a d)\n(attack c)\n(overcome c b)\n(feast a d)\n(overcome a c)",
+            "(feast d a)\n(succumb d)\n(feast a b)\n(succumb a)\n(attack c)\n(overcome c b)\n(attack a)\n(overcome a c)",
+            "(feast d a)\n(succumb d)\n(feast a b)\n(overcome a d)\n(attack c)\n(overcome c b)\n(feast a d)\n(overcome a c)\n(attack d)",
+            "(feast d a)\n(succumb d)\n(feast a b)\n(succumb a)\n(attack c)\n(overcome c b)\n(attack a)\n(overcome a c)\n(attack d)",
+            "(feast d a)\n(succumb d)\n(feast a b)\n(succumb a)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c b)\n(feast a d)\n(overcome a c)"
+        ],
+        "225": [
+            "(feast d c)\n(succumb d)\n(feast c a)\n(overcome c d)",
+            "(feast d c)\n(succumb d)\n(feast c a)\n(succumb c)\n(attack c)\n(overcome c d)",
+            "(feast d c)\n(succumb d)\n(feast c a)\n(overcome c d)\n(feast a b)\n(overcome a b)",
+            "(feast d c)\n(succumb d)\n(feast c a)\n(overcome c a)\n(feast c a)\n(overcome c d)",
+            "(feast d c)\n(succumb d)\n(attack d)\n(succumb d)\n(feast c a)\n(overcome c d)"
+        ],
+        "397": [
+            "(feast c b)\n(succumb c)\n(feast b a)\n(overcome b c)\n(attack a)\n(overcome a d)",
+            "(feast c b)\n(succumb c)\n(feast b a)\n(succumb b)\n(attack a)\n(overcome a d)",
+            "(feast c b)\n(succumb c)\n(feast b a)\n(overcome b c)\n(attack a)\n(overcome a d)\n(feast b c)",
+            "(feast c b)\n(succumb c)\n(feast b a)\n(succumb b)\n(attack a)\n(overcome a d)\n(attack b)",
+            "(feast c b)\n(succumb c)\n(feast b a)\n(succumb b)\n(attack a)\n(overcome a d)\n(attack c)"
+        ],
+        "359": [
+            "(feast c b)\n(succumb c)\n(feast b d)\n(succumb b)\n(attack c)\n(overcome c d)\n(attack a)\n(overcome a c)",
+            "(feast c b)\n(overcome c a)\n(feast b d)\n(succumb b)\n(feast c a)\n(overcome c d)\n(attack a)\n(overcome a c)",
+            "(feast c b)\n(succumb c)\n(feast b d)\n(succumb b)\n(attack c)\n(overcome c d)\n(attack a)\n(overcome a c)\n(attack b)",
+            "(feast c b)\n(overcome c a)\n(feast b d)\n(succumb b)\n(feast c a)\n(overcome c d)\n(attack a)\n(overcome a c)\n(attack b)",
+            "(feast c b)\n(succumb c)\n(feast b d)\n(succumb b)\n(attack c)\n(overcome c d)\n(attack a)\n(overcome a b)\n(feast a b)\n(overcome a c)"
+        ],
+        "140": [
+            "(feast c b)\n(succumb c)\n(attack d)\n(overcome d b)\n(attack c)\n(overcome c d)",
+            "(feast c b)\n(overcome c b)\n(feast c b)\n(succumb c)\n(attack d)\n(overcome d b)\n(attack c)\n(overcome c d)",
+            "(attack d)\n(succumb d)\n(feast c b)\n(succumb c)\n(attack d)\n(overcome d b)\n(attack c)\n(overcome c d)",
+            "(feast c b)\n(overcome c d)\n(feast c d)\n(succumb c)\n(attack d)\n(overcome d b)\n(attack c)\n(overcome c d)",
+            "(feast c b)\n(succumb c)\n(attack c)\n(succumb c)\n(attack d)\n(overcome d b)\n(attack c)\n(overcome c d)"
+        ],
+        "172": [
+            "(feast a c)\n(succumb a)\n(feast c d)\n(overcome c b)\n(attack a)\n(overcome a d)",
+            "(feast a c)\n(succumb a)\n(feast c d)\n(succumb c)\n(attack a)\n(overcome a d)",
+            "(feast a c)\n(overcome a b)\n(feast c d)\n(succumb c)\n(feast a b)\n(overcome a d)",
+            "(feast a c)\n(succumb a)\n(feast c d)\n(overcome c b)\n(attack a)\n(overcome a d)\n(feast c b)",
+            "(feast a c)\n(succumb a)\n(feast c d)\n(succumb c)\n(attack a)\n(overcome a d)\n(attack b)"
+        ],
+        "65": [
+            "(feast b d)\n(succumb b)\n(feast d a)\n(succumb d)\n(attack b)\n(overcome b d)\n(feast a c)\n(overcome a b)\n(attack c)\n(overcome c a)",
+            "(feast b d)\n(succumb b)\n(feast d a)\n(succumb d)\n(feast a c)\n(succumb a)\n(attack c)\n(overcome c a)\n(attack b)\n(overcome b d)",
+            "(feast b d)\n(succumb b)\n(feast d a)\n(succumb d)\n(attack b)\n(overcome b d)\n(feast a c)\n(succumb a)\n(attack c)\n(overcome c a)",
+            "(feast b d)\n(succumb b)\n(feast d a)\n(succumb d)\n(feast a c)\n(succumb a)\n(attack b)\n(overcome b d)\n(attack c)\n(overcome c a)",
+            "(feast b d)\n(succumb b)\n(feast d a)\n(succumb d)\n(feast a c)\n(succumb a)\n(attack b)\n(overcome b d)\n(attack a)\n(overcome a b)\n(attack c)\n(overcome c a)"
+        ],
+        "444": [
+            "(feast c d)\n(overcome c a)\n(attack b)\n(overcome b d)",
+            "(feast c d)\n(succumb c)\n(attack b)\n(overcome b d)",
+            "(feast c d)\n(overcome c a)\n(attack b)\n(overcome b d)\n(feast c a)",
+            "(feast c d)\n(succumb c)\n(attack b)\n(overcome b d)\n(attack a)",
+            "(feast c d)\n(succumb c)\n(attack b)\n(overcome b d)\n(attack c)"
+        ],
+        "290": [
+            "(feast a d)\n(overcome a c)\n(attack b)\n(overcome b d)",
+            "(feast a d)\n(succumb a)\n(attack a)\n(overcome a c)\n(attack b)\n(overcome b d)",
+            "(feast a d)\n(overcome a c)\n(attack d)\n(overcome d a)\n(attack b)\n(overcome b d)",
+            "(feast a d)\n(overcome a c)\n(attack d)\n(succumb d)\n(attack b)\n(overcome b d)",
+            "(feast a d)\n(overcome a c)\n(attack b)\n(overcome b a)\n(feast b a)\n(overcome b d)"
+        ],
+        "381": [
+            "(feast a d)\n(succumb a)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)\n(attack a)\n(overcome a b)",
+            "(feast a d)\n(succumb a)\n(attack a)\n(succumb a)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)\n(attack a)\n(overcome a b)",
+            "(feast a d)\n(overcome a b)\n(attack c)\n(overcome c d)\n(feast a b)\n(succumb a)\n(attack b)\n(overcome b c)\n(attack a)\n(overcome a b)",
+            "(feast a d)\n(succumb a)\n(attack c)\n(overcome c a)\n(feast c a)\n(overcome c d)\n(attack b)\n(overcome b c)\n(attack a)\n(overcome a b)",
+            "(feast a d)\n(succumb a)\n(attack c)\n(overcome c b)\n(feast c b)\n(overcome c d)\n(attack b)\n(overcome b c)\n(attack a)\n(overcome a b)"
+        ],
+        "489": [
+            "(feast a e)\n(succumb a)\n(feast e c)\n(succumb e)\n(feast b d)\n(overcome b e)\n(attack c)\n(overcome c a)\n(attack d)\n(overcome d b)",
+            "(feast a e)\n(succumb a)\n(feast e c)\n(succumb e)\n(feast b d)\n(overcome b e)\n(attack d)\n(overcome d b)\n(attack c)\n(overcome c a)",
+            "(feast a e)\n(succumb a)\n(feast e c)\n(succumb e)\n(attack c)\n(overcome c a)\n(feast b d)\n(overcome b e)\n(attack d)\n(overcome d b)",
+            "(feast a e)\n(succumb a)\n(feast e c)\n(succumb e)\n(feast b d)\n(overcome b e)\n(attack a)\n(succumb a)\n(attack c)\n(overcome c a)\n(attack d)\n(overcome d b)",
+            "(feast a e)\n(succumb a)\n(feast e c)\n(succumb e)\n(feast b d)\n(overcome b e)\n(attack a)\n(succumb a)\n(attack d)\n(overcome d b)\n(attack c)\n(overcome c a)"
+        ],
+        "169": [
+            "(feast d c)\n(succumb d)\n(feast c a)\n(succumb c)\n(attack a)\n(overcome a b)\n(attack d)\n(overcome d a)\n(attack c)\n(overcome c d)",
+            "(feast d c)\n(succumb d)\n(feast c a)\n(overcome c a)\n(feast c a)\n(succumb c)\n(attack a)\n(overcome a b)\n(attack d)\n(overcome d a)\n(attack c)\n(overcome c d)",
+            "(feast d c)\n(succumb d)\n(feast c a)\n(overcome c d)\n(attack a)\n(overcome a b)\n(feast c d)\n(succumb c)\n(attack d)\n(overcome d a)\n(attack c)\n(overcome c d)",
+            "(feast d c)\n(succumb d)\n(feast c a)\n(overcome c d)\n(feast c d)\n(succumb c)\n(attack a)\n(overcome a b)\n(attack d)\n(overcome d a)\n(attack c)\n(overcome c d)",
+            "(feast d c)\n(succumb d)\n(feast c a)\n(overcome c b)\n(feast c b)\n(succumb c)\n(attack a)\n(overcome a b)\n(attack d)\n(overcome d a)\n(attack c)\n(overcome c d)"
+        ],
+        "216": [
+            "(feast d b)\n(succumb d)\n(attack c)\n(overcome c b)",
+            "(feast d b)\n(succumb d)\n(attack c)\n(overcome c b)\n(attack d)",
+            "(feast d b)\n(succumb d)\n(feast b a)\n(overcome b a)\n(attack c)\n(overcome c b)",
+            "(feast d b)\n(succumb d)\n(attack d)\n(succumb d)\n(attack c)\n(overcome c b)",
+            "(feast d b)\n(overcome d b)\n(feast d b)\n(succumb d)\n(attack c)\n(overcome c b)"
+        ],
+        "105": [
+            "(feast b a)\n(succumb b)\n(feast a d)\n(succumb a)\n(attack b)\n(overcome b d)\n(attack c)\n(overcome c a)",
+            "(feast b a)\n(overcome b c)\n(feast a d)\n(succumb a)\n(feast b c)\n(overcome b d)\n(attack c)\n(overcome c a)",
+            "(feast b a)\n(succumb b)\n(feast a d)\n(succumb a)\n(attack c)\n(overcome c a)\n(attack b)\n(overcome b d)",
+            "(feast b a)\n(succumb b)\n(feast a d)\n(succumb a)\n(attack b)\n(overcome b d)\n(attack a)\n(overcome a b)\n(attack c)\n(overcome c a)",
+            "(feast b a)\n(succumb b)\n(feast a d)\n(succumb a)\n(attack b)\n(overcome b d)\n(attack a)\n(succumb a)\n(attack c)\n(overcome c a)"
+        ],
+        "264": [
+            "(feast b d)\n(succumb b)\n(feast d c)\n(overcome d b)\n(attack a)\n(overcome a c)\n(feast d b)\n(overcome d a)\n(attack b)\n(overcome b d)",
+            "(feast b d)\n(succumb b)\n(feast d c)\n(succumb d)\n(attack a)\n(overcome a c)\n(attack d)\n(overcome d a)\n(attack b)\n(overcome b d)",
+            "(feast b d)\n(succumb b)\n(feast d c)\n(overcome d b)\n(attack a)\n(overcome a c)\n(feast a c)\n(overcome a c)\n(feast d b)\n(overcome d a)\n(attack b)\n(overcome b d)",
+            "(feast b d)\n(succumb b)\n(feast d c)\n(overcome d b)\n(attack a)\n(overcome a c)\n(feast d b)\n(overcome d a)\n(attack b)\n(overcome b d)\n(feast b d)\n(overcome b d)",
+            "(feast b d)\n(succumb b)\n(feast d c)\n(overcome d b)\n(attack a)\n(overcome a c)\n(feast d b)\n(overcome d a)\n(attack b)\n(succumb b)\n(attack b)\n(overcome b d)"
+        ],
+        "470": [
+            "(feast b d)\n(succumb b)\n(feast d e)\n(overcome d c)\n(attack b)\n(overcome b d)",
+            "(feast b d)\n(succumb b)\n(feast d e)\n(overcome d c)\n(attack b)\n(overcome b d)\n(attack e)",
+            "(feast b d)\n(succumb b)\n(feast d e)\n(overcome d c)\n(attack b)\n(overcome b d)\n(attack e)\n(overcome e b)",
+            "(feast b d)\n(succumb b)\n(feast d e)\n(overcome d c)\n(attack b)\n(overcome b d)\n(attack e)\n(succumb e)",
+            "(feast b d)\n(succumb b)\n(feast d e)\n(overcome d c)\n(attack b)\n(overcome b d)\n(feast b d)\n(overcome b d)"
+        ],
+        "202": [
+            "(feast c b)\n(succumb c)\n(feast b a)\n(overcome b c)",
+            "(feast c b)\n(succumb c)\n(feast b a)\n(succumb b)\n(attack b)\n(overcome b c)",
+            "(feast c b)\n(succumb c)\n(feast b a)\n(overcome b c)\n(feast a d)\n(overcome a d)",
+            "(feast c b)\n(succumb c)\n(feast b a)\n(overcome b a)\n(feast b a)\n(overcome b c)",
+            "(feast c b)\n(succumb c)\n(attack c)\n(succumb c)\n(feast b a)\n(overcome b c)"
+        ],
+        "197": [
+            "(feast c b)\n(succumb c)\n(feast b d)\n(succumb b)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c a)",
+            "(feast c b)\n(succumb c)\n(feast b d)\n(succumb b)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c a)\n(attack b)",
+            "(feast c b)\n(succumb c)\n(feast b d)\n(succumb b)\n(attack a)\n(overcome a b)\n(feast a b)\n(overcome a d)\n(attack c)\n(overcome c a)",
+            "(feast c b)\n(succumb c)\n(feast b d)\n(succumb b)\n(attack a)\n(overcome a c)\n(feast a c)\n(overcome a d)\n(attack c)\n(overcome c a)",
+            "(feast c b)\n(succumb c)\n(feast b d)\n(succumb b)\n(attack c)\n(overcome c b)\n(attack a)\n(overcome a d)\n(feast c b)\n(overcome c a)"
+        ],
+        "193": [
+            "(feast d b)\n(succumb d)\n(feast b a)\n(overcome b d)\n(attack a)\n(overcome a b)\n(attack c)\n(overcome c a)",
+            "(feast d b)\n(succumb d)\n(attack c)\n(succumb c)\n(feast b a)\n(overcome b d)\n(attack a)\n(overcome a b)\n(attack c)\n(overcome c a)",
+            "(feast d b)\n(succumb d)\n(feast b a)\n(overcome b a)\n(feast b a)\n(overcome b d)\n(attack a)\n(overcome a b)\n(attack c)\n(overcome c a)",
+            "(feast d b)\n(succumb d)\n(feast b a)\n(overcome b d)\n(attack a)\n(overcome a b)\n(attack c)\n(overcome c a)\n(feast c a)\n(overcome c a)",
+            "(feast d b)\n(succumb d)\n(feast b a)\n(overcome b d)\n(attack a)\n(overcome a b)\n(attack c)\n(succumb c)\n(attack c)\n(overcome c a)"
+        ],
+        "54": [
+            "(feast d c)\n(succumb d)\n(attack c)\n(overcome c b)\n(attack a)\n(overcome a c)\n(attack d)\n(overcome d a)",
+            "(feast d c)\n(succumb d)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c b)\n(feast a d)\n(overcome a c)\n(attack d)\n(overcome d a)",
+            "(feast d c)\n(succumb d)\n(attack a)\n(succumb a)\n(attack c)\n(overcome c b)\n(attack a)\n(overcome a c)\n(attack d)\n(overcome d a)",
+            "(feast d c)\n(overcome d a)\n(attack c)\n(overcome c b)\n(feast d a)\n(succumb d)\n(attack a)\n(overcome a c)\n(attack d)\n(overcome d a)",
+            "(feast d c)\n(succumb d)\n(attack c)\n(overcome c a)\n(feast c a)\n(overcome c b)\n(attack a)\n(overcome a c)\n(attack d)\n(overcome d a)"
+        ],
+        "39": [
+            "(feast d c)\n(succumb d)\n(feast c b)\n(succumb c)\n(attack a)\n(overcome a b)\n(attack d)\n(overcome d a)\n(attack c)\n(overcome c d)",
+            "(feast d c)\n(succumb d)\n(attack a)\n(overcome a d)\n(feast c b)\n(succumb c)\n(feast a d)\n(overcome a b)\n(attack d)\n(overcome d a)\n(attack c)\n(overcome c d)",
+            "(feast d c)\n(succumb d)\n(feast c b)\n(overcome c b)\n(feast c b)\n(succumb c)\n(attack a)\n(overcome a b)\n(attack d)\n(overcome d a)\n(attack c)\n(overcome c d)",
+            "(feast d c)\n(succumb d)\n(attack d)\n(succumb d)\n(feast c b)\n(succumb c)\n(attack a)\n(overcome a b)\n(attack d)\n(overcome d a)\n(attack c)\n(overcome c d)",
+            "(feast d c)\n(overcome d a)\n(feast d a)\n(succumb d)\n(feast c b)\n(succumb c)\n(attack a)\n(overcome a b)\n(attack d)\n(overcome d a)\n(attack c)\n(overcome c d)"
+        ],
+        "439": [
+            "(feast a c)\n(succumb a)\n(feast c d)\n(succumb c)\n(attack b)\n(overcome b c)\n(attack d)\n(overcome d b)\n(attack a)\n(overcome a d)",
+            "(feast a c)\n(succumb a)\n(feast c d)\n(succumb c)\n(attack a)\n(succumb a)\n(attack b)\n(overcome b c)\n(attack d)\n(overcome d b)\n(attack a)\n(overcome a d)",
+            "(feast a c)\n(succumb a)\n(feast c d)\n(overcome c b)\n(feast c b)\n(succumb c)\n(attack b)\n(overcome b c)\n(attack d)\n(overcome d b)\n(attack a)\n(overcome a d)",
+            "(feast a c)\n(succumb a)\n(attack b)\n(overcome b a)\n(feast c d)\n(succumb c)\n(feast b a)\n(overcome b c)\n(attack d)\n(overcome d b)\n(attack a)\n(overcome a d)",
+            "(feast a c)\n(succumb a)\n(feast c d)\n(overcome c d)\n(feast c d)\n(succumb c)\n(attack b)\n(overcome b c)\n(attack d)\n(overcome d b)\n(attack a)\n(overcome a d)"
+        ],
+        "386": [
+            "(feast c d)\n(succumb c)\n(feast d b)\n(succumb d)\n(feast b a)\n(overcome b d)\n(attack a)\n(overcome a c)\n(feast b d)\n(overcome b a)",
+            "(feast c d)\n(succumb c)\n(feast d b)\n(succumb d)\n(feast b a)\n(succumb b)\n(attack a)\n(overcome a c)\n(attack b)\n(overcome b a)",
+            "(feast c d)\n(succumb c)\n(feast d b)\n(succumb d)\n(feast b a)\n(overcome b d)\n(attack a)\n(overcome a c)\n(feast b d)\n(overcome b a)\n(attack d)",
+            "(feast c d)\n(succumb c)\n(feast d b)\n(succumb d)\n(feast b a)\n(succumb b)\n(attack a)\n(overcome a c)\n(attack b)\n(overcome b a)\n(attack d)",
+            "(feast c d)\n(succumb c)\n(feast d b)\n(succumb d)\n(feast b a)\n(overcome b d)\n(attack a)\n(overcome a b)\n(feast a b)\n(overcome a c)\n(feast b d)\n(overcome b a)"
+        ],
+        "468": [
+            "(feast b d)\n(succumb b)\n(feast a e)\n(overcome a d)\n(attack e)\n(overcome e b)\n(attack c)\n(overcome c e)",
+            "(feast b d)\n(succumb b)\n(feast a e)\n(succumb a)\n(attack a)\n(overcome a d)\n(attack e)\n(overcome e b)\n(attack c)\n(overcome c e)",
+            "(feast a e)\n(succumb a)\n(feast b d)\n(succumb b)\n(attack a)\n(overcome a d)\n(attack e)\n(overcome e b)\n(attack c)\n(overcome c e)",
+            "(feast b d)\n(succumb b)\n(feast a e)\n(overcome a d)\n(attack b)\n(overcome b a)\n(attack e)\n(overcome e b)\n(attack c)\n(overcome c e)",
+            "(feast b d)\n(succumb b)\n(feast a e)\n(overcome a d)\n(attack b)\n(succumb b)\n(attack e)\n(overcome e b)\n(attack c)\n(overcome c e)"
+        ],
+        "328": [
+            "(feast a b)\n(succumb a)\n(feast b d)\n(overcome b c)\n(attack a)\n(overcome a d)\n(feast b c)\n(overcome b a)",
+            "(feast a b)\n(succumb a)\n(feast b d)\n(succumb b)\n(attack a)\n(overcome a d)\n(attack b)\n(overcome b a)",
+            "(feast a b)\n(overcome a c)\n(feast b d)\n(succumb b)\n(feast a c)\n(overcome a d)\n(attack b)\n(overcome b a)",
+            "(feast a b)\n(succumb a)\n(feast b d)\n(overcome b c)\n(attack a)\n(overcome a d)\n(feast b c)\n(overcome b a)\n(attack c)",
+            "(feast a b)\n(succumb a)\n(feast b d)\n(succumb b)\n(attack a)\n(overcome a d)\n(attack b)\n(overcome b a)\n(attack c)"
+        ],
+        "424": [
+            "(feast d c)\n(overcome d a)\n(feast c b)\n(succumb c)\n(feast d a)\n(overcome d b)\n(attack c)\n(overcome c d)\n(attack a)\n(overcome a c)",
+            "(feast d c)\n(succumb d)\n(feast c b)\n(overcome c a)\n(attack d)\n(overcome d b)\n(feast c a)\n(overcome c d)\n(attack a)\n(overcome a c)",
+            "(feast d c)\n(succumb d)\n(feast c b)\n(succumb c)\n(attack d)\n(overcome d b)\n(attack c)\n(overcome c d)\n(attack a)\n(overcome a c)",
+            "(feast d c)\n(succumb d)\n(feast c b)\n(succumb c)\n(attack a)\n(succumb a)\n(attack d)\n(overcome d b)\n(attack c)\n(overcome c d)\n(attack a)\n(overcome a c)",
+            "(feast d c)\n(overcome d a)\n(feast c b)\n(overcome c d)\n(feast c d)\n(succumb c)\n(feast d a)\n(overcome d b)\n(attack c)\n(overcome c d)\n(attack a)\n(overcome a c)"
+        ],
+        "327": [
+            "(feast c b)\n(overcome c d)\n(feast b a)\n(overcome b c)\n(attack a)\n(overcome a b)",
+            "(feast c b)\n(succumb c)\n(feast b a)\n(overcome b c)\n(attack a)\n(overcome a b)",
+            "(feast c b)\n(succumb c)\n(feast b a)\n(overcome b d)\n(attack a)\n(overcome a b)",
+            "(feast c b)\n(overcome c d)\n(feast b a)\n(succumb b)\n(attack a)\n(overcome a b)",
+            "(feast c b)\n(succumb c)\n(feast b a)\n(succumb b)\n(attack a)\n(overcome a b)"
+        ],
+        "455": [
+            "(feast c e)\n(succumb c)\n(feast e b)\n(succumb e)\n(feast b a)\n(succumb b)\n(attack e)\n(overcome e b)\n(feast a d)\n(overcome a c)\n(attack d)\n(overcome d a)",
+            "(feast c e)\n(succumb c)\n(feast e b)\n(overcome e c)\n(feast b a)\n(succumb b)\n(feast e c)\n(overcome e b)\n(feast a d)\n(overcome a c)\n(attack d)\n(overcome d a)",
+            "(feast c e)\n(succumb c)\n(feast e b)\n(succumb e)\n(feast b a)\n(overcome b c)\n(attack e)\n(overcome e b)\n(feast a d)\n(overcome a e)\n(attack d)\n(overcome d a)",
+            "(feast c e)\n(succumb c)\n(feast e b)\n(succumb e)\n(feast b a)\n(succumb b)\n(attack e)\n(overcome e b)\n(feast a d)\n(overcome a e)\n(attack d)\n(overcome d a)",
+            "(feast c e)\n(succumb c)\n(feast e b)\n(overcome e c)\n(feast b a)\n(succumb b)\n(feast e c)\n(overcome e b)\n(feast a d)\n(overcome a e)\n(attack d)\n(overcome d a)"
+        ],
+        "205": [
+            "(feast a c)\n(succumb a)\n(feast c d)\n(succumb c)\n(feast d b)\n(overcome d c)\n(attack b)\n(overcome b a)",
+            "(feast a c)\n(succumb a)\n(feast c d)\n(succumb c)\n(feast d b)\n(overcome d c)\n(attack a)\n(overcome a d)\n(attack b)\n(overcome b a)",
+            "(feast a c)\n(succumb a)\n(feast c d)\n(succumb c)\n(feast d b)\n(overcome d c)\n(attack a)\n(succumb a)\n(attack b)\n(overcome b a)",
+            "(feast a c)\n(succumb a)\n(feast c d)\n(succumb c)\n(feast d b)\n(overcome d c)\n(feast d c)\n(overcome d c)\n(attack b)\n(overcome b a)",
+            "(feast a c)\n(succumb a)\n(feast c d)\n(succumb c)\n(feast d b)\n(succumb d)\n(attack d)\n(overcome d c)\n(attack b)\n(overcome b a)"
+        ],
+        "362": [
+            "(feast a c)\n(overcome a b)",
+            "(feast a c)\n(overcome a b)\n(attack c)",
+            "(feast a c)\n(succumb a)\n(attack a)\n(overcome a b)",
+            "(feast a c)\n(overcome a b)\n(feast a b)\n(overcome a b)",
+            "(feast a c)\n(overcome a c)\n(feast a c)\n(overcome a b)"
+        ],
+        "241": [
+            "(feast c b)\n(succumb c)\n(feast a d)\n(overcome a c)\n(attack b)\n(overcome b a)",
+            "(feast c b)\n(succumb c)\n(feast a d)\n(overcome a c)\n(attack b)\n(overcome b a)\n(attack d)",
+            "(feast a d)\n(succumb a)\n(feast c b)\n(overcome c d)\n(attack a)\n(overcome a c)\n(attack b)\n(overcome b a)",
+            "(feast c b)\n(succumb c)\n(feast a d)\n(succumb a)\n(attack a)\n(overcome a c)\n(attack b)\n(overcome b a)",
+            "(feast a d)\n(succumb a)\n(feast c b)\n(succumb c)\n(attack a)\n(overcome a c)\n(attack b)\n(overcome b a)"
+        ],
+        "325": [
+            "(feast b c)\n(succumb b)\n(feast c a)\n(succumb c)\n(feast a d)\n(overcome a b)\n(attack d)\n(overcome d a)\n(attack c)\n(overcome c d)",
+            "(feast b c)\n(succumb b)\n(feast c a)\n(succumb c)\n(feast a d)\n(succumb a)\n(attack a)\n(overcome a b)\n(attack d)\n(overcome d a)\n(attack c)\n(overcome c d)",
+            "(feast b c)\n(succumb b)\n(feast c a)\n(succumb c)\n(feast a d)\n(overcome a b)\n(attack d)\n(overcome d a)\n(attack c)\n(overcome c d)\n(feast c d)\n(overcome c d)",
+            "(feast b c)\n(succumb b)\n(feast c a)\n(succumb c)\n(feast a d)\n(overcome a b)\n(attack d)\n(overcome d a)\n(attack c)\n(succumb c)\n(attack c)\n(overcome c d)",
+            "(feast b c)\n(succumb b)\n(feast c a)\n(succumb c)\n(feast a d)\n(overcome a b)\n(attack d)\n(overcome d a)\n(feast d a)\n(overcome d a)\n(attack c)\n(overcome c d)"
+        ],
+        "315": [
+            "(feast a c)\n(succumb a)\n(feast d b)\n(overcome d c)\n(attack b)\n(overcome b d)",
+            "(feast a c)\n(succumb a)\n(feast d b)\n(overcome d c)\n(attack b)\n(overcome b d)\n(attack a)",
+            "(feast a c)\n(succumb a)\n(feast d b)\n(overcome d c)\n(attack a)\n(succumb a)\n(attack b)\n(overcome b d)",
+            "(feast d b)\n(succumb d)\n(feast a c)\n(succumb a)\n(attack d)\n(overcome d c)\n(attack b)\n(overcome b d)",
+            "(feast a c)\n(succumb a)\n(feast d b)\n(succumb d)\n(attack d)\n(overcome d c)\n(attack b)\n(overcome b d)"
+        ],
+        "191": [
+            "(attack a)\n(overcome a b)\n(attack d)\n(overcome d a)",
+            "(attack a)\n(overcome a b)\n(attack d)\n(overcome d a)\n(attack c)",
+            "(attack b)\n(overcome b c)\n(attack a)\n(overcome a b)\n(attack d)\n(overcome d a)",
+            "(attack d)\n(overcome d c)\n(attack a)\n(overcome a b)\n(feast d c)\n(overcome d a)",
+            "(attack d)\n(succumb d)\n(attack a)\n(overcome a b)\n(attack d)\n(overcome d a)"
+        ],
+        "103": [
+            "(feast c d)\n(succumb c)\n(feast d b)\n(succumb d)\n(attack c)\n(overcome c d)\n(feast b a)\n(overcome b c)",
+            "(feast c d)\n(succumb c)\n(feast d b)\n(succumb d)\n(attack c)\n(overcome c d)\n(feast b a)\n(overcome b c)\n(attack a)",
+            "(feast c d)\n(succumb c)\n(feast d b)\n(succumb d)\n(attack c)\n(overcome c d)\n(feast b a)\n(overcome b a)\n(feast b a)\n(overcome b c)",
+            "(feast c d)\n(succumb c)\n(feast d b)\n(succumb d)\n(feast b a)\n(overcome b a)\n(attack c)\n(overcome c d)\n(feast b a)\n(overcome b c)",
+            "(feast c d)\n(succumb c)\n(feast d b)\n(succumb d)\n(attack c)\n(succumb c)\n(attack c)\n(overcome c d)\n(feast b a)\n(overcome b c)"
+        ],
+        "67": [
+            "(feast a c)\n(succumb a)\n(attack b)\n(overcome b a)\n(attack d)\n(overcome d b)\n(attack c)\n(overcome c d)",
+            "(feast a c)\n(succumb a)\n(attack a)\n(succumb a)\n(attack b)\n(overcome b a)\n(attack d)\n(overcome d b)\n(attack c)\n(overcome c d)",
+            "(feast a c)\n(succumb a)\n(attack c)\n(succumb c)\n(attack b)\n(overcome b a)\n(attack d)\n(overcome d b)\n(attack c)\n(overcome c d)",
+            "(feast a c)\n(overcome a d)\n(feast a d)\n(succumb a)\n(attack b)\n(overcome b a)\n(attack d)\n(overcome d b)\n(attack c)\n(overcome c d)",
+            "(feast a c)\n(overcome a c)\n(feast a c)\n(succumb a)\n(attack b)\n(overcome b a)\n(attack d)\n(overcome d b)\n(attack c)\n(overcome c d)"
+        ],
+        "57": [
+            "(feast c b)\n(succumb c)\n(feast b d)\n(succumb b)\n(feast d a)\n(succumb d)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c a)\n(attack b)\n(overcome b c)",
+            "(feast c b)\n(succumb c)\n(feast b d)\n(overcome b c)\n(feast d a)\n(succumb d)\n(attack a)\n(overcome a d)\n(feast b c)\n(succumb b)\n(attack c)\n(overcome c a)\n(attack b)\n(overcome b c)",
+            "(feast c b)\n(succumb c)\n(feast b d)\n(succumb b)\n(feast d a)\n(succumb d)\n(attack a)\n(overcome a b)\n(feast a b)\n(overcome a d)\n(attack c)\n(overcome c a)\n(attack b)\n(overcome b c)",
+            "(feast c b)\n(succumb c)\n(feast b d)\n(succumb b)\n(feast d a)\n(succumb d)\n(attack a)\n(overcome a c)\n(feast a c)\n(overcome a d)\n(attack c)\n(overcome c a)\n(attack b)\n(overcome b c)",
+            "(feast c b)\n(succumb c)\n(feast b d)\n(succumb b)\n(feast d a)\n(succumb d)\n(attack a)\n(overcome a d)\n(attack b)\n(succumb b)\n(attack c)\n(overcome c a)\n(attack b)\n(overcome b c)"
+        ],
+        "303": [
+            "(feast d c)\n(succumb d)\n(feast c a)\n(overcome c b)\n(attack a)\n(overcome a d)\n(feast c b)\n(overcome c a)",
+            "(feast d c)\n(overcome d b)\n(feast c a)\n(succumb c)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c a)",
+            "(feast d c)\n(succumb d)\n(feast c a)\n(succumb c)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c a)",
+            "(feast d c)\n(succumb d)\n(feast c a)\n(overcome c b)\n(attack a)\n(overcome a d)\n(feast c b)\n(overcome c a)\n(attack b)",
+            "(feast d c)\n(succumb d)\n(feast c a)\n(succumb c)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c a)\n(attack b)"
+        ],
+        "341": [
+            "(attack a)\n(overcome a b)\n(feast c d)\n(succumb c)\n(attack d)\n(overcome d a)\n(attack c)\n(overcome c d)",
+            "(feast c d)\n(succumb c)\n(attack a)\n(overcome a b)\n(attack d)\n(overcome d a)\n(attack c)\n(overcome c d)",
+            "(feast c d)\n(overcome c d)\n(attack a)\n(overcome a b)\n(feast c d)\n(succumb c)\n(attack d)\n(overcome d a)\n(attack c)\n(overcome c d)",
+            "(feast c d)\n(succumb c)\n(attack a)\n(overcome a b)\n(attack c)\n(succumb c)\n(attack d)\n(overcome d a)\n(attack c)\n(overcome c d)",
+            "(feast c d)\n(succumb c)\n(attack a)\n(overcome a b)\n(attack d)\n(overcome d a)\n(attack c)\n(overcome c d)\n(feast c d)\n(overcome c d)"
+        ],
+        "239": [
+            "(feast c a)\n(overcome c d)\n(attack a)\n(overcome a b)\n(feast c d)\n(overcome c a)\n(attack d)\n(overcome d c)",
+            "(feast c a)\n(succumb c)\n(attack a)\n(overcome a b)\n(attack c)\n(overcome c a)\n(attack d)\n(overcome d c)",
+            "(feast c a)\n(overcome c d)\n(attack a)\n(overcome a b)\n(feast a b)\n(overcome a b)\n(feast c d)\n(overcome c a)\n(attack d)\n(overcome d c)",
+            "(feast c a)\n(overcome c d)\n(attack a)\n(overcome a b)\n(feast c d)\n(overcome c a)\n(attack d)\n(overcome d c)\n(feast d c)\n(overcome d c)",
+            "(feast c a)\n(overcome c d)\n(attack a)\n(overcome a b)\n(feast c d)\n(overcome c a)\n(attack d)\n(succumb d)\n(attack d)\n(overcome d c)"
+        ],
+        "276": [
+            "(feast a b)\n(overcome a d)\n(feast b c)\n(succumb b)\n(feast a d)\n(overcome a c)\n(attack d)\n(overcome d a)\n(attack b)\n(overcome b d)",
+            "(feast a b)\n(succumb a)\n(feast b c)\n(succumb b)\n(attack a)\n(overcome a c)\n(attack d)\n(overcome d a)\n(attack b)\n(overcome b d)",
+            "(feast a b)\n(succumb a)\n(attack a)\n(overcome a d)\n(feast b c)\n(succumb b)\n(feast a d)\n(overcome a c)\n(attack d)\n(overcome d a)\n(attack b)\n(overcome b d)",
+            "(feast a b)\n(overcome a b)\n(feast a b)\n(overcome a d)\n(feast b c)\n(succumb b)\n(feast a d)\n(overcome a c)\n(attack d)\n(overcome d a)\n(attack b)\n(overcome b d)",
+            "(attack d)\n(succumb d)\n(feast a b)\n(overcome a d)\n(feast b c)\n(succumb b)\n(feast a d)\n(overcome a c)\n(attack d)\n(overcome d a)\n(attack b)\n(overcome b d)"
+        ],
+        "374": [
+            "(feast b c)\n(succumb b)\n(feast d a)\n(overcome d b)\n(attack c)\n(overcome c a)\n(feast d b)\n(overcome d c)",
+            "(feast d a)\n(succumb d)\n(feast b c)\n(succumb b)\n(attack c)\n(overcome c a)\n(attack d)\n(overcome d c)",
+            "(feast b c)\n(succumb b)\n(feast d a)\n(succumb d)\n(attack c)\n(overcome c a)\n(attack d)\n(overcome d c)",
+            "(feast b c)\n(succumb b)\n(feast d a)\n(overcome d b)\n(attack c)\n(overcome c a)\n(feast d b)\n(overcome d c)\n(attack b)",
+            "(feast b c)\n(succumb b)\n(feast d a)\n(succumb d)\n(attack c)\n(overcome c a)\n(attack d)\n(overcome d c)\n(attack b)"
+        ],
+        "268": [
+            "(feast c b)\n(succumb c)\n(feast b d)\n(overcome b a)\n(attack c)\n(overcome c b)\n(attack d)\n(overcome d c)",
+            "(feast c b)\n(succumb c)\n(feast b d)\n(succumb b)\n(attack b)\n(overcome b a)\n(attack c)\n(overcome c b)\n(attack d)\n(overcome d c)",
+            "(feast c b)\n(succumb c)\n(feast b d)\n(overcome b a)\n(attack d)\n(succumb d)\n(attack c)\n(overcome c b)\n(attack d)\n(overcome d c)",
+            "(feast c b)\n(succumb c)\n(feast b d)\n(overcome b d)\n(feast b d)\n(overcome b a)\n(attack c)\n(overcome c b)\n(attack d)\n(overcome d c)",
+            "(feast c b)\n(succumb c)\n(attack c)\n(succumb c)\n(feast b d)\n(overcome b a)\n(attack c)\n(overcome c b)\n(attack d)\n(overcome d c)"
+        ],
+        "77": [
+            "(feast a c)\n(succumb a)\n(feast c b)\n(succumb c)\n(attack d)\n(overcome d c)\n(attack b)\n(overcome b d)\n(attack a)\n(overcome a b)",
+            "(feast a c)\n(succumb a)\n(feast c b)\n(succumb c)\n(attack a)\n(succumb a)\n(attack d)\n(overcome d c)\n(attack b)\n(overcome b d)\n(attack a)\n(overcome a b)",
+            "(feast a c)\n(succumb a)\n(feast c b)\n(overcome c b)\n(feast c b)\n(succumb c)\n(attack d)\n(overcome d c)\n(attack b)\n(overcome b d)\n(attack a)\n(overcome a b)",
+            "(feast a c)\n(succumb a)\n(attack d)\n(overcome d a)\n(feast c b)\n(succumb c)\n(feast d a)\n(overcome d c)\n(attack b)\n(overcome b d)\n(attack a)\n(overcome a b)",
+            "(feast a c)\n(succumb a)\n(attack d)\n(succumb d)\n(feast c b)\n(succumb c)\n(attack d)\n(overcome d c)\n(attack b)\n(overcome b d)\n(attack a)\n(overcome a b)"
+        ],
+        "384": [
+            "(feast d b)\n(overcome d a)\n(attack c)\n(overcome c b)\n(feast d a)\n(overcome d c)\n(attack a)\n(overcome a d)",
+            "(feast d b)\n(succumb d)\n(attack c)\n(overcome c b)\n(attack d)\n(overcome d c)\n(attack a)\n(overcome a d)",
+            "(feast d b)\n(succumb d)\n(attack a)\n(succumb a)\n(attack c)\n(overcome c b)\n(attack d)\n(overcome d c)\n(attack a)\n(overcome a d)",
+            "(feast d b)\n(overcome d a)\n(attack c)\n(overcome c b)\n(feast c b)\n(overcome c b)\n(feast d a)\n(overcome d c)\n(attack a)\n(overcome a d)",
+            "(feast d b)\n(overcome d a)\n(attack c)\n(overcome c b)\n(feast d a)\n(overcome d a)\n(feast d a)\n(overcome d c)\n(attack a)\n(overcome a d)"
+        ],
+        "308": [
+            "(feast d b)\n(succumb d)\n(feast b c)\n(overcome b a)\n(attack c)\n(overcome c d)\n(feast b a)\n(overcome b c)",
+            "(feast d b)\n(overcome d a)\n(feast b c)\n(succumb b)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)",
+            "(feast d b)\n(succumb d)\n(feast b c)\n(succumb b)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)",
+            "(feast d b)\n(succumb d)\n(feast b c)\n(overcome b a)\n(attack c)\n(overcome c d)\n(feast b a)\n(overcome b c)\n(attack a)",
+            "(feast d b)\n(succumb d)\n(feast b c)\n(succumb b)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)\n(attack a)"
+        ],
+        "296": [
+            "(feast a c)\n(succumb a)\n(feast c d)\n(overcome c a)\n(attack d)\n(overcome d c)\n(attack b)\n(overcome b d)",
+            "(feast a c)\n(succumb a)\n(feast c d)\n(succumb c)\n(attack d)\n(overcome d c)\n(attack b)\n(overcome b d)",
+            "(feast a c)\n(succumb a)\n(feast c d)\n(succumb c)\n(attack d)\n(overcome d c)\n(attack b)\n(overcome b d)\n(attack a)",
+            "(feast a c)\n(succumb a)\n(feast c d)\n(succumb c)\n(attack b)\n(overcome b a)\n(attack d)\n(overcome d c)\n(feast b a)\n(overcome b d)",
+            "(feast a c)\n(succumb a)\n(feast c d)\n(succumb c)\n(attack c)\n(overcome c a)\n(attack d)\n(overcome d c)\n(attack b)\n(overcome b d)"
+        ],
+        "149": [
+            "(attack b)\n(overcome b c)",
+            "(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)",
+            "(attack b)\n(succumb b)\n(attack b)\n(overcome b c)",
+            "(attack c)\n(succumb c)\n(attack b)\n(overcome b c)",
+            "(feast d a)\n(overcome d a)\n(attack b)\n(overcome b c)"
+        ],
+        "153": [
+            "(feast c d)\n(succumb c)\n(feast d b)\n(succumb d)\n(attack a)\n(overcome a d)\n(attack b)\n(overcome b c)",
+            "(feast c d)\n(succumb c)\n(feast d b)\n(succumb d)\n(attack b)\n(overcome b c)\n(attack a)\n(overcome a d)",
+            "(feast c d)\n(succumb c)\n(feast d b)\n(succumb d)\n(attack b)\n(overcome b c)\n(attack a)\n(overcome a b)\n(feast a b)\n(overcome a d)",
+            "(feast c d)\n(succumb c)\n(feast d b)\n(succumb d)\n(attack b)\n(overcome b c)\n(attack a)\n(overcome a d)\n(feast a d)\n(overcome a d)",
+            "(feast c d)\n(succumb c)\n(feast d b)\n(succumb d)\n(attack b)\n(overcome b c)\n(attack a)\n(overcome a d)\n(feast b c)\n(overcome b c)"
+        ],
+        "30": [
+            "(feast d b)\n(overcome d c)\n(feast b a)\n(overcome b d)",
+            "(feast d b)\n(overcome d c)\n(feast b a)\n(overcome b d)\n(attack a)",
+            "(feast d b)\n(overcome d c)\n(feast b a)\n(overcome b d)\n(attack a)\n(overcome a b)",
+            "(feast d b)\n(overcome d c)\n(feast b a)\n(overcome b d)\n(attack a)\n(succumb a)",
+            "(feast d b)\n(overcome d c)\n(feast b a)\n(succumb b)\n(attack b)\n(overcome b d)"
+        ],
+        "108": [
+            "(feast a b)\n(succumb a)\n(feast b d)\n(succumb b)\n(attack d)\n(overcome d c)\n(attack a)\n(overcome a d)\n(attack b)\n(overcome b a)",
+            "(feast a b)\n(succumb a)\n(feast b d)\n(succumb b)\n(attack a)\n(overcome a b)\n(attack d)\n(overcome d c)\n(feast a b)\n(overcome a d)\n(attack b)\n(overcome b a)",
+            "(feast a b)\n(succumb a)\n(feast b d)\n(succumb b)\n(attack a)\n(succumb a)\n(attack d)\n(overcome d c)\n(attack a)\n(overcome a d)\n(attack b)\n(overcome b a)",
+            "(feast a b)\n(succumb a)\n(feast b d)\n(overcome b c)\n(feast b c)\n(succumb b)\n(attack d)\n(overcome d c)\n(attack a)\n(overcome a d)\n(attack b)\n(overcome b a)",
+            "(feast a b)\n(succumb a)\n(feast b d)\n(overcome b d)\n(feast b d)\n(succumb b)\n(attack d)\n(overcome d c)\n(attack a)\n(overcome a d)\n(attack b)\n(overcome b a)"
+        ],
+        "110": [
+            "(feast a c)\n(succumb a)\n(feast c d)\n(succumb c)\n(feast d b)\n(succumb d)\n(attack a)\n(overcome a d)\n(attack b)\n(overcome b c)",
+            "(feast a c)\n(succumb a)\n(feast c d)\n(succumb c)\n(feast d b)\n(succumb d)\n(attack b)\n(overcome b c)\n(attack a)\n(overcome a d)",
+            "(feast a c)\n(succumb a)\n(feast c d)\n(succumb c)\n(feast d b)\n(succumb d)\n(attack b)\n(overcome b c)\n(attack a)\n(overcome a b)\n(feast a b)\n(overcome a d)",
+            "(feast a c)\n(succumb a)\n(feast c d)\n(succumb c)\n(feast d b)\n(succumb d)\n(attack b)\n(overcome b c)\n(attack a)\n(overcome a d)\n(feast a d)\n(overcome a d)",
+            "(feast a c)\n(succumb a)\n(feast c d)\n(succumb c)\n(feast d b)\n(succumb d)\n(attack b)\n(overcome b c)\n(attack a)\n(overcome a d)\n(feast b c)\n(overcome b c)"
+        ],
+        "273": [
+            "(feast a c)\n(overcome a b)",
+            "(feast a c)\n(overcome a b)\n(feast c d)",
+            "(feast a c)\n(succumb a)\n(attack a)\n(overcome a b)",
+            "(feast a c)\n(overcome a c)\n(feast a c)\n(overcome a b)",
+            "(attack b)\n(succumb b)\n(feast a c)\n(overcome a b)"
+        ],
+        "174": [
+            "(feast d a)\n(overcome d c)\n(feast a b)\n(succumb a)\n(feast d c)\n(overcome d a)\n(attack b)\n(overcome b d)\n(attack c)\n(overcome c b)",
+            "(feast d a)\n(succumb d)\n(feast a b)\n(succumb a)\n(attack d)\n(overcome d a)\n(attack b)\n(overcome b d)\n(attack c)\n(overcome c b)",
+            "(feast d a)\n(overcome d c)\n(feast a b)\n(succumb a)\n(attack a)\n(succumb a)\n(feast d c)\n(overcome d a)\n(attack b)\n(overcome b d)\n(attack c)\n(overcome c b)",
+            "(feast d a)\n(succumb d)\n(feast a b)\n(succumb a)\n(attack a)\n(succumb a)\n(attack d)\n(overcome d a)\n(attack b)\n(overcome b d)\n(attack c)\n(overcome c b)",
+            "(feast d a)\n(overcome d c)\n(feast a b)\n(overcome a d)\n(feast a d)\n(succumb a)\n(feast d c)\n(overcome d a)\n(attack b)\n(overcome b d)\n(attack c)\n(overcome c b)"
+        ],
+        "101": [
+            "(feast c a)\n(succumb c)\n(feast a b)\n(succumb a)\n(feast b d)\n(overcome b a)\n(attack d)\n(overcome d c)\n(feast b a)\n(overcome b d)",
+            "(feast c a)\n(succumb c)\n(feast a b)\n(succumb a)\n(feast b d)\n(succumb b)\n(attack d)\n(overcome d c)\n(attack b)\n(overcome b d)",
+            "(feast c a)\n(succumb c)\n(feast a b)\n(succumb a)\n(feast b d)\n(overcome b a)\n(attack d)\n(overcome d c)\n(feast b a)\n(overcome b d)\n(attack a)",
+            "(feast c a)\n(succumb c)\n(feast a b)\n(succumb a)\n(feast b d)\n(succumb b)\n(attack d)\n(overcome d c)\n(attack b)\n(overcome b d)\n(attack a)",
+            "(feast c a)\n(succumb c)\n(feast a b)\n(succumb a)\n(feast b d)\n(succumb b)\n(attack b)\n(overcome b a)\n(attack d)\n(overcome d c)\n(feast b a)\n(overcome b d)"
+        ],
+        "396": [
+            "(feast c d)\n(overcome c b)",
+            "(feast c d)\n(overcome c b)\n(attack a)",
+            "(feast c d)\n(overcome c b)\n(attack d)",
+            "(feast c d)\n(overcome c b)\n(attack a)\n(overcome a c)",
+            "(feast c d)\n(overcome c b)\n(attack a)\n(overcome a d)"
+        ],
+        "497": [
+            "(feast b a)\n(succumb b)\n(feast a e)\n(overcome a c)\n(attack d)\n(overcome d a)\n(attack e)\n(overcome e d)\n(attack b)\n(overcome b e)",
+            "(feast b a)\n(overcome b c)\n(feast a e)\n(succumb a)\n(attack d)\n(overcome d a)\n(attack e)\n(overcome e d)\n(feast b c)\n(overcome b e)",
+            "(feast b a)\n(succumb b)\n(feast a e)\n(succumb a)\n(attack d)\n(overcome d a)\n(attack e)\n(overcome e d)\n(attack b)\n(overcome b e)",
+            "(feast b a)\n(overcome b c)\n(feast a e)\n(succumb a)\n(attack d)\n(overcome d a)\n(attack e)\n(overcome e d)\n(feast b c)\n(overcome b e)\n(attack c)",
+            "(feast b a)\n(succumb b)\n(feast a e)\n(succumb a)\n(attack d)\n(overcome d a)\n(attack e)\n(overcome e d)\n(attack b)\n(overcome b e)\n(attack c)"
+        ],
+        "453": [
+            "(feast e a)\n(succumb e)\n(feast a d)\n(succumb a)\n(feast d b)\n(succumb d)\n(feast b c)\n(overcome b e)\n(attack d)\n(overcome d b)",
+            "(feast e a)\n(succumb e)\n(feast a d)\n(succumb a)\n(feast d b)\n(overcome d a)\n(feast b c)\n(overcome b e)\n(feast d a)\n(overcome d b)",
+            "(feast e a)\n(succumb e)\n(feast a d)\n(succumb a)\n(feast d b)\n(succumb d)\n(feast b c)\n(overcome b e)\n(attack d)\n(overcome d b)\n(attack a)",
+            "(feast e a)\n(succumb e)\n(feast a d)\n(succumb a)\n(feast d b)\n(succumb d)\n(feast b c)\n(overcome b e)\n(attack d)\n(overcome d b)\n(attack c)",
+            "(feast e a)\n(succumb e)\n(feast a d)\n(succumb a)\n(feast d b)\n(overcome d a)\n(feast b c)\n(overcome b e)\n(feast d a)\n(overcome d b)\n(attack a)"
+        ],
+        "133": [
+            "(feast a b)\n(overcome a d)\n(attack c)\n(overcome c b)",
+            "(feast a b)\n(succumb a)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c b)",
+            "(feast a b)\n(overcome a b)\n(feast a b)\n(overcome a d)\n(attack c)\n(overcome c b)",
+            "(attack c)\n(succumb c)\n(feast a b)\n(overcome a d)\n(attack c)\n(overcome c b)",
+            "(attack d)\n(succumb d)\n(feast a b)\n(overcome a d)\n(attack c)\n(overcome c b)"
+        ],
+        "491": [
+            "(feast a e)\n(overcome a b)\n(feast e d)\n(succumb e)\n(feast d c)\n(succumb d)\n(attack c)\n(overcome c a)\n(attack e)\n(overcome e c)\n(attack d)\n(overcome d e)",
+            "(feast a e)\n(succumb a)\n(feast e d)\n(succumb e)\n(attack a)\n(overcome a b)\n(feast d c)\n(succumb d)\n(attack c)\n(overcome c a)\n(attack e)\n(overcome e c)\n(attack d)\n(overcome d e)",
+            "(feast a e)\n(overcome a b)\n(feast e d)\n(succumb e)\n(feast a b)\n(overcome a b)\n(feast d c)\n(succumb d)\n(attack c)\n(overcome c a)\n(attack e)\n(overcome e c)\n(attack d)\n(overcome d e)",
+            "(feast a e)\n(overcome a b)\n(feast e d)\n(overcome e a)\n(feast e a)\n(succumb e)\n(feast d c)\n(succumb d)\n(attack c)\n(overcome c a)\n(attack e)\n(overcome e c)\n(attack d)\n(overcome d e)",
+            "(feast a e)\n(overcome a b)\n(feast e d)\n(overcome e a)\n(feast d c)\n(succumb d)\n(feast e a)\n(overcome e d)\n(attack c)\n(overcome c a)\n(feast e d)\n(overcome e c)\n(attack d)\n(overcome d e)"
+        ],
+        "301": [
+            "(feast c a)\n(overcome c d)\n(attack b)\n(overcome b c)",
+            "(feast c a)\n(overcome c d)\n(attack b)\n(overcome b c)\n(attack a)",
+            "(feast c a)\n(overcome c d)\n(attack b)\n(overcome b a)\n(feast b a)\n(overcome b c)",
+            "(feast c a)\n(overcome c d)\n(attack b)\n(overcome b c)\n(attack a)\n(overcome a b)",
+            "(feast c a)\n(overcome c d)\n(attack b)\n(overcome b c)\n(attack a)\n(succumb a)"
+        ],
+        "472": [
+            "(feast a c)\n(overcome a b)\n(feast c e)\n(overcome c a)\n(feast e d)\n(succumb e)\n(feast c a)\n(overcome c e)\n(attack d)\n(overcome d a)",
+            "(feast a c)\n(overcome a b)\n(feast c e)\n(succumb c)\n(feast e d)\n(succumb e)\n(attack c)\n(overcome c e)\n(attack d)\n(overcome d a)",
+            "(feast a c)\n(overcome a b)\n(feast c e)\n(succumb c)\n(feast e d)\n(succumb e)\n(attack d)\n(overcome d a)\n(attack c)\n(overcome c e)",
+            "(feast a c)\n(succumb a)\n(feast c e)\n(succumb c)\n(feast e d)\n(succumb e)\n(attack a)\n(overcome a b)\n(attack c)\n(overcome c e)\n(attack d)\n(overcome d a)",
+            "(feast a c)\n(succumb a)\n(feast c e)\n(succumb c)\n(feast e d)\n(succumb e)\n(attack a)\n(overcome a b)\n(attack d)\n(overcome d a)\n(attack c)\n(overcome c e)"
+        ],
+        "480": [
+            "(feast a e)\n(succumb a)\n(feast e b)\n(overcome e a)\n(feast b c)\n(overcome b d)",
+            "(feast a e)\n(succumb a)\n(feast e b)\n(overcome e a)\n(feast b c)\n(overcome b d)\n(attack c)",
+            "(feast a e)\n(succumb a)\n(feast e b)\n(overcome e a)\n(feast b c)\n(succumb b)\n(attack b)\n(overcome b d)",
+            "(feast a e)\n(succumb a)\n(feast e b)\n(succumb e)\n(feast b c)\n(overcome b d)\n(attack e)\n(overcome e a)",
+            "(feast a e)\n(succumb a)\n(feast e b)\n(overcome e a)\n(feast b c)\n(overcome b d)\n(feast e a)\n(overcome e a)"
+        ],
+        "112": [
+            "(feast a d)\n(succumb a)\n(feast d c)\n(overcome d b)\n(attack c)\n(overcome c d)",
+            "(feast a d)\n(succumb a)\n(feast d c)\n(overcome d b)\n(attack c)\n(overcome c d)\n(attack a)",
+            "(feast a d)\n(succumb a)\n(feast d c)\n(overcome d b)\n(attack c)\n(overcome c a)\n(feast c a)\n(overcome c d)",
+            "(feast a d)\n(succumb a)\n(feast d c)\n(overcome d b)\n(attack c)\n(succumb c)\n(attack c)\n(overcome c d)",
+            "(feast a d)\n(succumb a)\n(feast d c)\n(overcome d b)\n(attack a)\n(succumb a)\n(attack c)\n(overcome c d)"
+        ],
+        "259": [
+            "(feast b c)\n(succumb b)\n(attack a)\n(overcome a b)\n(attack d)\n(overcome d c)",
+            "(feast b c)\n(succumb b)\n(attack d)\n(overcome d c)\n(attack a)\n(overcome a b)",
+            "(feast b c)\n(succumb b)\n(attack a)\n(overcome a b)\n(attack c)\n(overcome c a)\n(attack d)\n(overcome d c)",
+            "(feast b c)\n(succumb b)\n(attack a)\n(overcome a b)\n(attack c)\n(succumb c)\n(attack d)\n(overcome d c)",
+            "(feast b c)\n(succumb b)\n(attack a)\n(overcome a b)\n(feast a b)\n(overcome a b)\n(attack d)\n(overcome d c)"
+        ],
+        "51": [
+            "(feast d b)\n(succumb d)\n(feast a c)\n(succumb a)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)\n(attack a)\n(overcome a b)",
+            "(feast a c)\n(succumb a)\n(feast d b)\n(succumb d)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)\n(attack a)\n(overcome a b)",
+            "(feast d b)\n(succumb d)\n(feast a c)\n(overcome a b)\n(attack c)\n(overcome c d)\n(feast a b)\n(succumb a)\n(attack b)\n(overcome b c)\n(attack a)\n(overcome a b)",
+            "(feast d b)\n(succumb d)\n(feast a c)\n(overcome a b)\n(feast a b)\n(succumb a)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)\n(attack a)\n(overcome a b)",
+            "(feast a c)\n(succumb a)\n(feast d b)\n(overcome d c)\n(feast d c)\n(succumb d)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)\n(attack a)\n(overcome a b)"
+        ],
+        "161": [
+            "(attack d)\n(overcome d b)",
+            "(feast b c)\n(overcome b c)\n(attack d)\n(overcome d b)",
+            "(attack d)\n(succumb d)\n(attack d)\n(overcome d b)",
+            "(attack d)\n(overcome d b)\n(feast d b)\n(overcome d b)",
+            "(feast b c)\n(succumb b)\n(attack b)\n(overcome b c)\n(attack d)\n(overcome d b)"
+        ],
+        "160": [
+            "(feast a b)\n(succumb a)\n(feast b d)\n(succumb b)\n(feast d c)\n(overcome d b)\n(attack c)\n(overcome c a)\n(feast d b)\n(overcome d c)",
+            "(feast a b)\n(succumb a)\n(feast b d)\n(succumb b)\n(feast d c)\n(succumb d)\n(attack c)\n(overcome c a)\n(attack d)\n(overcome d c)",
+            "(feast a b)\n(succumb a)\n(feast b d)\n(succumb b)\n(feast d c)\n(overcome d b)\n(attack c)\n(overcome c a)\n(feast d b)\n(overcome d c)\n(attack b)",
+            "(feast a b)\n(succumb a)\n(feast b d)\n(succumb b)\n(feast d c)\n(succumb d)\n(attack c)\n(overcome c a)\n(attack d)\n(overcome d c)\n(attack b)",
+            "(feast a b)\n(succumb a)\n(feast b d)\n(succumb b)\n(feast d c)\n(succumb d)\n(attack a)\n(overcome a b)\n(attack c)\n(overcome c a)\n(attack d)\n(overcome d c)"
+        ],
+        "99": [
+            "(feast a d)\n(succumb a)\n(feast d b)\n(succumb d)\n(attack a)\n(overcome a b)\n(attack c)\n(overcome c d)",
+            "(feast a d)\n(overcome a c)\n(feast d b)\n(succumb d)\n(feast a c)\n(overcome a b)\n(attack c)\n(overcome c d)",
+            "(feast a d)\n(succumb a)\n(feast d b)\n(succumb d)\n(attack c)\n(overcome c d)\n(attack a)\n(overcome a b)",
+            "(feast a d)\n(succumb a)\n(feast d b)\n(succumb d)\n(attack c)\n(overcome c d)\n(attack a)\n(overcome a b)\n(feast a b)\n(overcome a b)",
+            "(feast a d)\n(succumb a)\n(feast d b)\n(succumb d)\n(attack c)\n(overcome c d)\n(attack a)\n(overcome a b)\n(feast c d)\n(overcome c d)"
+        ],
+        "355": [
+            "(feast c a)\n(succumb c)\n(feast a d)\n(succumb a)\n(attack b)\n(overcome b d)\n(attack c)\n(overcome c b)",
+            "(feast c a)\n(succumb c)\n(feast a d)\n(succumb a)\n(attack b)\n(overcome b d)\n(attack c)\n(overcome c b)\n(attack a)",
+            "(feast c a)\n(succumb c)\n(feast a d)\n(succumb a)\n(attack b)\n(overcome b d)\n(attack a)\n(succumb a)\n(attack c)\n(overcome c b)",
+            "(feast c a)\n(succumb c)\n(feast a d)\n(succumb a)\n(attack b)\n(overcome b d)\n(attack c)\n(overcome c a)\n(feast c a)\n(overcome c b)",
+            "(feast c a)\n(succumb c)\n(feast a d)\n(succumb a)\n(attack b)\n(overcome b d)\n(attack c)\n(overcome c b)\n(attack a)\n(overcome a c)"
+        ],
+        "34": [
+            "(attack d)\n(overcome d b)",
+            "(feast b a)\n(overcome b a)\n(attack d)\n(overcome d b)",
+            "(feast b a)\n(succumb b)\n(attack d)\n(overcome d b)",
+            "(attack d)\n(succumb d)\n(attack d)\n(overcome d b)",
+            "(attack d)\n(overcome d b)\n(feast d b)\n(overcome d b)"
+        ],
+        "207": [
+            "(feast d c)\n(succumb d)\n(feast c b)\n(succumb c)\n(feast b a)\n(succumb b)\n(attack d)\n(overcome d a)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)",
+            "(feast d c)\n(succumb d)\n(feast c b)\n(succumb c)\n(feast b a)\n(succumb b)\n(attack a)\n(succumb a)\n(attack d)\n(overcome d a)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)",
+            "(feast d c)\n(succumb d)\n(feast c b)\n(succumb c)\n(feast b a)\n(overcome b c)\n(attack d)\n(overcome d a)\n(feast b c)\n(succumb b)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)",
+            "(feast d c)\n(succumb d)\n(feast c b)\n(succumb c)\n(feast b a)\n(succumb b)\n(attack d)\n(overcome d a)\n(attack b)\n(succumb b)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)",
+            "(feast d c)\n(succumb d)\n(feast c b)\n(succumb c)\n(feast b a)\n(succumb b)\n(attack d)\n(overcome d a)\n(feast d a)\n(overcome d a)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)"
+        ],
+        "488": [
+            "(feast c e)\n(overcome c a)\n(feast e d)\n(succumb e)\n(feast d b)\n(overcome d c)\n(attack e)\n(overcome e d)",
+            "(feast c e)\n(overcome c a)\n(feast e d)\n(succumb e)\n(feast d b)\n(overcome d c)\n(attack e)\n(overcome e d)\n(attack b)",
+            "(feast c e)\n(succumb c)\n(feast e d)\n(succumb e)\n(attack c)\n(overcome c a)\n(feast d b)\n(overcome d c)\n(attack e)\n(overcome e d)",
+            "(feast c e)\n(overcome c a)\n(feast e d)\n(succumb e)\n(feast c a)\n(overcome c a)\n(feast d b)\n(overcome d c)\n(attack e)\n(overcome e d)",
+            "(feast c e)\n(overcome c a)\n(feast e d)\n(succumb e)\n(attack e)\n(succumb e)\n(feast d b)\n(overcome d c)\n(attack e)\n(overcome e d)"
+        ],
+        "200": [
+            "(feast d a)\n(succumb d)\n(feast a b)\n(succumb a)\n(feast b c)\n(succumb b)\n(attack c)\n(overcome c b)\n(attack d)\n(overcome d c)\n(attack a)\n(overcome a d)",
+            "(feast d a)\n(succumb d)\n(feast a b)\n(succumb a)\n(feast b c)\n(succumb b)\n(attack a)\n(succumb a)\n(attack c)\n(overcome c b)\n(attack d)\n(overcome d c)\n(attack a)\n(overcome a d)",
+            "(feast d a)\n(succumb d)\n(feast a b)\n(succumb a)\n(feast b c)\n(succumb b)\n(attack d)\n(overcome d a)\n(attack c)\n(overcome c b)\n(feast d a)\n(overcome d c)\n(attack a)\n(overcome a d)",
+            "(feast d a)\n(succumb d)\n(feast a b)\n(succumb a)\n(feast b c)\n(succumb b)\n(attack d)\n(succumb d)\n(attack c)\n(overcome c b)\n(attack d)\n(overcome d c)\n(attack a)\n(overcome a d)",
+            "(feast d a)\n(succumb d)\n(feast a b)\n(succumb a)\n(feast b c)\n(succumb b)\n(attack b)\n(succumb b)\n(attack c)\n(overcome c b)\n(attack d)\n(overcome d c)\n(attack a)\n(overcome a d)"
+        ],
+        "28": [
+            "(feast a b)\n(succumb a)\n(attack c)\n(overcome c a)\n(feast b d)\n(succumb b)\n(attack d)\n(overcome d c)\n(attack b)\n(overcome b d)",
+            "(feast a b)\n(succumb a)\n(feast b d)\n(succumb b)\n(attack c)\n(overcome c a)\n(attack d)\n(overcome d c)\n(attack b)\n(overcome b d)",
+            "(feast a b)\n(succumb a)\n(feast b d)\n(succumb b)\n(attack a)\n(succumb a)\n(attack c)\n(overcome c a)\n(attack d)\n(overcome d c)\n(attack b)\n(overcome b d)",
+            "(feast a b)\n(succumb a)\n(feast b d)\n(overcome b c)\n(feast b c)\n(succumb b)\n(attack c)\n(overcome c a)\n(attack d)\n(overcome d c)\n(attack b)\n(overcome b d)",
+            "(feast a b)\n(overcome a c)\n(feast b d)\n(succumb b)\n(feast a c)\n(succumb a)\n(attack c)\n(overcome c a)\n(attack d)\n(overcome d c)\n(attack b)\n(overcome b d)"
+        ],
+        "435": [
+            "(feast a b)\n(succumb a)\n(feast b c)\n(succumb b)\n(feast c d)\n(overcome c b)\n(attack a)\n(overcome a d)\n(feast c b)\n(overcome c a)",
+            "(feast a b)\n(succumb a)\n(feast b c)\n(succumb b)\n(feast c d)\n(succumb c)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c a)",
+            "(feast a b)\n(succumb a)\n(feast b c)\n(succumb b)\n(feast c d)\n(overcome c b)\n(attack a)\n(overcome a d)\n(feast c b)\n(overcome c a)\n(attack b)",
+            "(feast a b)\n(succumb a)\n(feast b c)\n(succumb b)\n(feast c d)\n(succumb c)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c a)\n(attack b)",
+            "(feast a b)\n(succumb a)\n(feast b c)\n(succumb b)\n(feast c d)\n(succumb c)\n(attack a)\n(overcome a b)\n(feast a b)\n(overcome a d)\n(attack c)\n(overcome c a)"
+        ],
+        "198": [
+            "(feast a b)\n(succumb a)\n(attack d)\n(overcome d b)",
+            "(feast a b)\n(succumb a)\n(attack d)\n(overcome d b)\n(attack a)",
+            "(feast a b)\n(succumb a)\n(attack d)\n(overcome d b)\n(attack a)\n(overcome a d)",
+            "(feast a b)\n(succumb a)\n(attack d)\n(overcome d b)\n(attack a)\n(succumb a)",
+            "(feast a b)\n(succumb a)\n(feast b c)\n(overcome b c)\n(attack d)\n(overcome d b)"
+        ],
+        "179": [
+            "(feast b c)\n(succumb b)\n(feast c a)\n(succumb c)\n(feast a d)\n(overcome a b)\n(attack c)\n(overcome c a)",
+            "(feast b c)\n(succumb b)\n(feast c a)\n(succumb c)\n(feast a d)\n(overcome a b)\n(attack c)\n(overcome c a)\n(attack d)",
+            "(feast b c)\n(succumb b)\n(feast c a)\n(succumb c)\n(feast a d)\n(succumb a)\n(attack a)\n(overcome a b)\n(attack c)\n(overcome c a)",
+            "(feast b c)\n(succumb b)\n(feast c a)\n(succumb c)\n(feast a d)\n(overcome a c)\n(feast a c)\n(overcome a b)\n(attack c)\n(overcome c a)",
+            "(feast b c)\n(succumb b)\n(feast c a)\n(succumb c)\n(feast a d)\n(overcome a b)\n(feast a b)\n(overcome a b)\n(attack c)\n(overcome c a)"
+        ],
+        "73": [
+            "(feast d c)\n(succumb d)\n(attack a)\n(overcome a d)\n(attack b)\n(overcome b c)",
+            "(feast d c)\n(succumb d)\n(attack b)\n(overcome b c)\n(attack a)\n(overcome a d)",
+            "(feast d c)\n(succumb d)\n(attack b)\n(overcome b c)\n(attack a)\n(overcome a b)\n(feast a b)\n(overcome a d)",
+            "(feast d c)\n(succumb d)\n(attack b)\n(overcome b c)\n(attack a)\n(overcome a d)\n(feast a d)\n(overcome a d)",
+            "(feast d c)\n(succumb d)\n(attack b)\n(overcome b c)\n(attack a)\n(overcome a d)\n(feast b c)\n(overcome b c)"
+        ],
+        "184": [
+            "(feast d b)\n(succumb d)\n(feast a c)\n(overcome a b)\n(attack c)\n(overcome c a)",
+            "(feast d b)\n(succumb d)\n(feast a c)\n(overcome a b)\n(attack c)\n(overcome c a)\n(attack d)",
+            "(feast d b)\n(succumb d)\n(feast a c)\n(succumb a)\n(attack a)\n(overcome a b)\n(attack c)\n(overcome c a)",
+            "(feast a c)\n(succumb a)\n(feast d b)\n(succumb d)\n(attack a)\n(overcome a b)\n(attack c)\n(overcome c a)",
+            "(feast d b)\n(succumb d)\n(feast a c)\n(overcome a d)\n(feast a d)\n(overcome a b)\n(attack c)\n(overcome c a)"
+        ],
+        "49": [
+            "(feast a c)\n(succumb a)\n(feast c b)\n(overcome c a)\n(feast b d)\n(succumb b)\n(attack d)\n(overcome d c)\n(attack b)\n(overcome b d)",
+            "(feast a c)\n(succumb a)\n(feast c b)\n(overcome c a)\n(feast b d)\n(succumb b)\n(attack b)\n(succumb b)\n(attack d)\n(overcome d c)\n(attack b)\n(overcome b d)",
+            "(feast a c)\n(succumb a)\n(feast c b)\n(overcome c a)\n(feast b d)\n(succumb b)\n(attack d)\n(overcome d b)\n(feast d b)\n(overcome d c)\n(attack b)\n(overcome b d)",
+            "(feast a c)\n(succumb a)\n(feast c b)\n(overcome c a)\n(feast b d)\n(succumb b)\n(attack d)\n(overcome d c)\n(attack b)\n(overcome b d)\n(feast b d)\n(overcome b d)",
+            "(feast a c)\n(succumb a)\n(feast c b)\n(overcome c a)\n(feast b d)\n(succumb b)\n(attack d)\n(overcome d c)\n(attack b)\n(succumb b)\n(attack b)\n(overcome b d)"
+        ],
+        "64": [
+            "(feast c d)\n(overcome c b)\n(attack d)\n(overcome d c)",
+            "(feast c d)\n(succumb c)\n(attack d)\n(overcome d c)",
+            "(feast c d)\n(succumb c)\n(feast b a)\n(overcome b a)\n(attack d)\n(overcome d c)",
+            "(feast c d)\n(succumb c)\n(attack d)\n(overcome d b)\n(feast d b)\n(overcome d c)",
+            "(feast c d)\n(succumb c)\n(attack c)\n(overcome c b)\n(attack d)\n(overcome d c)"
+        ],
+        "123": [
+            "(feast a d)\n(overcome a c)",
+            "(feast a d)\n(overcome a c)\n(feast d b)",
+            "(feast a d)\n(succumb a)\n(attack a)\n(overcome a c)",
+            "(feast a d)\n(overcome a d)\n(feast a d)\n(overcome a c)",
+            "(attack c)\n(succumb c)\n(feast a d)\n(overcome a c)"
+        ],
+        "447": [
+            "(feast c a)\n(succumb c)\n(feast a d)\n(overcome a c)\n(feast b e)\n(overcome b d)\n(feast a c)\n(overcome a b)\n(attack c)\n(overcome c a)",
+            "(feast c a)\n(succumb c)\n(feast a d)\n(succumb a)\n(feast b e)\n(overcome b d)\n(attack a)\n(overcome a b)\n(attack c)\n(overcome c a)",
+            "(feast c a)\n(succumb c)\n(feast a d)\n(overcome a c)\n(feast b e)\n(overcome b d)\n(feast a c)\n(overcome a b)\n(attack c)\n(overcome c a)\n(attack e)",
+            "(feast c a)\n(succumb c)\n(feast a d)\n(succumb a)\n(feast b e)\n(overcome b d)\n(attack a)\n(overcome a b)\n(attack c)\n(overcome c a)\n(attack e)",
+            "(feast c a)\n(succumb c)\n(feast a d)\n(succumb a)\n(attack a)\n(overcome a c)\n(feast b e)\n(overcome b d)\n(feast a c)\n(overcome a b)\n(attack c)\n(overcome c a)"
+        ],
+        "199": [
+            "(feast b d)\n(succumb b)\n(feast d a)\n(succumb d)\n(feast a c)\n(overcome a b)\n(attack d)\n(overcome d c)",
+            "(feast b d)\n(succumb b)\n(feast d a)\n(succumb d)\n(feast a c)\n(succumb a)\n(attack d)\n(overcome d c)",
+            "(feast b d)\n(succumb b)\n(feast d a)\n(overcome d b)\n(feast a c)\n(succumb a)\n(feast d b)\n(overcome d c)",
+            "(feast b d)\n(succumb b)\n(feast d a)\n(succumb d)\n(feast a c)\n(overcome a b)\n(attack d)\n(overcome d c)\n(feast a b)",
+            "(feast b d)\n(succumb b)\n(feast d a)\n(succumb d)\n(feast a c)\n(succumb a)\n(attack d)\n(overcome d c)\n(attack a)"
+        ],
+        "482": [
+            "(feast e c)\n(succumb e)\n(feast c b)\n(succumb c)\n(feast a d)\n(overcome a c)\n(attack d)\n(overcome d e)\n(attack b)\n(overcome b d)",
+            "(feast e c)\n(succumb e)\n(feast c b)\n(succumb c)\n(feast a d)\n(succumb a)\n(attack d)\n(overcome d e)\n(attack b)\n(overcome b d)",
+            "(feast e c)\n(succumb e)\n(feast a d)\n(succumb a)\n(feast c b)\n(overcome c a)\n(attack d)\n(overcome d e)\n(attack b)\n(overcome b d)",
+            "(feast a d)\n(succumb a)\n(feast e c)\n(succumb e)\n(feast c b)\n(overcome c a)\n(attack d)\n(overcome d e)\n(attack b)\n(overcome b d)",
+            "(feast a d)\n(succumb a)\n(feast e c)\n(overcome e a)\n(feast c b)\n(succumb c)\n(attack d)\n(overcome d e)\n(attack b)\n(overcome b d)"
+        ],
+        "350": [
+            "(feast b d)\n(overcome b a)\n(attack d)\n(overcome d c)",
+            "(feast b d)\n(succumb b)\n(attack d)\n(overcome d c)",
+            "(feast b d)\n(overcome b a)\n(attack d)\n(overcome d c)\n(feast b a)",
+            "(feast b d)\n(succumb b)\n(attack d)\n(overcome d c)\n(attack a)",
+            "(feast b d)\n(succumb b)\n(attack d)\n(overcome d c)\n(attack b)"
+        ],
+        "195": [
+            "(feast d a)\n(succumb d)\n(feast a b)\n(succumb a)\n(feast b c)\n(overcome b d)\n(attack c)\n(overcome c a)",
+            "(feast d a)\n(succumb d)\n(feast a b)\n(succumb a)\n(feast b c)\n(overcome b d)\n(attack a)\n(overcome a b)\n(attack c)\n(overcome c a)",
+            "(feast d a)\n(succumb d)\n(feast a b)\n(succumb a)\n(feast b c)\n(overcome b d)\n(attack a)\n(succumb a)\n(attack c)\n(overcome c a)",
+            "(feast d a)\n(succumb d)\n(feast a b)\n(succumb a)\n(feast b c)\n(overcome b d)\n(feast b d)\n(overcome b d)\n(attack c)\n(overcome c a)",
+            "(feast d a)\n(succumb d)\n(feast a b)\n(succumb a)\n(feast b c)\n(overcome b d)\n(attack c)\n(overcome c a)\n(feast b d)\n(overcome b d)"
+        ],
+        "319": [
+            "(feast a b)\n(succumb a)\n(feast d c)\n(overcome d a)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)",
+            "(feast a b)\n(succumb a)\n(attack a)\n(succumb a)\n(feast d c)\n(overcome d a)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)",
+            "(feast a b)\n(overcome a b)\n(feast a b)\n(succumb a)\n(feast d c)\n(overcome d a)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)",
+            "(feast d c)\n(succumb d)\n(feast a b)\n(succumb a)\n(attack d)\n(overcome d a)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)",
+            "(feast d c)\n(overcome d c)\n(feast a b)\n(succumb a)\n(feast d c)\n(overcome d a)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)"
+        ],
+        "206": [
+            "(attack a)\n(overcome a d)\n(feast b c)\n(overcome b a)\n(attack c)\n(overcome c b)",
+            "(attack a)\n(overcome a b)\n(feast a b)\n(overcome a d)\n(feast b c)\n(overcome b a)\n(attack c)\n(overcome c b)",
+            "(feast b c)\n(overcome b c)\n(attack a)\n(overcome a d)\n(feast b c)\n(overcome b a)\n(attack c)\n(overcome c b)",
+            "(feast b c)\n(succumb b)\n(attack a)\n(overcome a d)\n(attack b)\n(overcome b a)\n(attack c)\n(overcome c b)",
+            "(attack a)\n(succumb a)\n(attack a)\n(overcome a d)\n(feast b c)\n(overcome b a)\n(attack c)\n(overcome c b)"
+        ],
+        "37": [
+            "(feast b d)\n(succumb b)\n(feast d a)\n(succumb d)\n(attack b)\n(overcome b a)\n(attack c)\n(overcome c d)",
+            "(feast b d)\n(overcome b c)\n(feast d a)\n(succumb d)\n(feast b c)\n(overcome b a)\n(attack c)\n(overcome c d)",
+            "(feast b d)\n(succumb b)\n(feast d a)\n(succumb d)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b a)",
+            "(feast b d)\n(succumb b)\n(feast d a)\n(succumb d)\n(attack c)\n(overcome c d)\n(attack a)\n(overcome a c)\n(attack b)\n(overcome b a)",
+            "(feast b d)\n(succumb b)\n(feast d a)\n(succumb d)\n(attack c)\n(overcome c d)\n(attack a)\n(succumb a)\n(attack b)\n(overcome b a)"
+        ],
+        "471": [
+            "(feast d c)\n(overcome d a)\n(feast c b)\n(overcome c e)",
+            "(feast d c)\n(overcome d a)\n(feast c b)\n(overcome c e)\n(attack b)",
+            "(feast d c)\n(overcome d a)\n(feast c b)\n(overcome c e)\n(attack b)\n(overcome b c)",
+            "(feast d c)\n(overcome d a)\n(feast c b)\n(overcome c e)\n(attack b)\n(overcome b d)",
+            "(feast d c)\n(overcome d a)\n(feast c b)\n(overcome c e)\n(attack b)\n(succumb b)"
+        ],
+        "425": [
+            "(feast a c)\n(succumb a)\n(feast c d)\n(overcome c b)",
+            "(feast a c)\n(succumb a)\n(feast c d)\n(overcome c b)\n(attack a)",
+            "(feast a c)\n(succumb a)\n(feast c d)\n(overcome c b)\n(attack d)",
+            "(feast a c)\n(succumb a)\n(feast c d)\n(overcome c b)\n(attack a)\n(overcome a c)",
+            "(feast a c)\n(succumb a)\n(feast c d)\n(overcome c b)\n(attack a)\n(overcome a d)"
+        ],
+        "378": [
+            "(feast a c)\n(overcome a d)",
+            "(feast a c)\n(overcome a d)\n(attack c)",
+            "(feast a c)\n(succumb a)\n(attack a)\n(overcome a d)",
+            "(feast a c)\n(overcome a c)\n(feast a c)\n(overcome a d)",
+            "(feast d b)\n(overcome d b)\n(feast a c)\n(overcome a d)"
+        ],
+        "19": [
+            "(feast c a)\n(succumb c)\n(feast a d)\n(overcome a b)\n(attack c)\n(overcome c a)\n(attack d)\n(overcome d c)",
+            "(feast c a)\n(succumb c)\n(feast a d)\n(overcome a b)\n(attack c)\n(overcome c a)\n(attack d)\n(overcome d c)\n(feast d c)\n(overcome d c)",
+            "(feast c a)\n(succumb c)\n(feast a d)\n(overcome a b)\n(attack c)\n(overcome c a)\n(attack d)\n(succumb d)\n(attack d)\n(overcome d c)",
+            "(feast c a)\n(succumb c)\n(feast a d)\n(overcome a b)\n(attack c)\n(overcome c a)\n(feast c a)\n(overcome c a)\n(attack d)\n(overcome d c)",
+            "(feast c a)\n(succumb c)\n(feast a d)\n(overcome a b)\n(attack c)\n(overcome c d)\n(feast c d)\n(overcome c a)\n(attack d)\n(overcome d c)"
+        ],
+        "151": [
+            "(feast d c)\n(succumb d)\n(feast c b)\n(overcome c a)\n(attack d)\n(overcome d b)\n(feast c a)\n(overcome c d)",
+            "(feast d c)\n(succumb d)\n(feast c b)\n(succumb c)\n(attack d)\n(overcome d b)\n(attack c)\n(overcome c d)",
+            "(feast d c)\n(overcome d a)\n(feast c b)\n(succumb c)\n(feast d a)\n(overcome d b)\n(attack c)\n(overcome c d)",
+            "(feast d c)\n(succumb d)\n(feast c b)\n(overcome c a)\n(attack d)\n(overcome d b)\n(feast c a)\n(overcome c d)\n(attack a)",
+            "(feast d c)\n(succumb d)\n(feast c b)\n(succumb c)\n(attack d)\n(overcome d b)\n(attack c)\n(overcome c d)\n(attack a)"
+        ],
+        "271": [
+            "(feast a b)\n(succumb a)\n(attack c)\n(overcome c a)\n(attack d)\n(overcome d c)\n(attack b)\n(overcome b d)",
+            "(feast a b)\n(succumb a)\n(attack a)\n(succumb a)\n(attack c)\n(overcome c a)\n(attack d)\n(overcome d c)\n(attack b)\n(overcome b d)",
+            "(feast a b)\n(succumb a)\n(attack c)\n(overcome c a)\n(attack b)\n(succumb b)\n(attack d)\n(overcome d c)\n(attack b)\n(overcome b d)",
+            "(feast a b)\n(succumb a)\n(attack c)\n(overcome c a)\n(attack d)\n(overcome d b)\n(feast d b)\n(overcome d c)\n(attack b)\n(overcome b d)",
+            "(feast a b)\n(succumb a)\n(attack c)\n(overcome c a)\n(attack d)\n(succumb d)\n(attack d)\n(overcome d c)\n(attack b)\n(overcome b d)"
+        ],
+        "372": [
+            "(feast a c)\n(succumb a)\n(attack c)\n(overcome c b)\n(attack a)\n(overcome a c)",
+            "(feast a c)\n(succumb a)\n(attack c)\n(overcome c b)\n(attack a)\n(overcome a c)\n(feast a c)\n(overcome a c)",
+            "(feast a c)\n(succumb a)\n(attack c)\n(overcome c b)\n(attack a)\n(succumb a)\n(attack a)\n(overcome a c)",
+            "(feast a c)\n(succumb a)\n(attack c)\n(overcome c a)\n(feast c a)\n(overcome c b)\n(attack a)\n(overcome a c)",
+            "(feast b d)\n(succumb b)\n(feast a c)\n(overcome a d)\n(attack c)\n(overcome c b)\n(feast a d)\n(overcome a c)"
+        ],
+        "0": [
+            "(feast b a)\n(succumb b)\n(feast a c)\n(succumb a)\n(feast c d)\n(overcome c a)\n(attack b)\n(overcome b c)\n(attack d)\n(overcome d b)",
+            "(feast b a)\n(succumb b)\n(feast a c)\n(succumb a)\n(feast c d)\n(succumb c)\n(attack b)\n(overcome b c)\n(attack d)\n(overcome d b)",
+            "(feast b a)\n(succumb b)\n(feast a c)\n(succumb a)\n(feast c d)\n(succumb c)\n(attack b)\n(overcome b c)\n(attack d)\n(overcome d b)\n(attack a)",
+            "(feast b a)\n(succumb b)\n(feast a c)\n(succumb a)\n(feast c d)\n(succumb c)\n(attack b)\n(overcome b a)\n(feast b a)\n(overcome b c)\n(attack d)\n(overcome d b)",
+            "(feast b a)\n(succumb b)\n(feast a c)\n(succumb a)\n(feast c d)\n(overcome c a)\n(attack b)\n(succumb b)\n(attack b)\n(overcome b c)\n(attack d)\n(overcome d b)"
+        ],
+        "420": [
+            "(feast d c)\n(succumb d)\n(feast c b)\n(succumb c)\n(feast b a)\n(succumb b)\n(attack a)\n(overcome a c)\n(attack d)\n(overcome d b)",
+            "(feast d c)\n(succumb d)\n(feast c b)\n(succumb c)\n(feast b a)\n(succumb b)\n(attack d)\n(overcome d b)\n(attack a)\n(overcome a c)",
+            "(feast d c)\n(succumb d)\n(feast c b)\n(succumb c)\n(feast b a)\n(succumb b)\n(attack a)\n(overcome a b)\n(feast a b)\n(overcome a c)\n(attack d)\n(overcome d b)",
+            "(feast d c)\n(succumb d)\n(feast c b)\n(succumb c)\n(feast b a)\n(succumb b)\n(attack a)\n(succumb a)\n(attack a)\n(overcome a c)\n(attack d)\n(overcome d b)",
+            "(feast d c)\n(succumb d)\n(feast c b)\n(succumb c)\n(feast b a)\n(succumb b)\n(attack a)\n(succumb a)\n(attack d)\n(overcome d b)\n(attack a)\n(overcome a c)"
+        ],
+        "399": [
+            "(feast b d)\n(succumb b)\n(feast d c)\n(succumb d)\n(feast c a)\n(succumb c)\n(attack a)\n(overcome a c)\n(attack b)\n(overcome b a)\n(attack d)\n(overcome d b)",
+            "(feast b d)\n(succumb b)\n(feast d c)\n(overcome d b)\n(feast c a)\n(succumb c)\n(attack a)\n(overcome a c)\n(feast d b)\n(succumb d)\n(attack b)\n(overcome b a)\n(attack d)\n(overcome d b)",
+            "(feast b d)\n(succumb b)\n(feast d c)\n(succumb d)\n(feast c a)\n(succumb c)\n(attack a)\n(overcome a b)\n(feast a b)\n(overcome a c)\n(attack b)\n(overcome b a)\n(attack d)\n(overcome d b)",
+            "(feast b d)\n(succumb b)\n(feast d c)\n(succumb d)\n(feast c a)\n(succumb c)\n(attack a)\n(overcome a c)\n(attack b)\n(overcome b a)\n(attack d)\n(overcome d b)\n(feast d b)\n(overcome d b)",
+            "(feast b d)\n(succumb b)\n(feast d c)\n(succumb d)\n(feast c a)\n(succumb c)\n(attack a)\n(overcome a c)\n(attack b)\n(overcome b a)\n(attack d)\n(succumb d)\n(attack d)\n(overcome d b)"
+        ],
+        "127": [
+            "(feast a c)\n(succumb a)\n(attack d)\n(overcome d a)\n(feast c b)\n(overcome c d)\n(attack b)\n(overcome b c)",
+            "(feast a c)\n(succumb a)\n(attack a)\n(succumb a)\n(attack d)\n(overcome d a)\n(feast c b)\n(overcome c d)\n(attack b)\n(overcome b c)",
+            "(feast a c)\n(overcome a c)\n(feast a c)\n(succumb a)\n(attack d)\n(overcome d a)\n(feast c b)\n(overcome c d)\n(attack b)\n(overcome b c)",
+            "(attack d)\n(succumb d)\n(feast a c)\n(succumb a)\n(attack d)\n(overcome d a)\n(feast c b)\n(overcome c d)\n(attack b)\n(overcome b c)",
+            "(feast a c)\n(succumb a)\n(attack d)\n(overcome d a)\n(feast c b)\n(overcome c b)\n(feast c b)\n(overcome c d)\n(attack b)\n(overcome b c)"
+        ],
+        "6": [
+            "(feast d a)\n(succumb d)\n(feast a c)\n(succumb a)\n(feast c b)\n(succumb c)\n(attack a)\n(overcome a b)\n(attack d)\n(overcome d c)",
+            "(feast d a)\n(succumb d)\n(feast a c)\n(overcome a d)\n(feast c b)\n(succumb c)\n(feast a d)\n(overcome a b)\n(attack d)\n(overcome d c)",
+            "(feast d a)\n(succumb d)\n(feast a c)\n(succumb a)\n(feast c b)\n(succumb c)\n(attack d)\n(overcome d c)\n(attack a)\n(overcome a b)",
+            "(feast d a)\n(succumb d)\n(feast a c)\n(succumb a)\n(feast c b)\n(succumb c)\n(attack d)\n(overcome d c)\n(attack a)\n(overcome a b)\n(feast a b)\n(overcome a b)",
+            "(feast d a)\n(succumb d)\n(feast a c)\n(succumb a)\n(feast c b)\n(succumb c)\n(attack d)\n(overcome d c)\n(attack a)\n(overcome a b)\n(feast d c)\n(overcome d c)"
+        ],
+        "129": [
+            "(feast d c)\n(succumb d)\n(feast c b)\n(succumb c)\n(feast b a)\n(overcome b c)\n(attack a)\n(overcome a d)",
+            "(feast d c)\n(succumb d)\n(feast c b)\n(succumb c)\n(feast b a)\n(succumb b)\n(attack a)\n(overcome a d)",
+            "(feast d c)\n(succumb d)\n(feast c b)\n(succumb c)\n(feast b a)\n(overcome b c)\n(attack a)\n(overcome a d)\n(feast b c)",
+            "(feast d c)\n(succumb d)\n(feast c b)\n(succumb c)\n(feast b a)\n(succumb b)\n(attack a)\n(overcome a d)\n(attack b)",
+            "(feast d c)\n(succumb d)\n(feast c b)\n(succumb c)\n(feast b a)\n(succumb b)\n(attack a)\n(overcome a d)\n(attack c)"
+        ],
+        "132": [
+            "(feast c b)\n(succumb c)\n(feast b d)\n(overcome b c)\n(attack d)\n(overcome d b)\n(attack a)\n(overcome a d)",
+            "(feast c b)\n(succumb c)\n(feast b d)\n(overcome b a)\n(feast b a)\n(overcome b c)\n(attack d)\n(overcome d b)\n(attack a)\n(overcome a d)",
+            "(feast c b)\n(succumb c)\n(feast b d)\n(overcome b d)\n(feast b d)\n(overcome b c)\n(attack d)\n(overcome d b)\n(attack a)\n(overcome a d)",
+            "(feast c b)\n(succumb c)\n(attack c)\n(succumb c)\n(feast b d)\n(overcome b c)\n(attack d)\n(overcome d b)\n(attack a)\n(overcome a d)",
+            "(feast c b)\n(overcome c b)\n(feast c b)\n(succumb c)\n(feast b d)\n(overcome b c)\n(attack d)\n(overcome d b)\n(attack a)\n(overcome a d)"
+        ],
+        "358": [
+            "(feast a d)\n(succumb a)\n(feast d c)\n(succumb d)\n(feast c b)\n(overcome c d)\n(attack a)\n(overcome a c)\n(attack b)\n(overcome b a)",
+            "(feast a d)\n(succumb a)\n(feast d c)\n(succumb d)\n(feast c b)\n(succumb c)\n(attack a)\n(overcome a c)\n(attack b)\n(overcome b a)",
+            "(feast a d)\n(succumb a)\n(feast d c)\n(succumb d)\n(feast c b)\n(succumb c)\n(attack a)\n(overcome a c)\n(attack b)\n(overcome b a)\n(attack d)",
+            "(feast a d)\n(succumb a)\n(feast d c)\n(succumb d)\n(feast c b)\n(overcome c d)\n(attack a)\n(overcome a b)\n(feast a b)\n(overcome a c)\n(attack b)\n(overcome b a)",
+            "(feast a d)\n(succumb a)\n(feast d c)\n(succumb d)\n(feast c b)\n(succumb c)\n(attack a)\n(overcome a b)\n(feast a b)\n(overcome a c)\n(attack b)\n(overcome b a)"
+        ],
+        "409": [
+            "(feast d c)\n(succumb d)\n(attack c)\n(overcome c d)\n(feast b a)\n(overcome b c)\n(attack a)\n(overcome a b)",
+            "(feast d c)\n(succumb d)\n(attack c)\n(overcome c b)\n(feast c b)\n(overcome c d)\n(feast b a)\n(overcome b c)\n(attack a)\n(overcome a b)",
+            "(feast d c)\n(succumb d)\n(attack c)\n(overcome c d)\n(feast b a)\n(overcome b a)\n(feast b a)\n(overcome b c)\n(attack a)\n(overcome a b)",
+            "(feast d c)\n(succumb d)\n(attack c)\n(overcome c d)\n(feast b a)\n(overcome b c)\n(attack a)\n(overcome a b)\n(feast a b)\n(overcome a b)",
+            "(feast d c)\n(succumb d)\n(attack c)\n(overcome c d)\n(feast b a)\n(overcome b c)\n(attack a)\n(succumb a)\n(attack a)\n(overcome a b)"
+        ],
+        "500": [
+            "(feast d b)\n(overcome d a)\n(feast b c)\n(overcome b d)\n(attack c)\n(overcome c b)",
+            "(feast d b)\n(overcome d a)\n(feast b c)\n(succumb b)\n(attack c)\n(overcome c b)",
+            "(feast d b)\n(overcome d a)\n(feast b c)\n(succumb b)\n(attack b)\n(overcome b d)\n(attack c)\n(overcome c b)",
+            "(feast d b)\n(overcome d a)\n(feast b c)\n(overcome b c)\n(feast b c)\n(overcome b d)\n(attack c)\n(overcome c b)",
+            "(feast d b)\n(succumb d)\n(attack d)\n(overcome d a)\n(feast b c)\n(overcome b d)\n(attack c)\n(overcome c b)"
+        ],
+        "346": [
+            "(feast a c)\n(succumb a)\n(attack d)\n(overcome d c)",
+            "(feast a c)\n(succumb a)\n(attack d)\n(overcome d c)\n(attack a)",
+            "(feast a c)\n(succumb a)\n(attack d)\n(overcome d c)\n(attack a)\n(overcome a d)",
+            "(feast a c)\n(succumb a)\n(attack d)\n(overcome d c)\n(attack a)\n(succumb a)",
+            "(feast a c)\n(succumb a)\n(feast c b)\n(overcome c a)\n(attack d)\n(overcome d c)"
+        ],
+        "52": [
+            "(feast c a)\n(succumb c)\n(feast d b)\n(succumb d)\n(attack a)\n(overcome a b)\n(attack c)\n(overcome c a)",
+            "(feast d b)\n(succumb d)\n(feast c a)\n(overcome c d)\n(attack a)\n(overcome a b)\n(feast c d)\n(overcome c a)",
+            "(feast d b)\n(succumb d)\n(feast c a)\n(succumb c)\n(attack a)\n(overcome a b)\n(attack c)\n(overcome c a)",
+            "(feast c a)\n(succumb c)\n(feast d b)\n(succumb d)\n(attack a)\n(overcome a b)\n(attack c)\n(overcome c a)\n(attack d)",
+            "(feast d b)\n(succumb d)\n(feast c a)\n(overcome c d)\n(attack a)\n(overcome a b)\n(feast c d)\n(overcome c a)\n(attack d)"
+        ],
+        "255": [
+            "(feast c d)\n(succumb c)\n(feast a b)\n(succumb a)\n(attack d)\n(overcome d a)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)",
+            "(feast a b)\n(succumb a)\n(feast c d)\n(overcome c b)\n(attack d)\n(overcome d a)\n(feast c b)\n(overcome c d)\n(attack b)\n(overcome b c)",
+            "(feast a b)\n(succumb a)\n(feast c d)\n(succumb c)\n(attack d)\n(overcome d a)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)",
+            "(feast c d)\n(succumb c)\n(feast a b)\n(overcome a b)\n(feast a b)\n(succumb a)\n(attack d)\n(overcome d a)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)",
+            "(feast c d)\n(succumb c)\n(attack d)\n(overcome d c)\n(feast a b)\n(succumb a)\n(feast d c)\n(overcome d a)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)"
+        ],
+        "413": [
+            "(feast a d)\n(overcome a c)\n(feast d b)\n(overcome d a)\n(attack b)\n(overcome b d)",
+            "(feast a d)\n(overcome a c)\n(feast d b)\n(succumb d)\n(attack b)\n(overcome b d)",
+            "(feast a d)\n(succumb a)\n(feast d b)\n(succumb d)\n(attack a)\n(overcome a c)\n(attack b)\n(overcome b d)",
+            "(feast a d)\n(overcome a c)\n(feast d b)\n(succumb d)\n(feast a c)\n(overcome a c)\n(attack b)\n(overcome b d)",
+            "(feast a d)\n(overcome a c)\n(feast d b)\n(succumb d)\n(attack d)\n(succumb d)\n(attack b)\n(overcome b d)"
+        ],
+        "223": [
+            "(attack a)\n(overcome a d)",
+            "(feast b c)\n(overcome b c)\n(attack a)\n(overcome a d)",
+            "(attack a)\n(succumb a)\n(attack a)\n(overcome a d)",
+            "(attack d)\n(succumb d)\n(attack a)\n(overcome a d)",
+            "(attack d)\n(overcome d b)\n(attack a)\n(overcome a d)"
+        ],
+        "448": [
+            "(feast e d)\n(succumb e)\n(feast d c)\n(succumb d)\n(attack e)\n(overcome e c)\n(attack d)\n(overcome d e)",
+            "(feast e d)\n(succumb e)\n(feast d c)\n(succumb d)\n(feast c b)\n(overcome c b)\n(attack e)\n(overcome e c)\n(attack d)\n(overcome d e)",
+            "(feast e d)\n(succumb e)\n(feast d c)\n(succumb d)\n(attack d)\n(succumb d)\n(attack e)\n(overcome e c)\n(attack d)\n(overcome d e)",
+            "(feast e d)\n(succumb e)\n(feast d c)\n(overcome d c)\n(feast d c)\n(succumb d)\n(attack e)\n(overcome e c)\n(attack d)\n(overcome d e)",
+            "(feast e d)\n(succumb e)\n(attack e)\n(succumb e)\n(feast d c)\n(succumb d)\n(attack e)\n(overcome e c)\n(attack d)\n(overcome d e)"
+        ],
+        "13": [
+            "(feast d a)\n(succumb d)\n(feast c b)\n(overcome c d)\n(attack a)\n(overcome a b)",
+            "(feast c b)\n(succumb c)\n(feast d a)\n(succumb d)\n(attack a)\n(overcome a b)",
+            "(feast d a)\n(succumb d)\n(feast c b)\n(succumb c)\n(attack a)\n(overcome a b)",
+            "(feast c b)\n(succumb c)\n(feast d a)\n(overcome d c)\n(attack a)\n(overcome a b)",
+            "(feast d a)\n(succumb d)\n(feast c b)\n(overcome c d)\n(attack a)\n(overcome a b)\n(feast c d)"
+        ],
+        "377": [
+            "(feast a c)\n(succumb a)\n(feast c b)\n(succumb c)\n(feast b d)\n(overcome b a)\n(attack c)\n(overcome c b)",
+            "(feast a c)\n(succumb a)\n(feast c b)\n(succumb c)\n(feast b d)\n(overcome b a)\n(attack c)\n(overcome c b)\n(attack d)",
+            "(feast a c)\n(succumb a)\n(feast c b)\n(succumb c)\n(feast b d)\n(succumb b)\n(attack b)\n(overcome b a)\n(attack c)\n(overcome c b)",
+            "(feast a c)\n(succumb a)\n(feast c b)\n(succumb c)\n(feast b d)\n(overcome b c)\n(feast b c)\n(overcome b a)\n(attack c)\n(overcome c b)",
+            "(feast a c)\n(succumb a)\n(feast c b)\n(succumb c)\n(feast b d)\n(overcome b a)\n(feast b a)\n(overcome b a)\n(attack c)\n(overcome c b)"
+        ],
+        "182": [
+            "(feast d b)\n(succumb d)\n(feast b a)\n(succumb b)\n(feast a c)\n(overcome a d)\n(attack b)\n(overcome b c)\n(feast a d)\n(overcome a b)\n(attack d)\n(overcome d a)",
+            "(feast d b)\n(succumb d)\n(feast b a)\n(overcome b d)\n(feast a c)\n(succumb a)\n(feast b d)\n(overcome b c)\n(attack a)\n(overcome a b)\n(attack d)\n(overcome d a)",
+            "(feast d b)\n(succumb d)\n(feast b a)\n(succumb b)\n(feast a c)\n(succumb a)\n(attack b)\n(overcome b c)\n(attack a)\n(overcome a b)\n(attack d)\n(overcome d a)",
+            "(feast d b)\n(succumb d)\n(feast b a)\n(overcome b d)\n(feast a c)\n(succumb a)\n(attack a)\n(succumb a)\n(feast b d)\n(overcome b c)\n(attack a)\n(overcome a b)\n(attack d)\n(overcome d a)",
+            "(feast d b)\n(succumb d)\n(feast b a)\n(succumb b)\n(feast a c)\n(succumb a)\n(attack a)\n(overcome a d)\n(attack b)\n(overcome b c)\n(feast a d)\n(overcome a b)\n(attack d)\n(overcome d a)"
+        ],
+        "222": [
+            "(feast d b)\n(succumb d)\n(feast a c)\n(overcome a d)\n(attack b)\n(overcome b c)\n(feast a d)\n(overcome a b)\n(attack d)\n(overcome d a)",
+            "(feast d b)\n(succumb d)\n(feast a c)\n(succumb a)\n(attack b)\n(overcome b c)\n(attack a)\n(overcome a b)\n(attack d)\n(overcome d a)",
+            "(feast a c)\n(succumb a)\n(feast d b)\n(succumb d)\n(attack b)\n(overcome b c)\n(attack a)\n(overcome a b)\n(attack d)\n(overcome d a)",
+            "(feast d b)\n(succumb d)\n(feast a c)\n(overcome a b)\n(feast a b)\n(overcome a d)\n(attack b)\n(overcome b c)\n(feast a d)\n(overcome a b)\n(attack d)\n(overcome d a)",
+            "(feast d b)\n(succumb d)\n(feast a c)\n(overcome a b)\n(feast a b)\n(succumb a)\n(attack b)\n(overcome b c)\n(attack a)\n(overcome a b)\n(attack d)\n(overcome d a)"
+        ],
+        "165": [
+            "(feast d c)\n(succumb d)\n(feast c a)\n(overcome c d)\n(feast a b)\n(overcome a c)\n(attack b)\n(overcome b a)",
+            "(feast d c)\n(succumb d)\n(feast c a)\n(overcome c d)\n(feast a b)\n(succumb a)\n(attack b)\n(overcome b a)",
+            "(feast d c)\n(succumb d)\n(feast c a)\n(overcome c d)\n(feast a b)\n(succumb a)\n(attack a)\n(overcome a c)\n(attack b)\n(overcome b a)",
+            "(feast d c)\n(succumb d)\n(feast c a)\n(overcome c d)\n(feast a b)\n(succumb a)\n(attack a)\n(succumb a)\n(attack b)\n(overcome b a)",
+            "(feast d c)\n(succumb d)\n(feast c a)\n(overcome c d)\n(feast a b)\n(succumb a)\n(feast c d)\n(overcome c d)\n(attack b)\n(overcome b a)"
+        ],
+        "286": [
+            "(feast d c)\n(overcome d b)\n(attack c)\n(overcome c d)\n(attack a)\n(overcome a c)",
+            "(attack a)\n(succumb a)\n(feast d c)\n(overcome d b)\n(attack c)\n(overcome c d)\n(attack a)\n(overcome a c)",
+            "(feast d c)\n(overcome d a)\n(feast d a)\n(overcome d b)\n(attack c)\n(overcome c d)\n(attack a)\n(overcome a c)",
+            "(feast d c)\n(overcome d b)\n(attack a)\n(succumb a)\n(attack c)\n(overcome c d)\n(attack a)\n(overcome a c)",
+            "(feast d c)\n(overcome d b)\n(feast d b)\n(overcome d b)\n(attack c)\n(overcome c d)\n(attack a)\n(overcome a c)"
+        ],
+        "434": [
+            "(feast a c)\n(overcome a b)\n(attack c)\n(overcome c a)\n(attack d)\n(overcome d c)",
+            "(feast a c)\n(succumb a)\n(attack c)\n(overcome c a)\n(attack d)\n(overcome d c)",
+            "(feast a c)\n(succumb a)\n(attack c)\n(overcome c a)\n(attack d)\n(overcome d c)\n(attack b)",
+            "(feast a c)\n(succumb a)\n(attack a)\n(overcome a b)\n(attack c)\n(overcome c a)\n(attack d)\n(overcome d c)",
+            "(feast a c)\n(overcome a d)\n(feast a d)\n(overcome a b)\n(attack c)\n(overcome c a)\n(attack d)\n(overcome d c)"
+        ],
+        "98": [
+            "(feast c d)\n(overcome c a)\n(attack b)\n(overcome b d)",
+            "(feast c d)\n(overcome c a)\n(attack b)\n(overcome b c)\n(feast b c)\n(overcome b d)",
+            "(feast c d)\n(overcome c a)\n(attack b)\n(overcome b d)\n(feast b d)\n(overcome b d)",
+            "(feast c d)\n(overcome c a)\n(attack b)\n(overcome b d)\n(feast c a)\n(overcome c a)",
+            "(feast c d)\n(overcome c a)\n(attack b)\n(succumb b)\n(attack b)\n(overcome b d)"
+        ],
+        "131": [
+            "(feast a c)\n(succumb a)\n(feast c d)\n(succumb c)\n(feast d b)\n(overcome d a)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)",
+            "(feast a c)\n(succumb a)\n(feast c d)\n(succumb c)\n(feast d b)\n(succumb d)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)",
+            "(feast a c)\n(succumb a)\n(feast c d)\n(overcome c a)\n(feast d b)\n(succumb d)\n(feast c a)\n(overcome c d)\n(attack b)\n(overcome b c)",
+            "(feast a c)\n(succumb a)\n(feast c d)\n(succumb c)\n(feast d b)\n(succumb d)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)\n(attack a)",
+            "(feast a c)\n(succumb a)\n(feast c d)\n(overcome c a)\n(feast d b)\n(succumb d)\n(feast c a)\n(overcome c d)\n(attack b)\n(overcome b c)\n(attack a)"
+        ],
+        "477": [
+            "(feast e b)\n(overcome e a)\n(attack c)\n(overcome c e)",
+            "(feast e b)\n(overcome e a)\n(feast b d)\n(overcome b d)\n(attack c)\n(overcome c e)",
+            "(feast e b)\n(overcome e a)\n(attack c)\n(overcome c b)\n(feast c b)\n(overcome c e)",
+            "(feast e b)\n(overcome e a)\n(attack c)\n(succumb c)\n(attack c)\n(overcome c e)",
+            "(feast e b)\n(overcome e a)\n(attack c)\n(overcome c e)\n(feast b d)\n(overcome b d)"
+        ],
+        "338": [
+            "(feast b a)\n(succumb b)\n(feast a d)\n(succumb a)\n(feast d c)\n(overcome d b)\n(attack a)\n(overcome a d)",
+            "(feast b a)\n(succumb b)\n(feast a d)\n(succumb a)\n(feast d c)\n(overcome d b)\n(attack a)\n(overcome a d)\n(attack c)",
+            "(feast b a)\n(succumb b)\n(feast a d)\n(succumb a)\n(feast d c)\n(overcome d b)\n(attack a)\n(overcome a c)\n(feast a c)\n(overcome a d)",
+            "(feast b a)\n(succumb b)\n(feast a d)\n(succumb a)\n(feast d c)\n(succumb d)\n(attack d)\n(overcome d b)\n(attack a)\n(overcome a d)",
+            "(feast b a)\n(succumb b)\n(feast a d)\n(succumb a)\n(feast d c)\n(overcome d b)\n(feast d b)\n(overcome d b)\n(attack a)\n(overcome a d)"
+        ],
+        "333": [
+            "(feast d b)\n(overcome d a)\n(attack b)\n(overcome b c)\n(feast d a)\n(overcome d b)\n(attack a)\n(overcome a d)",
+            "(feast d b)\n(succumb d)\n(attack b)\n(overcome b c)\n(attack d)\n(overcome d b)\n(attack a)\n(overcome a d)",
+            "(feast d b)\n(succumb d)\n(attack a)\n(succumb a)\n(attack b)\n(overcome b c)\n(attack d)\n(overcome d b)\n(attack a)\n(overcome a d)",
+            "(feast d b)\n(overcome d a)\n(attack c)\n(succumb c)\n(attack b)\n(overcome b c)\n(feast d a)\n(overcome d b)\n(attack a)\n(overcome a d)",
+            "(feast d b)\n(succumb d)\n(attack c)\n(succumb c)\n(attack b)\n(overcome b c)\n(attack d)\n(overcome d b)\n(attack a)\n(overcome a d)"
+        ],
+        "317": [
+            "(feast b a)\n(succumb b)\n(attack a)\n(overcome a d)\n(attack b)\n(overcome b a)",
+            "(feast d c)\n(succumb d)\n(feast b a)\n(overcome b c)\n(attack a)\n(overcome a d)\n(feast b c)\n(overcome b a)",
+            "(feast b a)\n(succumb b)\n(feast d c)\n(succumb d)\n(attack a)\n(overcome a d)\n(attack b)\n(overcome b a)",
+            "(feast b a)\n(succumb b)\n(feast d c)\n(overcome d c)\n(attack a)\n(overcome a d)\n(attack b)\n(overcome b a)",
+            "(feast b a)\n(succumb b)\n(attack b)\n(succumb b)\n(attack a)\n(overcome a d)\n(attack b)\n(overcome b a)"
+        ],
+        "335": [
+            "(feast b d)\n(overcome b c)\n(attack d)\n(overcome d b)",
+            "(feast b d)\n(overcome b c)\n(attack d)\n(overcome d b)\n(feast d b)\n(overcome d b)",
+            "(feast b d)\n(overcome b c)\n(attack d)\n(succumb d)\n(attack d)\n(overcome d b)",
+            "(feast b d)\n(overcome b c)\n(feast b c)\n(overcome b c)\n(attack d)\n(overcome d b)",
+            "(feast b d)\n(overcome b d)\n(feast b d)\n(overcome b c)\n(attack d)\n(overcome d b)"
+        ],
+        "270": [
+            "(feast a c)\n(succumb a)\n(feast c d)\n(succumb c)\n(feast d b)\n(overcome d c)\n(attack a)\n(overcome a b)\n(feast d c)\n(overcome d a)\n(attack c)\n(overcome c d)",
+            "(feast a c)\n(succumb a)\n(feast c d)\n(succumb c)\n(feast d b)\n(succumb d)\n(attack a)\n(overcome a b)\n(attack d)\n(overcome d a)\n(attack c)\n(overcome c d)",
+            "(feast a c)\n(succumb a)\n(feast c d)\n(succumb c)\n(feast d b)\n(overcome d c)\n(attack a)\n(overcome a b)\n(feast a b)\n(overcome a b)\n(feast d c)\n(overcome d a)\n(attack c)\n(overcome c d)",
+            "(feast a c)\n(succumb a)\n(feast c d)\n(succumb c)\n(feast d b)\n(overcome d c)\n(attack a)\n(overcome a b)\n(feast d c)\n(overcome d a)\n(attack c)\n(overcome c d)\n(feast c d)\n(overcome c d)",
+            "(feast a c)\n(succumb a)\n(feast c d)\n(succumb c)\n(feast d b)\n(overcome d c)\n(attack a)\n(overcome a b)\n(feast d c)\n(overcome d a)\n(attack c)\n(succumb c)\n(attack c)\n(overcome c d)"
+        ],
+        "8": [
+            "(feast b c)\n(overcome b a)\n(attack d)\n(overcome d c)\n(feast b a)\n(overcome b d)\n(attack a)\n(overcome a b)",
+            "(feast b c)\n(succumb b)\n(attack d)\n(overcome d c)\n(attack b)\n(overcome b d)\n(attack a)\n(overcome a b)",
+            "(feast b c)\n(succumb b)\n(attack a)\n(succumb a)\n(attack d)\n(overcome d c)\n(attack b)\n(overcome b d)\n(attack a)\n(overcome a b)",
+            "(feast b c)\n(overcome b a)\n(attack c)\n(succumb c)\n(attack d)\n(overcome d c)\n(feast b a)\n(overcome b d)\n(attack a)\n(overcome a b)",
+            "(feast b c)\n(succumb b)\n(attack c)\n(succumb c)\n(attack d)\n(overcome d c)\n(attack b)\n(overcome b d)\n(attack a)\n(overcome a b)"
+        ],
+        "142": [
+            "(attack a)\n(overcome a d)",
+            "(attack a)\n(overcome a d)\n(feast a d)\n(overcome a d)",
+            "(attack a)\n(succumb a)\n(attack a)\n(overcome a d)",
+            "(feast d c)\n(overcome d c)\n(attack a)\n(overcome a d)",
+            "(attack a)\n(overcome a d)\n(feast a d)\n(overcome a d)\n(feast a d)\n(overcome a d)"
+        ],
+        "408": [
+            "(feast b d)\n(succumb b)\n(feast d a)\n(succumb d)\n(feast a c)\n(overcome a b)\n(attack c)\n(overcome c d)\n(feast a b)\n(overcome a c)\n(attack b)\n(overcome b a)",
+            "(feast b d)\n(succumb b)\n(feast d a)\n(succumb d)\n(feast a c)\n(succumb a)\n(attack c)\n(overcome c d)\n(attack a)\n(overcome a c)\n(attack b)\n(overcome b a)",
+            "(feast b d)\n(succumb b)\n(feast d a)\n(succumb d)\n(feast a c)\n(succumb a)\n(attack a)\n(overcome a b)\n(attack c)\n(overcome c d)\n(feast a b)\n(overcome a c)\n(attack b)\n(overcome b a)",
+            "(feast b d)\n(succumb b)\n(feast d a)\n(succumb d)\n(feast a c)\n(succumb a)\n(attack a)\n(succumb a)\n(attack c)\n(overcome c d)\n(attack a)\n(overcome a c)\n(attack b)\n(overcome b a)",
+            "(feast b d)\n(succumb b)\n(feast d a)\n(succumb d)\n(feast a c)\n(overcome a b)\n(attack d)\n(succumb d)\n(attack c)\n(overcome c d)\n(feast a b)\n(overcome a c)\n(attack b)\n(overcome b a)"
+        ],
+        "421": [
+            "(feast b d)\n(succumb b)\n(feast d a)\n(overcome d b)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c a)",
+            "(feast b d)\n(succumb b)\n(feast d a)\n(overcome d a)\n(feast d a)\n(overcome d b)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c a)",
+            "(feast b d)\n(succumb b)\n(feast d a)\n(overcome d c)\n(feast d c)\n(overcome d b)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c a)",
+            "(feast b d)\n(succumb b)\n(feast d a)\n(succumb d)\n(attack d)\n(overcome d b)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c a)",
+            "(feast b d)\n(succumb b)\n(attack c)\n(succumb c)\n(feast d a)\n(overcome d b)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c a)"
+        ],
+        "379": [
+            "(feast b d)\n(succumb b)\n(attack d)\n(overcome d b)\n(feast c a)\n(succumb c)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c a)",
+            "(feast b d)\n(succumb b)\n(feast c a)\n(succumb c)\n(attack d)\n(overcome d b)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c a)",
+            "(feast c a)\n(succumb c)\n(feast b d)\n(succumb b)\n(attack d)\n(overcome d b)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c a)",
+            "(feast c a)\n(succumb c)\n(attack a)\n(overcome a c)\n(feast b d)\n(succumb b)\n(attack d)\n(overcome d b)\n(feast a c)\n(overcome a d)\n(attack c)\n(overcome c a)",
+            "(feast c a)\n(succumb c)\n(feast b d)\n(overcome b c)\n(feast b c)\n(succumb b)\n(attack d)\n(overcome d b)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c a)"
+        ],
+        "1": [
+            "(feast b c)\n(overcome b a)\n(attack c)\n(overcome c b)",
+            "(feast b c)\n(overcome b d)\n(attack c)\n(overcome c b)",
+            "(feast b c)\n(succumb b)\n(attack c)\n(overcome c b)",
+            "(feast b c)\n(overcome b a)\n(attack c)\n(overcome c b)\n(attack d)",
+            "(feast b c)\n(overcome b d)\n(attack c)\n(overcome c b)\n(attack a)"
+        ],
+        "248": [
+            "(attack b)\n(overcome b d)\n(attack a)\n(overcome a b)\n(attack c)\n(overcome c a)",
+            "(attack a)\n(overcome a c)\n(attack b)\n(overcome b d)\n(feast a c)\n(overcome a b)\n(attack c)\n(overcome c a)",
+            "(attack a)\n(succumb a)\n(attack b)\n(overcome b d)\n(attack a)\n(overcome a b)\n(attack c)\n(overcome c a)",
+            "(attack d)\n(succumb d)\n(attack b)\n(overcome b d)\n(attack a)\n(overcome a b)\n(attack c)\n(overcome c a)",
+            "(attack c)\n(succumb c)\n(attack b)\n(overcome b d)\n(attack a)\n(overcome a b)\n(attack c)\n(overcome c a)"
+        ],
+        "429": [
+            "(feast d c)\n(succumb d)\n(feast c b)\n(succumb c)\n(feast b a)\n(succumb b)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c b)",
+            "(feast d c)\n(succumb d)\n(feast c b)\n(succumb c)\n(feast b a)\n(succumb b)\n(attack c)\n(overcome c b)\n(attack a)\n(overcome a d)",
+            "(feast d c)\n(succumb d)\n(feast c b)\n(overcome c d)\n(feast b a)\n(succumb b)\n(feast c d)\n(overcome c b)\n(attack a)\n(overcome a d)",
+            "(feast d c)\n(succumb d)\n(feast c b)\n(succumb c)\n(feast b a)\n(succumb b)\n(attack c)\n(overcome c b)\n(attack a)\n(overcome a c)\n(feast a c)\n(overcome a d)",
+            "(feast d c)\n(succumb d)\n(feast c b)\n(succumb c)\n(feast b a)\n(succumb b)\n(attack c)\n(overcome c b)\n(attack a)\n(overcome a d)\n(feast a d)\n(overcome a d)"
+        ],
+        "298": [
+            "(feast c a)\n(succumb c)\n(feast a d)\n(overcome a b)\n(attack d)\n(overcome d a)\n(attack c)\n(overcome c d)",
+            "(feast c a)\n(overcome c b)\n(feast a d)\n(succumb a)\n(attack d)\n(overcome d a)\n(feast c b)\n(overcome c d)",
+            "(feast c a)\n(succumb c)\n(feast a d)\n(succumb a)\n(attack d)\n(overcome d a)\n(attack c)\n(overcome c d)",
+            "(feast c a)\n(overcome c b)\n(feast a d)\n(succumb a)\n(attack d)\n(overcome d a)\n(feast c b)\n(overcome c d)\n(attack b)",
+            "(feast c a)\n(succumb c)\n(feast a d)\n(succumb a)\n(attack d)\n(overcome d a)\n(attack c)\n(overcome c d)\n(attack b)"
+        ],
+        "47": [
+            "(feast c a)\n(succumb c)\n(feast a d)\n(overcome a b)\n(attack d)\n(overcome d c)\n(feast a b)\n(overcome a d)\n(attack b)\n(overcome b a)",
+            "(feast c a)\n(succumb c)\n(feast a d)\n(succumb a)\n(attack d)\n(overcome d c)\n(attack a)\n(overcome a d)\n(attack b)\n(overcome b a)",
+            "(feast c a)\n(succumb c)\n(feast a d)\n(succumb a)\n(attack a)\n(overcome a b)\n(attack d)\n(overcome d c)\n(feast a b)\n(overcome a d)\n(attack b)\n(overcome b a)",
+            "(feast c a)\n(succumb c)\n(feast a d)\n(succumb a)\n(attack a)\n(succumb a)\n(attack d)\n(overcome d c)\n(attack a)\n(overcome a d)\n(attack b)\n(overcome b a)",
+            "(feast c a)\n(succumb c)\n(feast a d)\n(overcome a d)\n(feast a d)\n(overcome a b)\n(attack d)\n(overcome d c)\n(feast a b)\n(overcome a d)\n(attack b)\n(overcome b a)"
+        ],
+        "69": [
+            "(feast a b)\n(succumb a)\n(feast b d)\n(overcome b c)\n(attack a)\n(overcome a d)",
+            "(feast a b)\n(succumb a)\n(feast b d)\n(overcome b c)\n(attack a)\n(overcome a b)\n(feast a b)\n(overcome a d)",
+            "(feast a b)\n(succumb a)\n(feast b d)\n(overcome b c)\n(attack a)\n(overcome a d)\n(feast a d)\n(overcome a d)",
+            "(feast a b)\n(succumb a)\n(feast b d)\n(overcome b c)\n(attack a)\n(overcome a d)\n(feast b c)\n(overcome b c)",
+            "(feast a b)\n(succumb a)\n(feast b d)\n(overcome b c)\n(attack a)\n(succumb a)\n(attack a)\n(overcome a d)"
+        ],
+        "247": [
+            "(feast c a)\n(succumb c)\n(feast a d)\n(succumb a)\n(feast d b)\n(overcome d a)\n(attack c)\n(overcome c b)",
+            "(feast c a)\n(succumb c)\n(feast a d)\n(succumb a)\n(feast d b)\n(succumb d)\n(attack c)\n(overcome c b)",
+            "(feast c a)\n(succumb c)\n(feast a d)\n(succumb a)\n(feast d b)\n(overcome d a)\n(attack c)\n(overcome c b)\n(feast d a)",
+            "(feast c a)\n(succumb c)\n(feast a d)\n(succumb a)\n(feast d b)\n(succumb d)\n(attack c)\n(overcome c b)\n(attack a)",
+            "(feast c a)\n(succumb c)\n(feast a d)\n(succumb a)\n(feast d b)\n(succumb d)\n(attack c)\n(overcome c b)\n(attack d)"
+        ],
+        "334": [
+            "(feast b c)\n(overcome b d)\n(feast c a)\n(overcome c b)",
+            "(feast b c)\n(overcome b d)\n(feast c a)\n(overcome c b)\n(attack a)",
+            "(feast b c)\n(overcome b d)\n(feast c a)\n(overcome c b)\n(attack a)\n(overcome a c)",
+            "(feast b c)\n(overcome b d)\n(feast c a)\n(overcome c b)\n(attack a)\n(succumb a)",
+            "(feast b c)\n(overcome b d)\n(feast c a)\n(succumb c)\n(attack c)\n(overcome c b)"
+        ],
+        "389": [
+            "(feast a b)\n(succumb a)\n(feast b c)\n(overcome b a)\n(attack c)\n(overcome c b)\n(attack d)\n(overcome d c)",
+            "(feast a b)\n(succumb a)\n(attack a)\n(succumb a)\n(feast b c)\n(overcome b a)\n(attack c)\n(overcome c b)\n(attack d)\n(overcome d c)",
+            "(feast a b)\n(overcome a b)\n(feast a b)\n(succumb a)\n(feast b c)\n(overcome b a)\n(attack c)\n(overcome c b)\n(attack d)\n(overcome d c)",
+            "(attack d)\n(succumb d)\n(feast a b)\n(succumb a)\n(feast b c)\n(overcome b a)\n(attack c)\n(overcome c b)\n(attack d)\n(overcome d c)",
+            "(feast a b)\n(succumb a)\n(attack d)\n(succumb d)\n(feast b c)\n(overcome b a)\n(attack c)\n(overcome c b)\n(attack d)\n(overcome d c)"
+        ],
+        "414": [
+            "(feast a c)\n(succumb a)\n(feast c d)\n(overcome c a)\n(feast d b)\n(overcome d c)\n(attack b)\n(overcome b d)",
+            "(feast a c)\n(succumb a)\n(feast c d)\n(overcome c a)\n(feast c a)\n(overcome c a)\n(feast d b)\n(overcome d c)\n(attack b)\n(overcome b d)",
+            "(feast a c)\n(succumb a)\n(feast c d)\n(overcome c a)\n(feast d b)\n(overcome d b)\n(feast d b)\n(overcome d c)\n(attack b)\n(overcome b d)",
+            "(feast a c)\n(succumb a)\n(feast c d)\n(overcome c a)\n(feast d b)\n(succumb d)\n(attack d)\n(overcome d c)\n(attack b)\n(overcome b d)",
+            "(feast a c)\n(succumb a)\n(feast c d)\n(overcome c a)\n(feast d b)\n(overcome d c)\n(attack b)\n(overcome b d)\n(feast b d)\n(overcome b d)"
+        ],
+        "321": [
+            "(feast d a)\n(succumb d)\n(attack a)\n(overcome a b)\n(attack d)\n(overcome d a)",
+            "(feast d a)\n(succumb d)\n(feast b c)\n(overcome b c)\n(attack a)\n(overcome a b)\n(attack d)\n(overcome d a)",
+            "(feast d a)\n(succumb d)\n(attack d)\n(succumb d)\n(attack a)\n(overcome a b)\n(attack d)\n(overcome d a)",
+            "(feast b c)\n(overcome b c)\n(feast d a)\n(succumb d)\n(attack a)\n(overcome a b)\n(attack d)\n(overcome d a)",
+            "(feast d a)\n(overcome d a)\n(feast d a)\n(succumb d)\n(attack a)\n(overcome a b)\n(attack d)\n(overcome d a)"
+        ],
+        "494": [
+            "(attack e)\n(overcome e a)\n(attack d)\n(overcome d c)",
+            "(attack d)\n(overcome d c)\n(attack e)\n(overcome e a)",
+            "(attack d)\n(overcome d c)\n(attack a)\n(overcome a d)\n(attack e)\n(overcome e a)",
+            "(attack e)\n(overcome e a)\n(feast c b)\n(overcome c e)\n(attack d)\n(overcome d c)",
+            "(attack d)\n(overcome d c)\n(attack e)\n(overcome e d)\n(feast e d)\n(overcome e a)"
+        ],
+        "40": [
+            "(feast c d)\n(succumb c)\n(feast d a)\n(overcome d c)\n(feast a b)\n(succumb a)\n(feast d c)\n(overcome d b)\n(attack c)\n(overcome c d)\n(attack a)\n(overcome a c)",
+            "(feast c d)\n(succumb c)\n(feast d a)\n(succumb d)\n(feast a b)\n(succumb a)\n(attack d)\n(overcome d b)\n(attack c)\n(overcome c d)\n(attack a)\n(overcome a c)",
+            "(feast c d)\n(succumb c)\n(feast d a)\n(overcome d c)\n(feast a b)\n(succumb a)\n(attack a)\n(succumb a)\n(feast d c)\n(overcome d b)\n(attack c)\n(overcome c d)\n(attack a)\n(overcome a c)",
+            "(feast c d)\n(succumb c)\n(feast d a)\n(succumb d)\n(feast a b)\n(succumb a)\n(attack a)\n(succumb a)\n(attack d)\n(overcome d b)\n(attack c)\n(overcome c d)\n(attack a)\n(overcome a c)",
+            "(feast c d)\n(succumb c)\n(feast d a)\n(succumb d)\n(feast a b)\n(overcome a c)\n(attack d)\n(overcome d b)\n(feast a c)\n(succumb a)\n(attack c)\n(overcome c d)\n(attack a)\n(overcome a c)"
+        ],
+        "310": [
+            "(feast c a)\n(succumb c)\n(attack a)\n(overcome a c)\n(feast d b)\n(overcome d a)\n(attack b)\n(overcome b d)",
+            "(feast c a)\n(succumb c)\n(attack a)\n(overcome a c)\n(feast a c)\n(overcome a c)\n(feast d b)\n(overcome d a)\n(attack b)\n(overcome b d)",
+            "(feast c a)\n(succumb c)\n(attack a)\n(overcome a c)\n(feast d b)\n(overcome d a)\n(attack b)\n(overcome b d)\n(feast b d)\n(overcome b d)",
+            "(feast c a)\n(succumb c)\n(attack a)\n(overcome a c)\n(feast d b)\n(overcome d a)\n(attack b)\n(succumb b)\n(attack b)\n(overcome b d)",
+            "(feast c a)\n(succumb c)\n(attack a)\n(overcome a c)\n(feast d b)\n(overcome d a)\n(feast d a)\n(overcome d a)\n(attack b)\n(overcome b d)"
+        ],
+        "476": [
+            "(feast c d)\n(succumb c)\n(feast b e)\n(succumb b)\n(feast d a)\n(overcome d b)\n(attack e)\n(overcome e d)\n(attack a)\n(overcome a e)\n(attack c)\n(overcome c a)",
+            "(feast b e)\n(succumb b)\n(feast c d)\n(succumb c)\n(feast d a)\n(overcome d b)\n(attack e)\n(overcome e d)\n(attack a)\n(overcome a e)\n(attack c)\n(overcome c a)",
+            "(feast c d)\n(succumb c)\n(feast b e)\n(succumb b)\n(attack b)\n(succumb b)\n(feast d a)\n(overcome d b)\n(attack e)\n(overcome e d)\n(attack a)\n(overcome a e)\n(attack c)\n(overcome c a)",
+            "(feast b e)\n(succumb b)\n(feast c d)\n(succumb c)\n(attack b)\n(succumb b)\n(feast d a)\n(overcome d b)\n(attack e)\n(overcome e d)\n(attack a)\n(overcome a e)\n(attack c)\n(overcome c a)",
+            "(feast c d)\n(succumb c)\n(feast b e)\n(succumb b)\n(attack c)\n(succumb c)\n(feast d a)\n(overcome d b)\n(attack e)\n(overcome e d)\n(attack a)\n(overcome a e)\n(attack c)\n(overcome c a)"
+        ],
+        "442": [
+            "(feast d c)\n(succumb d)\n(feast c a)\n(succumb c)\n(feast a b)\n(overcome a c)\n(attack d)\n(overcome d a)\n(attack b)\n(overcome b d)",
+            "(feast d c)\n(succumb d)\n(feast c a)\n(succumb c)\n(attack c)\n(succumb c)\n(feast a b)\n(overcome a c)\n(attack d)\n(overcome d a)\n(attack b)\n(overcome b d)",
+            "(feast d c)\n(succumb d)\n(feast c a)\n(succumb c)\n(attack d)\n(succumb d)\n(feast a b)\n(overcome a c)\n(attack d)\n(overcome d a)\n(attack b)\n(overcome b d)",
+            "(feast d c)\n(succumb d)\n(feast c a)\n(overcome c d)\n(feast c d)\n(succumb c)\n(feast a b)\n(overcome a c)\n(attack d)\n(overcome d a)\n(attack b)\n(overcome b d)",
+            "(feast d c)\n(succumb d)\n(feast c a)\n(succumb c)\n(feast a b)\n(overcome a b)\n(feast a b)\n(overcome a c)\n(attack d)\n(overcome d a)\n(attack b)\n(overcome b d)"
+        ],
+        "295": [
+            "(feast d b)\n(succumb d)\n(feast c a)\n(overcome c d)\n(attack b)\n(overcome b c)",
+            "(feast d b)\n(succumb d)\n(feast c a)\n(overcome c d)\n(attack b)\n(overcome b c)\n(attack a)",
+            "(feast d b)\n(succumb d)\n(feast c a)\n(overcome c d)\n(attack a)\n(succumb a)\n(attack b)\n(overcome b c)",
+            "(feast c a)\n(succumb c)\n(feast d b)\n(overcome d a)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)",
+            "(feast d b)\n(succumb d)\n(feast c a)\n(succumb c)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)"
+        ],
+        "436": [
+            "(feast c a)\n(overcome c d)\n(attack a)\n(overcome a b)",
+            "(feast c a)\n(succumb c)\n(attack a)\n(overcome a b)",
+            "(feast c a)\n(overcome c d)\n(attack a)\n(overcome a b)\n(feast c d)",
+            "(feast c a)\n(succumb c)\n(attack a)\n(overcome a b)\n(attack c)",
+            "(feast c a)\n(succumb c)\n(attack a)\n(overcome a b)\n(attack d)"
+        ],
+        "365": [
+            "(feast d c)\n(overcome d a)\n(attack b)\n(overcome b c)",
+            "(feast d c)\n(succumb d)\n(attack b)\n(overcome b c)",
+            "(feast d c)\n(overcome d a)\n(attack b)\n(overcome b c)\n(feast d a)",
+            "(feast d c)\n(succumb d)\n(attack b)\n(overcome b c)\n(attack a)",
+            "(feast d c)\n(succumb d)\n(attack b)\n(overcome b c)\n(attack d)"
+        ],
+        "452": [
+            "(feast d a)\n(succumb d)\n(feast a e)\n(succumb a)\n(feast e c)\n(overcome e a)\n(feast c b)\n(overcome c d)\n(attack b)\n(overcome b c)\n(feast e a)\n(overcome e b)\n(attack a)\n(overcome a e)",
+            "(feast d a)\n(succumb d)\n(feast a e)\n(succumb a)\n(feast e c)\n(succumb e)\n(feast c b)\n(overcome c d)\n(attack b)\n(overcome b c)\n(attack e)\n(overcome e b)\n(attack a)\n(overcome a e)",
+            "(feast d a)\n(succumb d)\n(feast a e)\n(overcome a d)\n(feast e c)\n(overcome e a)\n(feast c b)\n(succumb c)\n(attack b)\n(overcome b c)\n(feast e a)\n(overcome e b)\n(feast a d)\n(overcome a e)",
+            "(feast d a)\n(succumb d)\n(feast a e)\n(succumb a)\n(feast e c)\n(overcome e a)\n(feast c b)\n(succumb c)\n(attack b)\n(overcome b c)\n(feast e a)\n(overcome e b)\n(attack a)\n(overcome a e)",
+            "(feast d a)\n(succumb d)\n(feast a e)\n(succumb a)\n(feast e c)\n(overcome e d)\n(feast c b)\n(succumb c)\n(attack b)\n(overcome b c)\n(feast e d)\n(overcome e b)\n(attack a)\n(overcome a e)"
+        ],
+        "410": [
+            "(feast c d)\n(succumb c)\n(attack d)\n(overcome d b)\n(attack c)\n(overcome c d)",
+            "(feast b a)\n(overcome b a)\n(feast c d)\n(succumb c)\n(attack d)\n(overcome d b)\n(attack c)\n(overcome c d)",
+            "(feast c d)\n(succumb c)\n(attack c)\n(succumb c)\n(attack d)\n(overcome d b)\n(attack c)\n(overcome c d)",
+            "(feast c d)\n(succumb c)\n(attack d)\n(overcome d b)\n(attack c)\n(overcome c d)\n(feast c d)\n(overcome c d)",
+            "(feast c d)\n(succumb c)\n(attack d)\n(overcome d b)\n(attack c)\n(succumb c)\n(attack c)\n(overcome c d)"
+        ],
+        "416": [
+            "(feast a b)\n(succumb a)\n(feast b c)\n(succumb b)\n(feast c d)\n(overcome c b)\n(attack a)\n(overcome a c)",
+            "(feast a b)\n(succumb a)\n(feast b c)\n(succumb b)\n(feast c d)\n(overcome c b)\n(attack a)\n(overcome a c)\n(attack d)",
+            "(feast a b)\n(succumb a)\n(feast b c)\n(succumb b)\n(feast c d)\n(overcome c b)\n(attack a)\n(overcome a c)\n(attack d)\n(overcome d a)",
+            "(feast a b)\n(succumb a)\n(feast b c)\n(succumb b)\n(feast c d)\n(overcome c b)\n(attack a)\n(overcome a c)\n(attack d)\n(succumb d)",
+            "(feast a b)\n(succumb a)\n(feast b c)\n(succumb b)\n(feast c d)\n(overcome c b)\n(attack a)\n(overcome a c)\n(feast a c)\n(overcome a c)"
+        ],
+        "111": [
+            "(feast c a)\n(succumb c)\n(feast a b)\n(succumb a)\n(feast b d)\n(succumb b)\n(attack c)\n(overcome c b)\n(attack a)\n(overcome a c)\n(attack d)\n(overcome d a)",
+            "(feast c a)\n(succumb c)\n(feast a b)\n(succumb a)\n(feast b d)\n(succumb b)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c b)\n(feast a d)\n(overcome a c)\n(attack d)\n(overcome d a)",
+            "(feast c a)\n(succumb c)\n(feast a b)\n(succumb a)\n(feast b d)\n(succumb b)\n(attack a)\n(succumb a)\n(attack c)\n(overcome c b)\n(attack a)\n(overcome a c)\n(attack d)\n(overcome d a)",
+            "(feast c a)\n(succumb c)\n(feast a b)\n(succumb a)\n(feast b d)\n(succumb b)\n(attack d)\n(succumb d)\n(attack c)\n(overcome c b)\n(attack a)\n(overcome a c)\n(attack d)\n(overcome d a)",
+            "(feast c a)\n(succumb c)\n(feast a b)\n(succumb a)\n(feast b d)\n(succumb b)\n(attack b)\n(succumb b)\n(attack c)\n(overcome c b)\n(attack a)\n(overcome a c)\n(attack d)\n(overcome d a)"
+        ],
+        "176": [
+            "(feast b c)\n(succumb b)\n(feast c a)\n(overcome c b)",
+            "(feast b c)\n(succumb b)\n(feast c a)\n(overcome c b)\n(feast a d)",
+            "(feast b c)\n(succumb b)\n(feast c a)\n(succumb c)\n(attack c)\n(overcome c b)",
+            "(feast b c)\n(succumb b)\n(feast c a)\n(overcome c b)\n(feast a d)\n(overcome a c)",
+            "(feast b c)\n(succumb b)\n(feast c a)\n(overcome c b)\n(feast a d)\n(overcome a d)"
+        ],
+        "443": [
+            "(feast d c)\n(succumb d)\n(feast b a)\n(succumb b)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c b)",
+            "(feast b a)\n(succumb b)\n(feast d c)\n(succumb d)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c b)",
+            "(feast d c)\n(succumb d)\n(feast b a)\n(succumb b)\n(attack c)\n(overcome c b)\n(attack a)\n(overcome a d)",
+            "(feast b a)\n(succumb b)\n(feast d c)\n(succumb d)\n(attack c)\n(overcome c b)\n(attack a)\n(overcome a d)",
+            "(feast d c)\n(succumb d)\n(feast b a)\n(succumb b)\n(attack a)\n(overcome a b)\n(feast a b)\n(overcome a d)\n(attack c)\n(overcome c b)"
+        ],
+        "428": [
+            "(attack d)\n(overcome d b)",
+            "(feast b a)\n(overcome b a)\n(attack d)\n(overcome d b)",
+            "(attack d)\n(succumb d)\n(attack d)\n(overcome d b)",
+            "(attack d)\n(overcome d b)\n(feast d b)\n(overcome d b)",
+            "(feast b a)\n(succumb b)\n(attack b)\n(overcome b a)\n(attack d)\n(overcome d b)"
+        ],
+        "330": [
+            "(feast b d)\n(succumb b)\n(feast d a)\n(overcome d b)\n(feast a c)\n(succumb a)\n(feast d b)\n(overcome d a)\n(attack b)\n(overcome b d)\n(attack c)\n(overcome c b)",
+            "(feast b d)\n(succumb b)\n(feast d a)\n(succumb d)\n(feast a c)\n(succumb a)\n(attack d)\n(overcome d a)\n(attack b)\n(overcome b d)\n(attack c)\n(overcome c b)",
+            "(feast b d)\n(succumb b)\n(feast d a)\n(overcome d b)\n(feast a c)\n(succumb a)\n(attack a)\n(succumb a)\n(feast d b)\n(overcome d a)\n(attack b)\n(overcome b d)\n(attack c)\n(overcome c b)",
+            "(feast b d)\n(succumb b)\n(feast d a)\n(succumb d)\n(feast a c)\n(succumb a)\n(attack a)\n(succumb a)\n(attack d)\n(overcome d a)\n(attack b)\n(overcome b d)\n(attack c)\n(overcome c b)",
+            "(feast b d)\n(succumb b)\n(feast d a)\n(succumb d)\n(feast a c)\n(succumb a)\n(attack d)\n(overcome d a)\n(attack b)\n(overcome b c)\n(feast b c)\n(overcome b d)\n(attack c)\n(overcome c b)"
+        ],
+        "86": [
+            "(feast b a)\n(overcome b d)\n(feast a c)\n(overcome a b)\n(attack c)\n(overcome c a)",
+            "(feast b a)\n(succumb b)\n(feast a c)\n(overcome a b)\n(attack c)\n(overcome c a)",
+            "(feast b a)\n(succumb b)\n(feast a c)\n(overcome a d)\n(attack c)\n(overcome c a)",
+            "(feast b a)\n(overcome b d)\n(feast a c)\n(succumb a)\n(attack c)\n(overcome c a)",
+            "(feast b a)\n(succumb b)\n(feast a c)\n(succumb a)\n(attack c)\n(overcome c a)"
+        ],
+        "454": [
+            "(feast b c)\n(succumb b)\n(feast c d)\n(succumb c)\n(feast d e)\n(overcome d c)\n(feast e a)\n(overcome e d)\n(attack a)\n(overcome a b)",
+            "(feast b c)\n(succumb b)\n(feast c d)\n(succumb c)\n(feast d e)\n(succumb d)\n(feast e a)\n(overcome e d)\n(attack a)\n(overcome a b)",
+            "(feast b c)\n(succumb b)\n(feast c d)\n(succumb c)\n(feast d e)\n(succumb d)\n(feast e a)\n(overcome e d)\n(attack a)\n(overcome a b)\n(attack c)",
+            "(feast b c)\n(succumb b)\n(feast c d)\n(succumb c)\n(feast d e)\n(succumb d)\n(feast e a)\n(overcome e c)\n(attack a)\n(overcome a b)\n(feast e c)\n(overcome e d)",
+            "(feast b c)\n(succumb b)\n(feast c d)\n(succumb c)\n(feast d e)\n(overcome d c)\n(feast e a)\n(succumb e)\n(attack a)\n(overcome a b)\n(attack e)\n(overcome e d)"
+        ],
+        "322": [
+            "(feast d b)\n(overcome d c)\n(feast b a)\n(overcome b d)\n(attack a)\n(overcome a b)",
+            "(feast d b)\n(overcome d c)\n(feast b a)\n(succumb b)\n(attack a)\n(overcome a b)",
+            "(feast d b)\n(overcome d c)\n(feast b a)\n(overcome b d)\n(attack a)\n(overcome a b)\n(feast a b)\n(overcome a b)",
+            "(feast d b)\n(overcome d c)\n(feast b a)\n(overcome b d)\n(attack a)\n(succumb a)\n(attack a)\n(overcome a b)",
+            "(feast d b)\n(overcome d c)\n(feast b a)\n(succumb b)\n(attack a)\n(overcome a b)\n(feast a b)\n(overcome a b)"
+        ],
+        "265": [
+            "(feast b a)\n(succumb b)\n(feast a d)\n(overcome a b)",
+            "(feast b a)\n(succumb b)\n(feast a d)\n(overcome a b)\n(feast d c)",
+            "(feast b a)\n(succumb b)\n(feast a d)\n(succumb a)\n(attack a)\n(overcome a b)",
+            "(feast b a)\n(succumb b)\n(feast a d)\n(overcome a b)\n(feast a b)\n(overcome a b)",
+            "(feast b a)\n(succumb b)\n(feast a d)\n(overcome a d)\n(feast a d)\n(overcome a b)"
+        ],
+        "263": [
+            "(feast b a)\n(succumb b)\n(feast a c)\n(succumb a)\n(feast c d)\n(succumb c)\n(attack d)\n(overcome d b)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c a)",
+            "(feast b a)\n(succumb b)\n(feast a c)\n(succumb a)\n(feast c d)\n(succumb c)\n(attack a)\n(overcome a c)\n(attack d)\n(overcome d b)\n(feast a c)\n(overcome a d)\n(attack c)\n(overcome c a)",
+            "(feast b a)\n(succumb b)\n(feast a c)\n(succumb a)\n(feast c d)\n(succumb c)\n(attack a)\n(succumb a)\n(attack d)\n(overcome d b)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c a)",
+            "(feast b a)\n(succumb b)\n(feast a c)\n(succumb a)\n(feast c d)\n(overcome c a)\n(attack d)\n(overcome d b)\n(feast c a)\n(succumb c)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c a)",
+            "(feast b a)\n(succumb b)\n(feast a c)\n(succumb a)\n(feast c d)\n(succumb c)\n(attack d)\n(overcome d a)\n(feast d a)\n(overcome d b)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c a)"
+        ],
+        "170": [
+            "(attack d)\n(overcome d b)",
+            "(attack d)\n(overcome d b)\n(attack c)",
+            "(attack d)\n(overcome d b)\n(attack c)\n(overcome c d)",
+            "(attack d)\n(overcome d b)\n(attack c)\n(succumb c)",
+            "(attack d)\n(overcome d b)\n(feast d b)\n(overcome d b)"
+        ],
+        "114": [
+            "(feast c d)\n(succumb c)\n(feast d b)\n(succumb d)\n(feast b a)\n(overcome b c)\n(attack d)\n(overcome d a)\n(feast b c)\n(overcome b d)",
+            "(feast c d)\n(succumb c)\n(feast d b)\n(succumb d)\n(feast b a)\n(succumb b)\n(attack d)\n(overcome d a)\n(attack b)\n(overcome b d)",
+            "(feast c d)\n(succumb c)\n(feast d b)\n(overcome d c)\n(feast b a)\n(succumb b)\n(feast d c)\n(overcome d a)\n(attack b)\n(overcome b d)",
+            "(feast c d)\n(succumb c)\n(feast d b)\n(succumb d)\n(feast b a)\n(overcome b c)\n(attack d)\n(overcome d a)\n(feast b c)\n(overcome b d)\n(attack c)",
+            "(feast c d)\n(succumb c)\n(feast d b)\n(succumb d)\n(feast b a)\n(succumb b)\n(attack d)\n(overcome d a)\n(attack b)\n(overcome b d)\n(attack c)"
+        ],
+        "375": [
+            "(feast a b)\n(succumb a)\n(feast b d)\n(succumb b)\n(feast d c)\n(overcome d a)\n(attack b)\n(overcome b c)\n(feast d a)\n(overcome d b)\n(attack a)\n(overcome a d)",
+            "(feast a b)\n(succumb a)\n(feast b d)\n(overcome b a)\n(feast d c)\n(succumb d)\n(feast b a)\n(overcome b c)\n(attack d)\n(overcome d b)\n(attack a)\n(overcome a d)",
+            "(feast a b)\n(succumb a)\n(feast b d)\n(succumb b)\n(feast d c)\n(succumb d)\n(attack b)\n(overcome b c)\n(attack d)\n(overcome d b)\n(attack a)\n(overcome a d)",
+            "(feast a b)\n(succumb a)\n(feast b d)\n(succumb b)\n(feast d c)\n(succumb d)\n(attack a)\n(succumb a)\n(attack b)\n(overcome b c)\n(attack d)\n(overcome d b)\n(attack a)\n(overcome a d)",
+            "(feast a b)\n(succumb a)\n(feast b d)\n(overcome b a)\n(feast d c)\n(succumb d)\n(attack d)\n(succumb d)\n(feast b a)\n(overcome b c)\n(attack d)\n(overcome d b)\n(attack a)\n(overcome a d)"
+        ],
+        "145": [
+            "(feast c a)\n(succumb c)\n(feast a d)\n(overcome a b)\n(attack c)\n(overcome c d)\n(feast a b)\n(overcome a c)\n(attack b)\n(overcome b a)",
+            "(feast c a)\n(overcome c b)\n(feast a d)\n(succumb a)\n(feast c b)\n(overcome c d)\n(attack a)\n(overcome a c)\n(attack b)\n(overcome b a)",
+            "(feast c a)\n(succumb c)\n(feast a d)\n(succumb a)\n(attack c)\n(overcome c d)\n(attack a)\n(overcome a c)\n(attack b)\n(overcome b a)",
+            "(feast c a)\n(overcome c b)\n(feast a d)\n(succumb a)\n(attack a)\n(succumb a)\n(feast c b)\n(overcome c d)\n(attack a)\n(overcome a c)\n(attack b)\n(overcome b a)",
+            "(feast c a)\n(succumb c)\n(feast a d)\n(succumb a)\n(attack a)\n(overcome a b)\n(attack c)\n(overcome c d)\n(feast a b)\n(overcome a c)\n(attack b)\n(overcome b a)"
+        ],
+        "20": [
+            "(feast c a)\n(succumb c)\n(feast b d)\n(overcome b a)\n(attack d)\n(overcome d b)\n(attack c)\n(overcome c d)",
+            "(feast c a)\n(succumb c)\n(attack a)\n(succumb a)\n(feast b d)\n(overcome b a)\n(attack d)\n(overcome d b)\n(attack c)\n(overcome c d)",
+            "(feast c a)\n(succumb c)\n(feast b d)\n(overcome b a)\n(attack c)\n(succumb c)\n(attack d)\n(overcome d b)\n(attack c)\n(overcome c d)",
+            "(feast c a)\n(succumb c)\n(feast b d)\n(overcome b a)\n(attack d)\n(overcome d b)\n(attack c)\n(overcome c d)\n(feast c d)\n(overcome c d)",
+            "(feast c a)\n(succumb c)\n(feast b d)\n(overcome b a)\n(attack d)\n(overcome d b)\n(attack c)\n(succumb c)\n(attack c)\n(overcome c d)"
+        ],
+        "130": [
+            "(feast c d)\n(succumb c)\n(feast b a)\n(overcome b c)\n(attack d)\n(overcome d a)",
+            "(feast c d)\n(succumb c)\n(feast b a)\n(overcome b c)\n(attack a)\n(overcome a b)\n(attack d)\n(overcome d a)",
+            "(feast c d)\n(succumb c)\n(feast b a)\n(overcome b c)\n(attack a)\n(succumb a)\n(attack d)\n(overcome d a)",
+            "(feast c d)\n(succumb c)\n(feast b a)\n(overcome b d)\n(feast b d)\n(overcome b c)\n(attack d)\n(overcome d a)",
+            "(feast c d)\n(succumb c)\n(feast b a)\n(overcome b c)\n(feast b c)\n(overcome b c)\n(attack d)\n(overcome d a)"
+        ],
+        "498": [
+            "(feast e b)\n(succumb e)\n(attack a)\n(overcome a e)\n(feast c d)\n(overcome c b)\n(attack d)\n(overcome d a)",
+            "(feast e b)\n(succumb e)\n(feast c d)\n(overcome c b)\n(attack a)\n(overcome a e)\n(attack d)\n(overcome d a)",
+            "(feast e b)\n(succumb e)\n(feast c d)\n(overcome c b)\n(attack a)\n(overcome a c)\n(feast a c)\n(overcome a e)\n(attack d)\n(overcome d a)",
+            "(feast e b)\n(succumb e)\n(feast c d)\n(overcome c b)\n(attack a)\n(overcome a d)\n(feast a d)\n(overcome a e)\n(attack d)\n(overcome d a)",
+            "(feast e b)\n(succumb e)\n(feast c d)\n(overcome c b)\n(attack a)\n(overcome a e)\n(attack d)\n(overcome d a)\n(feast c b)\n(overcome c b)"
+        ],
+        "473": [
+            "(feast e a)\n(succumb e)\n(feast a d)\n(overcome a e)\n(attack b)\n(overcome b d)",
+            "(feast e a)\n(succumb e)\n(feast a d)\n(succumb a)\n(attack a)\n(overcome a e)\n(attack b)\n(overcome b d)",
+            "(feast e a)\n(succumb e)\n(feast a d)\n(overcome a d)\n(feast a d)\n(overcome a e)\n(attack b)\n(overcome b d)",
+            "(feast e a)\n(succumb e)\n(attack b)\n(succumb b)\n(feast a d)\n(overcome a e)\n(attack b)\n(overcome b d)",
+            "(feast e a)\n(succumb e)\n(attack e)\n(succumb e)\n(feast a d)\n(overcome a e)\n(attack b)\n(overcome b d)"
+        ],
+        "269": [
+            "(feast d a)\n(succumb d)\n(feast a b)\n(succumb a)\n(attack c)\n(overcome c b)\n(attack d)\n(overcome d c)\n(attack a)\n(overcome a d)",
+            "(feast d a)\n(succumb d)\n(feast a b)\n(succumb a)\n(attack a)\n(succumb a)\n(attack c)\n(overcome c b)\n(attack d)\n(overcome d c)\n(attack a)\n(overcome a d)",
+            "(feast d a)\n(succumb d)\n(feast a b)\n(overcome a d)\n(feast a d)\n(succumb a)\n(attack c)\n(overcome c b)\n(attack d)\n(overcome d c)\n(attack a)\n(overcome a d)",
+            "(feast d a)\n(overcome d c)\n(feast a b)\n(succumb a)\n(feast d c)\n(overcome d a)\n(attack c)\n(overcome c b)\n(feast d a)\n(overcome d c)\n(attack a)\n(overcome a d)",
+            "(feast d a)\n(overcome d c)\n(feast a b)\n(succumb a)\n(feast d c)\n(succumb d)\n(attack c)\n(overcome c b)\n(attack d)\n(overcome d c)\n(attack a)\n(overcome a d)"
+        ],
+        "309": [
+            "(feast a d)\n(succumb a)\n(feast d c)\n(succumb d)\n(feast c b)\n(overcome c a)\n(attack b)\n(overcome b d)\n(feast c a)\n(overcome c b)\n(attack a)\n(overcome a c)",
+            "(feast a d)\n(succumb a)\n(feast d c)\n(succumb d)\n(feast c b)\n(succumb c)\n(attack b)\n(overcome b d)\n(attack c)\n(overcome c b)\n(attack a)\n(overcome a c)",
+            "(feast a d)\n(succumb a)\n(feast d c)\n(succumb d)\n(feast c b)\n(succumb c)\n(attack a)\n(succumb a)\n(attack b)\n(overcome b d)\n(attack c)\n(overcome c b)\n(attack a)\n(overcome a c)",
+            "(feast a d)\n(succumb a)\n(feast d c)\n(succumb d)\n(feast c b)\n(overcome c a)\n(attack d)\n(succumb d)\n(attack b)\n(overcome b d)\n(feast c a)\n(overcome c b)\n(attack a)\n(overcome a c)",
+            "(feast a d)\n(succumb a)\n(feast d c)\n(succumb d)\n(feast c b)\n(succumb c)\n(attack d)\n(succumb d)\n(attack b)\n(overcome b d)\n(attack c)\n(overcome c b)\n(attack a)\n(overcome a c)"
+        ],
+        "162": [
+            "(feast b c)\n(overcome b a)\n(attack c)\n(overcome c b)",
+            "(feast a d)\n(overcome a d)\n(feast b c)\n(overcome b a)\n(attack c)\n(overcome c b)",
+            "(feast b c)\n(overcome b a)\n(attack c)\n(overcome c b)\n(feast c b)\n(overcome c b)",
+            "(feast b c)\n(overcome b a)\n(attack c)\n(succumb c)\n(attack c)\n(overcome c b)",
+            "(feast b c)\n(overcome b a)\n(feast b a)\n(overcome b a)\n(attack c)\n(overcome c b)"
+        ],
+        "493": [
+            "(feast e c)\n(succumb e)\n(feast b d)\n(overcome b a)\n(attack d)\n(overcome d e)\n(attack c)\n(overcome c d)",
+            "(feast b d)\n(overcome b a)\n(feast e c)\n(succumb e)\n(attack d)\n(overcome d e)\n(attack c)\n(overcome c d)",
+            "(feast b d)\n(overcome b a)\n(feast e c)\n(overcome e b)\n(attack d)\n(overcome d e)\n(attack c)\n(overcome c d)",
+            "(feast e c)\n(succumb e)\n(feast b d)\n(succumb b)\n(attack b)\n(overcome b a)\n(attack d)\n(overcome d e)\n(attack c)\n(overcome c d)",
+            "(feast b d)\n(succumb b)\n(feast e c)\n(succumb e)\n(attack b)\n(overcome b a)\n(attack d)\n(overcome d e)\n(attack c)\n(overcome c d)"
+        ],
+        "50": [
+            "(feast b c)\n(overcome b a)\n(attack c)\n(overcome c d)\n(feast b a)\n(overcome b c)\n(attack a)\n(overcome a b)",
+            "(feast b c)\n(succumb b)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)\n(attack a)\n(overcome a b)",
+            "(feast b c)\n(succumb b)\n(attack a)\n(succumb a)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)\n(attack a)\n(overcome a b)",
+            "(feast b c)\n(overcome b a)\n(attack c)\n(overcome c b)\n(feast c b)\n(overcome c d)\n(feast b a)\n(overcome b c)\n(attack a)\n(overcome a b)",
+            "(feast b c)\n(overcome b a)\n(attack c)\n(overcome c d)\n(feast b a)\n(overcome b a)\n(feast b a)\n(overcome b c)\n(attack a)\n(overcome a b)"
+        ],
+        "135": [
+            "(feast c a)\n(succumb c)\n(feast a d)\n(overcome a b)\n(attack c)\n(overcome c a)",
+            "(feast c a)\n(succumb c)\n(feast a d)\n(overcome a b)\n(attack c)\n(overcome c a)\n(attack d)",
+            "(feast c a)\n(succumb c)\n(feast a d)\n(succumb a)\n(attack a)\n(overcome a b)\n(attack c)\n(overcome c a)",
+            "(feast c a)\n(succumb c)\n(feast a d)\n(overcome a c)\n(feast a c)\n(overcome a b)\n(attack c)\n(overcome c a)",
+            "(feast c a)\n(succumb c)\n(feast a d)\n(overcome a b)\n(feast a b)\n(overcome a b)\n(attack c)\n(overcome c a)"
+        ],
+        "272": [
+            "(feast a b)\n(succumb a)\n(feast b c)\n(succumb b)\n(attack d)\n(overcome d b)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c a)",
+            "(feast a b)\n(succumb a)\n(feast b c)\n(succumb b)\n(attack a)\n(overcome a c)\n(attack d)\n(overcome d b)\n(feast a c)\n(overcome a d)\n(attack c)\n(overcome c a)",
+            "(feast a b)\n(succumb a)\n(feast b c)\n(succumb b)\n(attack a)\n(succumb a)\n(attack d)\n(overcome d b)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c a)",
+            "(feast a b)\n(succumb a)\n(feast b c)\n(overcome b c)\n(feast b c)\n(succumb b)\n(attack d)\n(overcome d b)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c a)",
+            "(feast a b)\n(succumb a)\n(attack d)\n(overcome d a)\n(feast b c)\n(succumb b)\n(feast d a)\n(overcome d b)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c a)"
+        ],
+        "71": [
+            "(attack d)\n(overcome d a)",
+            "(attack a)\n(overcome a c)\n(attack d)\n(overcome d a)",
+            "(attack a)\n(succumb a)\n(attack d)\n(overcome d a)",
+            "(attack d)\n(succumb d)\n(attack d)\n(overcome d a)",
+            "(feast c b)\n(overcome c b)\n(attack d)\n(overcome d a)"
+        ],
+        "177": [
+            "(feast c d)\n(succumb c)\n(feast a b)\n(overcome a c)\n(attack d)\n(overcome d a)\n(attack b)\n(overcome b d)",
+            "(feast c d)\n(succumb c)\n(attack c)\n(succumb c)\n(feast a b)\n(overcome a c)\n(attack d)\n(overcome d a)\n(attack b)\n(overcome b d)",
+            "(feast c d)\n(succumb c)\n(feast a b)\n(overcome a b)\n(feast a b)\n(overcome a c)\n(attack d)\n(overcome d a)\n(attack b)\n(overcome b d)",
+            "(feast c d)\n(succumb c)\n(feast a b)\n(overcome a d)\n(feast a d)\n(overcome a c)\n(attack d)\n(overcome d a)\n(attack b)\n(overcome b d)",
+            "(feast c d)\n(succumb c)\n(feast a b)\n(succumb a)\n(attack a)\n(overcome a c)\n(attack d)\n(overcome d a)\n(attack b)\n(overcome b d)"
+        ],
+        "75": [
+            "(feast d c)\n(succumb d)\n(feast c a)\n(succumb c)\n(feast a b)\n(overcome a c)\n(attack d)\n(overcome d a)",
+            "(feast d c)\n(succumb d)\n(feast c a)\n(succumb c)\n(feast a b)\n(overcome a c)\n(attack d)\n(overcome d a)\n(attack b)",
+            "(feast d c)\n(succumb d)\n(feast c a)\n(succumb c)\n(feast a b)\n(succumb a)\n(attack a)\n(overcome a c)\n(attack d)\n(overcome d a)",
+            "(feast d c)\n(succumb d)\n(feast c a)\n(succumb c)\n(feast a b)\n(overcome a c)\n(feast a c)\n(overcome a c)\n(attack d)\n(overcome d a)",
+            "(feast d c)\n(succumb d)\n(feast c a)\n(succumb c)\n(feast a b)\n(overcome a b)\n(feast a b)\n(overcome a c)\n(attack d)\n(overcome d a)"
+        ],
+        "121": [
+            "(feast d c)\n(overcome d a)\n(attack c)\n(overcome c d)",
+            "(feast d c)\n(overcome d b)\n(attack c)\n(overcome c d)",
+            "(feast d c)\n(succumb d)\n(attack c)\n(overcome c d)",
+            "(feast d c)\n(overcome d a)\n(attack c)\n(overcome c d)\n(attack b)",
+            "(feast d c)\n(overcome d b)\n(attack c)\n(overcome c d)\n(attack a)"
+        ],
+        "411": [
+            "(feast d b)\n(overcome d a)\n(feast b c)\n(overcome b d)\n(attack c)\n(overcome c b)",
+            "(feast d b)\n(succumb d)\n(feast b c)\n(overcome b d)\n(attack c)\n(overcome c b)",
+            "(feast d b)\n(succumb d)\n(feast b c)\n(overcome b d)\n(attack c)\n(overcome c b)\n(attack a)",
+            "(feast d b)\n(overcome d a)\n(feast b c)\n(succumb b)\n(attack b)\n(overcome b d)\n(attack c)\n(overcome c b)",
+            "(feast d b)\n(succumb d)\n(feast b c)\n(succumb b)\n(attack b)\n(overcome b d)\n(attack c)\n(overcome c b)"
+        ],
+        "348": [
+            "(feast c d)\n(succumb c)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c a)",
+            "(feast c d)\n(succumb c)\n(feast d b)\n(overcome d b)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c a)",
+            "(feast c d)\n(succumb c)\n(attack c)\n(succumb c)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c a)",
+            "(feast c d)\n(overcome c a)\n(feast c a)\n(succumb c)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c a)",
+            "(feast c d)\n(overcome c d)\n(feast c d)\n(succumb c)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c a)"
+        ],
+        "41": [
+            "(feast b c)\n(overcome b d)",
+            "(feast b c)\n(succumb b)\n(attack b)\n(overcome b d)",
+            "(feast b c)\n(overcome b d)\n(feast b d)\n(overcome b d)",
+            "(feast b c)\n(overcome b d)\n(feast c a)\n(overcome c a)",
+            "(feast b c)\n(overcome b c)\n(feast b c)\n(overcome b d)"
+        ],
+        "490": [
+            "(feast e c)\n(succumb e)\n(attack d)\n(overcome d c)\n(attack a)\n(overcome a d)\n(attack b)\n(overcome b a)",
+            "(feast e c)\n(succumb e)\n(attack d)\n(overcome d c)\n(attack a)\n(overcome a d)\n(attack b)\n(overcome b a)\n(attack e)",
+            "(feast e c)\n(succumb e)\n(attack a)\n(overcome a b)\n(attack d)\n(overcome d c)\n(feast a b)\n(overcome a d)\n(attack b)\n(overcome b a)",
+            "(feast e c)\n(succumb e)\n(attack b)\n(overcome b e)\n(attack d)\n(overcome d c)\n(attack a)\n(overcome a d)\n(feast b e)\n(overcome b a)",
+            "(feast e c)\n(overcome e a)\n(attack d)\n(overcome d c)\n(feast e a)\n(succumb e)\n(attack a)\n(overcome a d)\n(attack b)\n(overcome b a)"
+        ],
+        "398": [
+            "(feast a c)\n(succumb a)\n(feast c b)\n(succumb c)\n(attack b)\n(overcome b c)\n(attack d)\n(overcome d b)\n(attack a)\n(overcome a d)",
+            "(feast a c)\n(succumb a)\n(feast c b)\n(succumb c)\n(attack a)\n(succumb a)\n(attack b)\n(overcome b c)\n(attack d)\n(overcome d b)\n(attack a)\n(overcome a d)",
+            "(feast a c)\n(succumb a)\n(feast c b)\n(overcome c b)\n(feast c b)\n(succumb c)\n(attack b)\n(overcome b c)\n(attack d)\n(overcome d b)\n(attack a)\n(overcome a d)",
+            "(feast a c)\n(succumb a)\n(attack d)\n(overcome d a)\n(feast c b)\n(succumb c)\n(attack b)\n(overcome b c)\n(feast d a)\n(overcome d b)\n(attack a)\n(overcome a d)",
+            "(feast a c)\n(succumb a)\n(attack d)\n(succumb d)\n(feast c b)\n(succumb c)\n(attack b)\n(overcome b c)\n(attack d)\n(overcome d b)\n(attack a)\n(overcome a d)"
+        ],
+        "369": [
+            "(feast a d)\n(succumb a)\n(feast d b)\n(succumb d)\n(feast b c)\n(overcome b a)\n(attack c)\n(overcome c b)",
+            "(feast a d)\n(succumb a)\n(feast d b)\n(succumb d)\n(feast b c)\n(overcome b a)\n(attack c)\n(overcome c b)\n(attack d)",
+            "(feast a d)\n(succumb a)\n(feast d b)\n(succumb d)\n(feast b c)\n(succumb b)\n(attack b)\n(overcome b a)\n(attack c)\n(overcome c b)",
+            "(feast a d)\n(succumb a)\n(feast d b)\n(succumb d)\n(attack a)\n(overcome a d)\n(feast b c)\n(overcome b a)\n(attack c)\n(overcome c b)",
+            "(feast a d)\n(succumb a)\n(feast d b)\n(succumb d)\n(feast b c)\n(overcome b c)\n(feast b c)\n(overcome b a)\n(attack c)\n(overcome c b)"
+        ],
+        "456": [
+            "(feast c b)\n(succumb c)\n(feast a e)\n(succumb a)\n(attack b)\n(overcome b c)\n(feast e d)\n(overcome e a)\n(attack d)\n(overcome d b)",
+            "(feast a e)\n(succumb a)\n(feast c b)\n(succumb c)\n(attack b)\n(overcome b c)\n(feast e d)\n(overcome e a)\n(attack d)\n(overcome d b)",
+            "(feast c b)\n(succumb c)\n(attack b)\n(overcome b c)\n(feast a e)\n(succumb a)\n(feast e d)\n(overcome e a)\n(attack d)\n(overcome d b)",
+            "(feast c b)\n(succumb c)\n(feast a e)\n(succumb a)\n(feast e d)\n(overcome e a)\n(attack b)\n(overcome b c)\n(attack d)\n(overcome d b)",
+            "(feast a e)\n(succumb a)\n(feast c b)\n(succumb c)\n(feast e d)\n(overcome e a)\n(attack b)\n(overcome b c)\n(attack d)\n(overcome d b)"
+        ],
+        "183": [
+            "(feast b c)\n(succumb b)\n(feast c d)\n(overcome c b)\n(attack a)\n(overcome a d)",
+            "(feast b c)\n(succumb b)\n(feast c d)\n(succumb c)\n(attack a)\n(overcome a d)",
+            "(feast b c)\n(succumb b)\n(feast c d)\n(overcome c b)\n(attack a)\n(overcome a d)\n(feast c b)",
+            "(feast b c)\n(succumb b)\n(feast c d)\n(succumb c)\n(attack a)\n(overcome a d)\n(attack b)",
+            "(feast b c)\n(succumb b)\n(feast c d)\n(succumb c)\n(attack a)\n(overcome a d)\n(attack c)"
+        ],
+        "366": [
+            "(feast a c)\n(succumb a)\n(attack b)\n(overcome b c)\n(attack d)\n(overcome d b)",
+            "(feast a c)\n(succumb a)\n(attack b)\n(overcome b c)\n(attack d)\n(overcome d b)\n(attack a)",
+            "(feast a c)\n(succumb a)\n(attack b)\n(overcome b a)\n(feast b a)\n(overcome b c)\n(attack d)\n(overcome d b)",
+            "(feast a c)\n(succumb a)\n(attack d)\n(succumb d)\n(attack b)\n(overcome b c)\n(attack d)\n(overcome d b)",
+            "(feast a c)\n(succumb a)\n(attack c)\n(succumb c)\n(attack b)\n(overcome b c)\n(attack d)\n(overcome d b)"
+        ],
+        "231": [
+            "(feast c d)\n(succumb c)\n(feast d a)\n(overcome d c)\n(feast a b)\n(succumb a)\n(attack b)\n(overcome b d)\n(attack a)\n(overcome a b)",
+            "(feast c d)\n(succumb c)\n(feast d a)\n(succumb d)\n(attack d)\n(overcome d c)\n(feast a b)\n(succumb a)\n(attack b)\n(overcome b d)\n(attack a)\n(overcome a b)",
+            "(feast c d)\n(succumb c)\n(feast d a)\n(overcome d c)\n(feast a b)\n(overcome a b)\n(feast a b)\n(succumb a)\n(attack b)\n(overcome b d)\n(attack a)\n(overcome a b)",
+            "(feast c d)\n(succumb c)\n(feast d a)\n(overcome d c)\n(feast a b)\n(succumb a)\n(attack a)\n(succumb a)\n(attack b)\n(overcome b d)\n(attack a)\n(overcome a b)",
+            "(feast c d)\n(succumb c)\n(feast d a)\n(overcome d c)\n(feast a b)\n(succumb a)\n(attack b)\n(overcome b a)\n(feast b a)\n(overcome b d)\n(attack a)\n(overcome a b)"
+        ],
+        "21": [
+            "(attack b)\n(overcome b d)",
+            "(attack b)\n(overcome b d)\n(feast b d)\n(overcome b d)",
+            "(attack b)\n(succumb b)\n(attack b)\n(overcome b d)",
+            "(feast d a)\n(overcome d a)\n(attack b)\n(overcome b d)",
+            "(attack b)\n(overcome b d)\n(feast b d)\n(overcome b d)\n(feast b d)\n(overcome b d)"
+        ],
+        "373": [
+            "(feast b a)\n(succumb b)\n(feast a c)\n(succumb a)\n(feast c d)\n(succumb c)\n(attack b)\n(overcome b d)\n(attack a)\n(overcome a b)",
+            "(feast b a)\n(succumb b)\n(feast a c)\n(succumb a)\n(feast c d)\n(succumb c)\n(attack b)\n(overcome b d)\n(attack a)\n(overcome a b)\n(attack c)",
+            "(feast b a)\n(succumb b)\n(feast a c)\n(succumb a)\n(feast c d)\n(succumb c)\n(attack a)\n(overcome a c)\n(attack b)\n(overcome b d)\n(feast a c)\n(overcome a b)",
+            "(feast b a)\n(succumb b)\n(feast a c)\n(overcome a b)\n(feast c d)\n(succumb c)\n(feast a b)\n(overcome a c)\n(attack b)\n(overcome b d)\n(feast a c)\n(overcome a b)",
+            "(feast b a)\n(succumb b)\n(feast a c)\n(succumb a)\n(feast c d)\n(succumb c)\n(attack b)\n(succumb b)\n(attack b)\n(overcome b d)\n(attack a)\n(overcome a b)"
+        ],
+        "267": [
+            "(feast d a)\n(succumb d)\n(feast a b)\n(succumb a)\n(feast b c)\n(succumb b)\n(attack d)\n(overcome d c)\n(attack a)\n(overcome a d)\n(attack b)\n(overcome b a)",
+            "(feast d a)\n(succumb d)\n(feast a b)\n(succumb a)\n(feast b c)\n(succumb b)\n(attack a)\n(overcome a b)\n(attack d)\n(overcome d c)\n(feast a b)\n(overcome a d)\n(attack b)\n(overcome b a)",
+            "(feast d a)\n(succumb d)\n(feast a b)\n(succumb a)\n(feast b c)\n(succumb b)\n(attack a)\n(succumb a)\n(attack d)\n(overcome d c)\n(attack a)\n(overcome a d)\n(attack b)\n(overcome b a)",
+            "(feast d a)\n(succumb d)\n(feast a b)\n(succumb a)\n(feast b c)\n(overcome b a)\n(attack d)\n(overcome d c)\n(feast b a)\n(succumb b)\n(attack a)\n(overcome a d)\n(attack b)\n(overcome b a)",
+            "(feast d a)\n(succumb d)\n(feast a b)\n(succumb a)\n(feast b c)\n(succumb b)\n(attack d)\n(overcome d a)\n(feast d a)\n(overcome d c)\n(attack a)\n(overcome a d)\n(attack b)\n(overcome b a)"
+        ],
+        "300": [
+            "(feast b d)\n(succumb b)\n(attack d)\n(overcome d b)\n(feast c a)\n(overcome c d)",
+            "(feast b d)\n(succumb b)\n(attack d)\n(overcome d b)\n(feast c a)\n(overcome c d)\n(attack a)",
+            "(feast c a)\n(succumb c)\n(feast b d)\n(overcome b a)\n(attack d)\n(overcome d b)\n(attack c)\n(overcome c d)",
+            "(feast b d)\n(succumb b)\n(attack d)\n(succumb d)\n(attack d)\n(overcome d b)\n(feast c a)\n(overcome c d)",
+            "(feast b d)\n(succumb b)\n(feast c a)\n(overcome c a)\n(attack d)\n(overcome d b)\n(feast c a)\n(overcome c d)"
+        ],
+        "188": [
+            "(feast b c)\n(succumb b)\n(feast c a)\n(overcome c b)\n(attack d)\n(overcome d a)",
+            "(feast b c)\n(succumb b)\n(feast c a)\n(succumb c)\n(attack d)\n(overcome d a)",
+            "(feast b c)\n(succumb b)\n(feast c a)\n(overcome c b)\n(attack d)\n(overcome d a)\n(feast c b)",
+            "(feast b c)\n(succumb b)\n(feast c a)\n(succumb c)\n(attack d)\n(overcome d a)\n(attack b)",
+            "(feast b c)\n(succumb b)\n(feast c a)\n(succumb c)\n(attack d)\n(overcome d a)\n(attack c)"
+        ],
+        "432": [
+            "(feast a c)\n(succumb a)\n(feast b d)\n(overcome b a)\n(attack c)\n(overcome c d)",
+            "(feast b d)\n(succumb b)\n(feast a c)\n(succumb a)\n(attack b)\n(overcome b a)\n(attack c)\n(overcome c d)",
+            "(feast a c)\n(succumb a)\n(feast b d)\n(succumb b)\n(attack b)\n(overcome b a)\n(attack c)\n(overcome c d)",
+            "(feast a c)\n(succumb a)\n(feast b d)\n(overcome b d)\n(feast b d)\n(overcome b a)\n(attack c)\n(overcome c d)",
+            "(feast a c)\n(succumb a)\n(attack a)\n(succumb a)\n(feast b d)\n(overcome b a)\n(attack c)\n(overcome c d)"
+        ],
+        "24": [
+            "(feast a b)\n(succumb a)\n(feast b d)\n(succumb b)\n(feast d c)\n(overcome d b)\n(attack c)\n(overcome c a)",
+            "(feast a b)\n(succumb a)\n(feast b d)\n(succumb b)\n(feast d c)\n(overcome d b)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c a)",
+            "(feast a b)\n(succumb a)\n(feast b d)\n(succumb b)\n(feast d c)\n(overcome d b)\n(attack a)\n(succumb a)\n(attack c)\n(overcome c a)",
+            "(feast a b)\n(succumb a)\n(feast b d)\n(succumb b)\n(feast d c)\n(overcome d c)\n(feast d c)\n(overcome d b)\n(attack c)\n(overcome c a)",
+            "(feast a b)\n(succumb a)\n(feast b d)\n(succumb b)\n(attack a)\n(succumb a)\n(feast d c)\n(overcome d b)\n(attack c)\n(overcome c a)"
+        ],
+        "18": [
+            "(feast d b)\n(succumb d)\n(feast b a)\n(succumb b)\n(feast a c)\n(succumb a)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)",
+            "(feast d b)\n(succumb d)\n(feast b a)\n(succumb b)\n(feast a c)\n(succumb a)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)\n(attack a)",
+            "(feast d b)\n(succumb d)\n(feast b a)\n(succumb b)\n(feast a c)\n(succumb a)\n(attack b)\n(overcome b a)\n(attack c)\n(overcome c d)\n(feast b a)\n(overcome b c)",
+            "(feast d b)\n(succumb d)\n(feast b a)\n(overcome b d)\n(feast a c)\n(succumb a)\n(feast b d)\n(overcome b a)\n(attack c)\n(overcome c d)\n(feast b a)\n(overcome b c)",
+            "(feast d b)\n(succumb d)\n(feast b a)\n(succumb b)\n(feast a c)\n(succumb a)\n(attack b)\n(succumb b)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)"
+        ],
+        "113": [
+            "(feast b a)\n(succumb b)\n(feast a d)\n(succumb a)\n(feast d c)\n(overcome d a)\n(attack c)\n(overcome c b)\n(feast d a)\n(overcome d c)\n(attack a)\n(overcome a d)",
+            "(feast b a)\n(succumb b)\n(feast a d)\n(succumb a)\n(feast d c)\n(succumb d)\n(attack c)\n(overcome c b)\n(attack d)\n(overcome d c)\n(attack a)\n(overcome a d)",
+            "(feast b a)\n(succumb b)\n(feast a d)\n(succumb a)\n(feast d c)\n(succumb d)\n(attack a)\n(succumb a)\n(attack c)\n(overcome c b)\n(attack d)\n(overcome d c)\n(attack a)\n(overcome a d)",
+            "(feast b a)\n(succumb b)\n(feast a d)\n(succumb a)\n(feast d c)\n(succumb d)\n(attack d)\n(overcome d a)\n(attack c)\n(overcome c b)\n(feast d a)\n(overcome d c)\n(attack a)\n(overcome a d)",
+            "(feast b a)\n(succumb b)\n(feast a d)\n(succumb a)\n(feast d c)\n(succumb d)\n(attack d)\n(succumb d)\n(attack c)\n(overcome c b)\n(attack d)\n(overcome d c)\n(attack a)\n(overcome a d)"
+        ],
+        "352": [
+            "(feast d c)\n(succumb d)\n(attack a)\n(overcome a d)\n(attack b)\n(overcome b a)\n(attack c)\n(overcome c b)",
+            "(feast d c)\n(succumb d)\n(attack a)\n(overcome a b)\n(feast a b)\n(overcome a d)\n(attack b)\n(overcome b a)\n(attack c)\n(overcome c b)",
+            "(feast d c)\n(succumb d)\n(attack a)\n(overcome a c)\n(feast a c)\n(overcome a d)\n(attack b)\n(overcome b a)\n(attack c)\n(overcome c b)",
+            "(feast d c)\n(succumb d)\n(attack a)\n(succumb a)\n(attack a)\n(overcome a d)\n(attack b)\n(overcome b a)\n(attack c)\n(overcome c b)",
+            "(feast d c)\n(succumb d)\n(attack a)\n(overcome a d)\n(attack b)\n(overcome b a)\n(attack c)\n(overcome c b)\n(feast c b)\n(overcome c b)"
+        ],
+        "124": [
+            "(attack c)\n(overcome c a)",
+            "(attack c)\n(overcome c a)\n(attack d)",
+            "(feast a b)\n(overcome a b)\n(attack c)\n(overcome c a)",
+            "(attack c)\n(overcome c a)\n(attack d)\n(overcome d c)",
+            "(attack c)\n(overcome c a)\n(attack d)\n(succumb d)"
+        ],
+        "394": [
+            "(feast c b)\n(succumb c)\n(attack b)\n(overcome b a)\n(attack d)\n(overcome d b)",
+            "(feast c b)\n(succumb c)\n(attack b)\n(overcome b a)\n(attack d)\n(overcome d b)\n(attack c)",
+            "(feast c b)\n(succumb c)\n(attack a)\n(overcome a c)\n(attack b)\n(overcome b a)\n(attack d)\n(overcome d b)",
+            "(feast c b)\n(succumb c)\n(attack d)\n(succumb d)\n(attack b)\n(overcome b a)\n(attack d)\n(overcome d b)",
+            "(feast c b)\n(succumb c)\n(attack c)\n(succumb c)\n(attack b)\n(overcome b a)\n(attack d)\n(overcome d b)"
+        ],
+        "56": [
+            "(feast a d)\n(overcome a c)\n(attack b)\n(overcome b d)\n(feast a c)\n(overcome a b)",
+            "(feast a d)\n(succumb a)\n(attack b)\n(overcome b d)\n(attack a)\n(overcome a b)",
+            "(feast a d)\n(overcome a c)\n(attack b)\n(overcome b d)\n(feast a c)\n(overcome a b)\n(attack c)",
+            "(feast a d)\n(succumb a)\n(attack b)\n(overcome b d)\n(attack a)\n(overcome a b)\n(attack c)",
+            "(feast a d)\n(succumb a)\n(attack a)\n(overcome a c)\n(attack b)\n(overcome b d)\n(feast a c)\n(overcome a b)"
+        ],
+        "63": [
+            "(feast a c)\n(succumb a)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)",
+            "(feast a c)\n(succumb a)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)\n(attack a)",
+            "(feast a c)\n(succumb a)\n(attack b)\n(overcome b a)\n(attack c)\n(overcome c d)\n(feast b a)\n(overcome b c)",
+            "(feast a c)\n(succumb a)\n(attack d)\n(succumb d)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)",
+            "(feast a c)\n(succumb a)\n(attack c)\n(succumb c)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)"
+        ],
+        "186": [
+            "(feast b c)\n(succumb b)\n(feast c d)\n(succumb c)\n(feast d a)\n(overcome d b)",
+            "(feast b c)\n(succumb b)\n(feast c d)\n(succumb c)\n(feast d a)\n(overcome d b)\n(attack a)",
+            "(feast b c)\n(succumb b)\n(feast c d)\n(succumb c)\n(feast d a)\n(overcome d b)\n(attack c)",
+            "(feast b c)\n(succumb b)\n(feast c d)\n(succumb c)\n(feast d a)\n(overcome d b)\n(attack a)\n(overcome a c)",
+            "(feast b c)\n(succumb b)\n(feast c d)\n(succumb c)\n(feast d a)\n(overcome d b)\n(attack a)\n(overcome a d)"
+        ],
+        "251": [
+            "(feast c a)\n(succumb c)\n(feast a d)\n(overcome a c)\n(feast d b)\n(succumb d)\n(feast a c)\n(overcome a b)\n(attack c)\n(overcome c a)\n(attack d)\n(overcome d c)",
+            "(feast c a)\n(succumb c)\n(feast a d)\n(succumb a)\n(feast d b)\n(succumb d)\n(attack a)\n(overcome a b)\n(attack c)\n(overcome c a)\n(attack d)\n(overcome d c)",
+            "(feast c a)\n(succumb c)\n(feast a d)\n(succumb a)\n(feast d b)\n(overcome d c)\n(attack a)\n(overcome a b)\n(feast d c)\n(succumb d)\n(attack c)\n(overcome c a)\n(attack d)\n(overcome d c)",
+            "(feast c a)\n(succumb c)\n(feast a d)\n(succumb a)\n(feast d b)\n(succumb d)\n(attack a)\n(overcome a b)\n(attack c)\n(overcome c a)\n(attack d)\n(overcome d c)\n(feast d c)\n(overcome d c)",
+            "(feast c a)\n(succumb c)\n(feast a d)\n(succumb a)\n(feast d b)\n(succumb d)\n(attack a)\n(overcome a b)\n(attack c)\n(overcome c a)\n(attack d)\n(succumb d)\n(attack d)\n(overcome d c)"
+        ],
+        "244": [
+            "(feast c d)\n(succumb c)\n(feast d b)\n(overcome d c)\n(feast b a)\n(succumb b)\n(attack a)\n(overcome a b)\n(feast d c)\n(overcome d a)\n(attack c)\n(overcome c d)",
+            "(feast c d)\n(succumb c)\n(feast d b)\n(succumb d)\n(feast b a)\n(succumb b)\n(attack a)\n(overcome a b)\n(attack d)\n(overcome d a)\n(attack c)\n(overcome c d)",
+            "(feast c d)\n(succumb c)\n(feast d b)\n(overcome d c)\n(feast b a)\n(succumb b)\n(attack a)\n(overcome a b)\n(feast a b)\n(overcome a b)\n(feast d c)\n(overcome d a)\n(attack c)\n(overcome c d)",
+            "(feast c d)\n(succumb c)\n(feast d b)\n(overcome d c)\n(feast b a)\n(succumb b)\n(attack a)\n(overcome a b)\n(feast d c)\n(overcome d a)\n(attack c)\n(overcome c d)\n(feast c d)\n(overcome c d)",
+            "(feast c d)\n(succumb c)\n(feast d b)\n(overcome d c)\n(feast b a)\n(succumb b)\n(attack a)\n(overcome a b)\n(feast d c)\n(overcome d a)\n(attack c)\n(succumb c)\n(attack c)\n(overcome c d)"
+        ],
+        "4": [
+            "(feast d a)\n(succumb d)\n(feast a c)\n(succumb a)\n(feast c b)\n(succumb c)\n(attack d)\n(overcome d b)\n(attack a)\n(overcome a d)",
+            "(feast d a)\n(succumb d)\n(feast a c)\n(succumb a)\n(feast c b)\n(succumb c)\n(attack d)\n(overcome d b)\n(attack a)\n(overcome a d)\n(attack c)",
+            "(feast d a)\n(succumb d)\n(feast a c)\n(succumb a)\n(feast c b)\n(succumb c)\n(attack d)\n(overcome d b)\n(attack a)\n(overcome a c)\n(feast a c)\n(overcome a d)",
+            "(feast d a)\n(succumb d)\n(feast a c)\n(succumb a)\n(feast c b)\n(succumb c)\n(attack d)\n(overcome d b)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c a)",
+            "(feast d a)\n(succumb d)\n(feast a c)\n(succumb a)\n(feast c b)\n(succumb c)\n(attack d)\n(overcome d b)\n(attack a)\n(overcome a d)\n(attack c)\n(succumb c)"
+        ],
+        "232": [
+            "(feast d a)\n(succumb d)\n(attack c)\n(overcome c a)\n(attack b)\n(overcome b c)",
+            "(feast d a)\n(succumb d)\n(attack c)\n(overcome c a)\n(attack b)\n(overcome b c)\n(attack d)",
+            "(feast d a)\n(succumb d)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c a)\n(attack b)\n(overcome b c)",
+            "(feast d a)\n(succumb d)\n(attack d)\n(succumb d)\n(attack c)\n(overcome c a)\n(attack b)\n(overcome b c)",
+            "(attack c)\n(overcome c b)\n(feast d a)\n(succumb d)\n(feast c b)\n(overcome c a)\n(attack b)\n(overcome b c)"
+        ],
+        "181": [
+            "(feast b a)\n(overcome b c)\n(attack d)\n(overcome d b)\n(attack a)\n(overcome a d)",
+            "(feast b a)\n(succumb b)\n(attack d)\n(overcome d b)\n(attack a)\n(overcome a d)",
+            "(feast b a)\n(succumb b)\n(attack d)\n(overcome d b)\n(attack a)\n(overcome a d)\n(attack c)",
+            "(feast b a)\n(succumb b)\n(attack d)\n(overcome d b)\n(attack a)\n(overcome a c)\n(feast a c)\n(overcome a d)",
+            "(feast b a)\n(succumb b)\n(attack d)\n(overcome d b)\n(attack c)\n(succumb c)\n(attack a)\n(overcome a d)"
+        ],
+        "81": [
+            "(feast c d)\n(succumb c)\n(feast d b)\n(succumb d)\n(feast b a)\n(succumb b)\n(attack c)\n(overcome c a)\n(attack d)\n(overcome d c)\n(attack b)\n(overcome b d)",
+            "(feast c d)\n(succumb c)\n(feast d b)\n(succumb d)\n(feast b a)\n(succumb b)\n(attack a)\n(succumb a)\n(attack c)\n(overcome c a)\n(attack d)\n(overcome d c)\n(attack b)\n(overcome b d)",
+            "(feast c d)\n(succumb c)\n(feast d b)\n(succumb d)\n(feast b a)\n(succumb b)\n(attack d)\n(overcome d b)\n(attack c)\n(overcome c a)\n(feast d b)\n(overcome d c)\n(attack b)\n(overcome b d)",
+            "(feast c d)\n(succumb c)\n(feast d b)\n(succumb d)\n(feast b a)\n(succumb b)\n(attack d)\n(succumb d)\n(attack c)\n(overcome c a)\n(attack d)\n(overcome d c)\n(attack b)\n(overcome b d)",
+            "(feast c d)\n(succumb c)\n(feast d b)\n(succumb d)\n(feast b a)\n(succumb b)\n(attack b)\n(succumb b)\n(attack c)\n(overcome c a)\n(attack d)\n(overcome d c)\n(attack b)\n(overcome b d)"
+        ],
+        "15": [
+            "(feast c b)\n(succumb c)\n(attack a)\n(overcome a c)\n(feast b d)\n(overcome b a)",
+            "(feast c b)\n(succumb c)\n(attack a)\n(overcome a c)\n(feast b d)\n(overcome b a)\n(attack d)",
+            "(feast c b)\n(succumb c)\n(feast b d)\n(overcome b d)\n(attack a)\n(overcome a c)\n(feast b d)\n(overcome b a)",
+            "(feast c b)\n(succumb c)\n(attack a)\n(succumb a)\n(attack a)\n(overcome a c)\n(feast b d)\n(overcome b a)",
+            "(feast c b)\n(succumb c)\n(feast b d)\n(succumb b)\n(attack a)\n(overcome a c)\n(attack b)\n(overcome b a)"
+        ],
+        "89": [
+            "(feast a d)\n(succumb a)\n(feast b c)\n(overcome b a)\n(attack d)\n(overcome d c)",
+            "(feast b c)\n(succumb b)\n(feast a d)\n(succumb a)\n(attack b)\n(overcome b a)\n(attack d)\n(overcome d c)",
+            "(feast a d)\n(succumb a)\n(feast b c)\n(succumb b)\n(attack b)\n(overcome b a)\n(attack d)\n(overcome d c)",
+            "(feast a d)\n(succumb a)\n(feast b c)\n(overcome b d)\n(feast b d)\n(overcome b a)\n(attack d)\n(overcome d c)",
+            "(feast a d)\n(succumb a)\n(feast b c)\n(overcome b c)\n(feast b c)\n(overcome b a)\n(attack d)\n(overcome d c)"
+        ],
+        "382": [
+            "(feast c a)\n(succumb c)\n(feast a d)\n(succumb a)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)",
+            "(feast c a)\n(overcome c b)\n(feast a d)\n(succumb a)\n(feast c b)\n(overcome c d)\n(attack b)\n(overcome b c)",
+            "(feast c a)\n(succumb c)\n(feast a d)\n(succumb a)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)\n(attack a)",
+            "(feast c a)\n(overcome c b)\n(feast a d)\n(succumb a)\n(feast c b)\n(overcome c d)\n(attack b)\n(overcome b c)\n(attack a)",
+            "(feast c a)\n(succumb c)\n(feast a d)\n(succumb a)\n(attack b)\n(overcome b a)\n(attack c)\n(overcome c d)\n(feast b a)\n(overcome b c)"
+        ],
+        "407": [
+            "(feast d a)\n(overcome d b)\n(attack c)\n(overcome c d)",
+            "(feast d a)\n(overcome d b)\n(attack c)\n(overcome c d)\n(attack a)",
+            "(feast d a)\n(overcome d b)\n(attack c)\n(overcome c a)\n(feast c a)\n(overcome c d)",
+            "(feast d a)\n(overcome d b)\n(attack c)\n(overcome c d)\n(attack a)\n(overcome a c)",
+            "(feast d a)\n(overcome d b)\n(attack c)\n(overcome c d)\n(attack a)\n(succumb a)"
+        ],
+        "294": [
+            "(feast c d)\n(succumb c)\n(feast d a)\n(succumb d)\n(feast a b)\n(overcome a d)\n(attack c)\n(overcome c a)\n(attack b)\n(overcome b c)",
+            "(feast c d)\n(succumb c)\n(feast d a)\n(succumb d)\n(feast a b)\n(succumb a)\n(attack c)\n(overcome c a)\n(attack b)\n(overcome b c)",
+            "(feast c d)\n(succumb c)\n(feast d a)\n(succumb d)\n(feast a b)\n(succumb a)\n(attack c)\n(overcome c a)\n(attack b)\n(overcome b c)\n(attack d)",
+            "(feast c d)\n(succumb c)\n(feast d a)\n(succumb d)\n(feast a b)\n(succumb a)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c a)\n(attack b)\n(overcome b c)",
+            "(feast c d)\n(succumb c)\n(feast d a)\n(succumb d)\n(feast a b)\n(overcome a d)\n(feast a d)\n(overcome a d)\n(attack c)\n(overcome c a)\n(attack b)\n(overcome b c)"
+        ],
+        "249": [
+            "(feast d a)\n(succumb d)\n(feast c b)\n(overcome c d)\n(attack a)\n(overcome a c)",
+            "(feast d a)\n(succumb d)\n(feast c b)\n(overcome c d)\n(attack a)\n(overcome a c)\n(attack b)",
+            "(feast d a)\n(succumb d)\n(feast c b)\n(overcome c d)\n(attack a)\n(overcome a b)\n(feast a b)\n(overcome a c)",
+            "(feast d a)\n(succumb d)\n(feast c b)\n(overcome c d)\n(attack a)\n(overcome a c)\n(attack b)\n(overcome b a)",
+            "(feast d a)\n(succumb d)\n(feast c b)\n(overcome c d)\n(attack a)\n(overcome a c)\n(attack b)\n(succumb b)"
+        ],
+        "282": [
+            "(feast c b)\n(succumb c)\n(feast b a)\n(succumb b)\n(feast a d)\n(succumb a)\n(attack d)\n(overcome d a)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)",
+            "(feast c b)\n(succumb c)\n(feast b a)\n(succumb b)\n(feast a d)\n(succumb a)\n(attack a)\n(succumb a)\n(attack d)\n(overcome d a)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)",
+            "(feast c b)\n(succumb c)\n(feast b a)\n(overcome b c)\n(feast a d)\n(succumb a)\n(attack d)\n(overcome d a)\n(feast b c)\n(succumb b)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)",
+            "(feast c b)\n(succumb c)\n(feast b a)\n(succumb b)\n(feast a d)\n(succumb a)\n(attack d)\n(overcome d a)\n(attack b)\n(succumb b)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)",
+            "(feast c b)\n(succumb c)\n(feast b a)\n(succumb b)\n(feast a d)\n(succumb a)\n(attack d)\n(overcome d a)\n(feast d a)\n(overcome d a)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)"
+        ],
+        "163": [
+            "(feast c a)\n(succumb c)\n(feast a d)\n(succumb a)\n(attack c)\n(overcome c d)",
+            "(feast c a)\n(succumb c)\n(feast a d)\n(succumb a)\n(attack c)\n(overcome c d)\n(attack a)",
+            "(feast c a)\n(succumb c)\n(feast a d)\n(succumb a)\n(attack c)\n(overcome c d)\n(attack a)\n(overcome a c)",
+            "(feast c a)\n(succumb c)\n(feast a d)\n(succumb a)\n(attack c)\n(overcome c d)\n(attack a)\n(succumb a)",
+            "(feast c a)\n(succumb c)\n(feast a d)\n(succumb a)\n(attack c)\n(overcome c d)\n(feast c d)\n(overcome c d)"
+        ],
+        "90": [
+            "(feast c b)\n(overcome c a)\n(feast b d)\n(overcome b c)\n(attack d)\n(overcome d b)",
+            "(feast c b)\n(succumb c)\n(feast b d)\n(overcome b c)\n(attack d)\n(overcome d b)",
+            "(feast c b)\n(succumb c)\n(feast b d)\n(overcome b c)\n(attack d)\n(overcome d b)\n(attack a)",
+            "(feast c b)\n(overcome c a)\n(feast b d)\n(succumb b)\n(attack b)\n(overcome b c)\n(attack d)\n(overcome d b)",
+            "(feast c b)\n(succumb c)\n(feast b d)\n(succumb b)\n(attack b)\n(overcome b c)\n(attack d)\n(overcome d b)"
+        ],
+        "345": [
+            "(feast c a)\n(succumb c)\n(feast a b)\n(succumb a)\n(attack c)\n(overcome c b)\n(attack a)\n(overcome a c)",
+            "(feast c a)\n(succumb c)\n(feast a b)\n(succumb a)\n(feast b d)\n(overcome b d)\n(attack c)\n(overcome c b)\n(attack a)\n(overcome a c)",
+            "(feast c a)\n(succumb c)\n(feast a b)\n(succumb a)\n(attack c)\n(overcome c b)\n(attack a)\n(overcome a c)\n(feast a c)\n(overcome a c)",
+            "(feast c a)\n(succumb c)\n(feast a b)\n(succumb a)\n(attack c)\n(overcome c b)\n(attack a)\n(succumb a)\n(attack a)\n(overcome a c)",
+            "(feast c a)\n(succumb c)\n(feast a b)\n(succumb a)\n(attack c)\n(overcome c b)\n(feast c b)\n(overcome c b)\n(attack a)\n(overcome a c)"
+        ],
+        "95": [
+            "(feast b d)\n(succumb b)\n(feast d a)\n(succumb d)\n(feast a c)\n(succumb a)\n(attack b)\n(overcome b a)\n(attack d)\n(overcome d c)",
+            "(feast b d)\n(succumb b)\n(feast d a)\n(succumb d)\n(feast a c)\n(succumb a)\n(attack d)\n(overcome d c)\n(attack b)\n(overcome b a)",
+            "(feast b d)\n(succumb b)\n(feast d a)\n(overcome d b)\n(feast a c)\n(succumb a)\n(feast d b)\n(overcome d c)\n(attack b)\n(overcome b a)",
+            "(feast b d)\n(succumb b)\n(feast d a)\n(succumb d)\n(feast a c)\n(succumb a)\n(attack d)\n(overcome d c)\n(attack a)\n(overcome a d)\n(attack b)\n(overcome b a)",
+            "(feast b d)\n(succumb b)\n(feast d a)\n(succumb d)\n(feast a c)\n(succumb a)\n(attack d)\n(overcome d c)\n(attack a)\n(succumb a)\n(attack b)\n(overcome b a)"
+        ],
+        "166": [
+            "(feast c d)\n(overcome c b)\n(attack a)\n(overcome a d)\n(feast c b)\n(overcome c a)",
+            "(feast c d)\n(succumb c)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c a)",
+            "(feast c d)\n(overcome c b)\n(attack a)\n(overcome a d)\n(feast c b)\n(overcome c a)\n(attack b)",
+            "(feast c d)\n(succumb c)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c a)\n(attack b)",
+            "(feast c d)\n(succumb c)\n(attack a)\n(overcome a b)\n(feast a b)\n(overcome a d)\n(attack c)\n(overcome c a)"
+        ],
+        "60": [
+            "(feast d c)\n(succumb d)\n(feast c a)\n(overcome c d)\n(attack a)\n(overcome a c)\n(attack b)\n(overcome b a)",
+            "(feast d c)\n(succumb d)\n(feast c a)\n(succumb c)\n(attack a)\n(overcome a c)\n(attack b)\n(overcome b a)",
+            "(feast d c)\n(succumb d)\n(feast c a)\n(succumb c)\n(attack a)\n(overcome a c)\n(attack b)\n(overcome b a)\n(attack d)",
+            "(feast d c)\n(succumb d)\n(feast c a)\n(overcome c d)\n(attack a)\n(overcome a b)\n(feast a b)\n(overcome a c)\n(attack b)\n(overcome b a)",
+            "(feast d c)\n(succumb d)\n(feast c a)\n(succumb c)\n(attack a)\n(overcome a b)\n(feast a b)\n(overcome a c)\n(attack b)\n(overcome b a)"
+        ],
+        "32": [
+            "(feast a d)\n(succumb a)\n(attack d)\n(overcome d c)\n(attack a)\n(overcome a d)",
+            "(feast a d)\n(succumb a)\n(attack d)\n(overcome d c)\n(attack a)\n(overcome a d)\n(feast a d)\n(overcome a d)",
+            "(feast a d)\n(succumb a)\n(attack d)\n(overcome d c)\n(attack a)\n(succumb a)\n(attack a)\n(overcome a d)",
+            "(feast a d)\n(succumb a)\n(attack d)\n(overcome d a)\n(feast d a)\n(overcome d c)\n(attack a)\n(overcome a d)",
+            "(feast c b)\n(succumb c)\n(feast a d)\n(overcome a b)\n(attack d)\n(overcome d c)\n(feast a b)\n(overcome a d)"
+        ],
+        "96": [
+            "(feast c b)\n(succumb c)\n(feast a d)\n(overcome a c)\n(attack d)\n(overcome d a)\n(attack b)\n(overcome b d)",
+            "(feast c b)\n(succumb c)\n(feast a d)\n(succumb a)\n(attack d)\n(overcome d a)\n(attack b)\n(overcome b d)",
+            "(feast a d)\n(succumb a)\n(feast c b)\n(succumb c)\n(attack d)\n(overcome d a)\n(attack b)\n(overcome b d)",
+            "(feast a d)\n(succumb a)\n(attack d)\n(overcome d a)\n(feast c b)\n(succumb c)\n(attack b)\n(overcome b d)",
+            "(feast c b)\n(succumb c)\n(feast a d)\n(succumb a)\n(attack d)\n(overcome d a)\n(attack b)\n(overcome b d)\n(attack c)"
+        ],
+        "29": [
+            "(feast c b)\n(succumb c)\n(feast a d)\n(succumb a)\n(attack b)\n(overcome b a)\n(attack c)\n(overcome c b)\n(attack d)\n(overcome d c)",
+            "(feast a d)\n(succumb a)\n(feast c b)\n(overcome c d)\n(attack b)\n(overcome b a)\n(feast c d)\n(overcome c b)\n(attack d)\n(overcome d c)",
+            "(feast a d)\n(succumb a)\n(feast c b)\n(succumb c)\n(attack b)\n(overcome b a)\n(attack c)\n(overcome c b)\n(attack d)\n(overcome d c)",
+            "(feast c b)\n(succumb c)\n(feast a d)\n(overcome a b)\n(feast a b)\n(succumb a)\n(attack b)\n(overcome b a)\n(attack c)\n(overcome c b)\n(attack d)\n(overcome d c)",
+            "(feast a d)\n(succumb a)\n(feast c b)\n(overcome c d)\n(attack a)\n(succumb a)\n(attack b)\n(overcome b a)\n(feast c d)\n(overcome c b)\n(attack d)\n(overcome d c)"
+        ],
+        "22": [
+            "(feast d c)\n(succumb d)\n(feast c a)\n(succumb c)\n(attack b)\n(overcome b c)\n(attack d)\n(overcome d a)",
+            "(feast d c)\n(succumb d)\n(feast c a)\n(succumb c)\n(attack d)\n(overcome d a)\n(attack b)\n(overcome b c)",
+            "(feast d c)\n(overcome d b)\n(feast c a)\n(succumb c)\n(feast d b)\n(overcome d a)\n(attack b)\n(overcome b c)",
+            "(feast d c)\n(succumb d)\n(feast c a)\n(succumb c)\n(attack b)\n(overcome b a)\n(feast b a)\n(overcome b c)\n(attack d)\n(overcome d a)",
+            "(feast d c)\n(succumb d)\n(feast c a)\n(succumb c)\n(attack b)\n(overcome b c)\n(attack a)\n(overcome a b)\n(attack d)\n(overcome d a)"
+        ],
+        "27": [
+            "(feast b d)\n(succumb b)\n(feast c a)\n(overcome c b)\n(attack a)\n(overcome a c)\n(attack d)\n(overcome d a)",
+            "(feast c a)\n(succumb c)\n(feast b d)\n(succumb b)\n(attack a)\n(overcome a c)\n(attack d)\n(overcome d a)",
+            "(feast b d)\n(succumb b)\n(feast c a)\n(succumb c)\n(attack a)\n(overcome a c)\n(attack d)\n(overcome d a)",
+            "(feast c a)\n(succumb c)\n(attack a)\n(overcome a c)\n(feast b d)\n(succumb b)\n(attack d)\n(overcome d a)",
+            "(feast c a)\n(succumb c)\n(feast b d)\n(succumb b)\n(attack a)\n(overcome a c)\n(attack d)\n(overcome d a)\n(attack b)"
+        ],
+        "87": [
+            "(feast b a)\n(succumb b)\n(feast a c)\n(overcome a b)\n(feast c d)\n(succumb c)\n(feast a b)\n(overcome a c)\n(attack d)\n(overcome d a)\n(attack b)\n(overcome b d)",
+            "(feast b a)\n(succumb b)\n(feast a c)\n(succumb a)\n(feast c d)\n(succumb c)\n(attack a)\n(overcome a c)\n(attack d)\n(overcome d a)\n(attack b)\n(overcome b d)",
+            "(feast b a)\n(succumb b)\n(feast a c)\n(succumb a)\n(feast c d)\n(succumb c)\n(attack a)\n(overcome a b)\n(feast a b)\n(overcome a c)\n(attack d)\n(overcome d a)\n(attack b)\n(overcome b d)",
+            "(feast b a)\n(succumb b)\n(feast a c)\n(succumb a)\n(feast c d)\n(succumb c)\n(attack a)\n(overcome a c)\n(attack b)\n(succumb b)\n(attack d)\n(overcome d a)\n(attack b)\n(overcome b d)",
+            "(feast b a)\n(succumb b)\n(feast a c)\n(succumb a)\n(feast c d)\n(succumb c)\n(attack a)\n(overcome a c)\n(feast a c)\n(overcome a c)\n(attack d)\n(overcome d a)\n(attack b)\n(overcome b d)"
+        ],
+        "7": [
+            "(feast a d)\n(succumb a)\n(feast d b)\n(succumb d)\n(feast b c)\n(overcome b d)\n(attack a)\n(overcome a c)",
+            "(feast a d)\n(succumb a)\n(feast d b)\n(succumb d)\n(feast b c)\n(succumb b)\n(attack a)\n(overcome a c)",
+            "(feast a d)\n(succumb a)\n(feast d b)\n(succumb d)\n(feast b c)\n(overcome b d)\n(attack a)\n(overcome a c)\n(feast b d)",
+            "(feast a d)\n(succumb a)\n(feast d b)\n(succumb d)\n(feast b c)\n(succumb b)\n(attack a)\n(overcome a c)\n(attack b)",
+            "(feast a d)\n(succumb a)\n(feast d b)\n(succumb d)\n(feast b c)\n(succumb b)\n(attack a)\n(overcome a c)\n(attack d)"
+        ],
+        "70": [
+            "(feast c b)\n(overcome c d)",
+            "(feast c b)\n(overcome c d)\n(feast b a)",
+            "(feast c b)\n(succumb c)\n(attack c)\n(overcome c d)",
+            "(feast c b)\n(overcome c b)\n(feast c b)\n(overcome c d)",
+            "(attack d)\n(succumb d)\n(feast c b)\n(overcome c d)"
+        ],
+        "12": [
+            "(feast b d)\n(overcome b c)\n(attack d)\n(overcome d a)",
+            "(feast b d)\n(overcome b c)\n(attack a)\n(overcome a b)\n(attack d)\n(overcome d a)",
+            "(feast b d)\n(overcome b c)\n(attack a)\n(succumb a)\n(attack d)\n(overcome d a)",
+            "(feast b d)\n(overcome b d)\n(feast b d)\n(overcome b c)\n(attack d)\n(overcome d a)",
+            "(attack a)\n(succumb a)\n(feast b d)\n(overcome b c)\n(attack d)\n(overcome d a)"
+        ],
+        "17": [
+            "(feast a d)\n(succumb a)\n(feast d c)\n(overcome d a)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)",
+            "(feast a d)\n(succumb a)\n(feast d c)\n(succumb d)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)",
+            "(feast a d)\n(succumb a)\n(feast d c)\n(succumb d)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)\n(attack a)",
+            "(feast a d)\n(succumb a)\n(feast d c)\n(succumb d)\n(attack b)\n(overcome b a)\n(attack c)\n(overcome c d)\n(feast b a)\n(overcome b c)",
+            "(feast a d)\n(succumb a)\n(feast d c)\n(succumb d)\n(attack c)\n(overcome c a)\n(feast c a)\n(overcome c d)\n(attack b)\n(overcome b c)"
+        ],
+        "2": [
+            "(feast d c)\n(succumb d)\n(attack c)\n(overcome c a)",
+            "(feast d c)\n(succumb d)\n(attack c)\n(overcome c a)\n(attack d)",
+            "(feast d c)\n(succumb d)\n(feast a b)\n(overcome a b)\n(attack c)\n(overcome c a)",
+            "(feast d c)\n(succumb d)\n(feast a b)\n(overcome a d)\n(attack c)\n(overcome c a)",
+            "(feast a b)\n(succumb a)\n(feast d c)\n(overcome d b)\n(attack c)\n(overcome c a)"
+        ],
+        "79": [
+            "(attack b)\n(overcome b d)",
+            "(attack b)\n(overcome b d)\n(attack c)",
+            "(feast d a)\n(overcome d a)\n(attack b)\n(overcome b d)",
+            "(attack c)\n(succumb c)\n(attack b)\n(overcome b d)",
+            "(attack b)\n(succumb b)\n(attack b)\n(overcome b d)"
+        ],
+        "68": [
+            "(feast d a)\n(succumb d)\n(feast a b)\n(succumb a)\n(feast b c)\n(overcome b d)\n(attack a)\n(overcome a c)",
+            "(feast d a)\n(succumb d)\n(feast a b)\n(succumb a)\n(feast b c)\n(overcome b d)\n(attack a)\n(overcome a b)\n(feast a b)\n(overcome a c)",
+            "(feast d a)\n(succumb d)\n(feast a b)\n(succumb a)\n(feast b c)\n(overcome b d)\n(attack a)\n(overcome a c)\n(feast a c)\n(overcome a c)",
+            "(feast d a)\n(succumb d)\n(feast a b)\n(succumb a)\n(feast b c)\n(overcome b d)\n(attack a)\n(overcome a c)\n(feast b d)\n(overcome b d)",
+            "(feast d a)\n(succumb d)\n(feast a b)\n(succumb a)\n(feast b c)\n(overcome b d)\n(attack a)\n(succumb a)\n(attack a)\n(overcome a c)"
+        ],
+        "93": [
+            "(feast c a)\n(succumb c)\n(feast a d)\n(succumb a)\n(attack c)\n(overcome c a)\n(feast d b)\n(overcome d c)",
+            "(feast c a)\n(succumb c)\n(feast a d)\n(succumb a)\n(attack c)\n(overcome c a)\n(feast d b)\n(overcome d c)\n(attack b)",
+            "(feast c a)\n(succumb c)\n(feast a d)\n(succumb a)\n(feast d b)\n(overcome d b)\n(attack c)\n(overcome c a)\n(feast d b)\n(overcome d c)",
+            "(feast c a)\n(succumb c)\n(feast a d)\n(succumb a)\n(attack c)\n(succumb c)\n(attack c)\n(overcome c a)\n(feast d b)\n(overcome d c)",
+            "(feast c a)\n(succumb c)\n(feast a d)\n(succumb a)\n(feast d b)\n(succumb d)\n(attack c)\n(overcome c a)\n(attack d)\n(overcome d c)"
+        ],
+        "84": [
+            "(feast a b)\n(succumb a)\n(feast b d)\n(succumb b)\n(attack a)\n(overcome a b)\n(feast d c)\n(succumb d)\n(attack c)\n(overcome c a)\n(attack d)\n(overcome d c)",
+            "(feast a b)\n(succumb a)\n(feast b d)\n(succumb b)\n(feast d c)\n(succumb d)\n(attack a)\n(overcome a b)\n(attack c)\n(overcome c a)\n(attack d)\n(overcome d c)",
+            "(feast a b)\n(succumb a)\n(feast b d)\n(succumb b)\n(feast d c)\n(overcome d c)\n(attack a)\n(overcome a b)\n(feast d c)\n(succumb d)\n(attack c)\n(overcome c a)\n(attack d)\n(overcome d c)",
+            "(feast a b)\n(succumb a)\n(feast b d)\n(succumb b)\n(attack b)\n(succumb b)\n(attack a)\n(overcome a b)\n(feast d c)\n(succumb d)\n(attack c)\n(overcome c a)\n(attack d)\n(overcome d c)",
+            "(feast a b)\n(succumb a)\n(feast b d)\n(overcome b a)\n(feast b a)\n(succumb b)\n(attack a)\n(overcome a b)\n(feast d c)\n(succumb d)\n(attack c)\n(overcome c a)\n(attack d)\n(overcome d c)"
+        ],
+        "80": [
+            "(feast c a)\n(succumb c)\n(feast a b)\n(succumb a)\n(attack d)\n(overcome d b)\n(attack c)\n(overcome c d)\n(attack a)\n(overcome a c)",
+            "(feast c a)\n(succumb c)\n(feast a b)\n(succumb a)\n(attack a)\n(succumb a)\n(attack d)\n(overcome d b)\n(attack c)\n(overcome c d)\n(attack a)\n(overcome a c)",
+            "(feast c a)\n(succumb c)\n(feast a b)\n(overcome a d)\n(feast a d)\n(succumb a)\n(attack d)\n(overcome d b)\n(attack c)\n(overcome c d)\n(attack a)\n(overcome a c)",
+            "(feast c a)\n(overcome c d)\n(feast a b)\n(succumb a)\n(feast c d)\n(overcome c a)\n(attack d)\n(overcome d b)\n(feast c a)\n(overcome c d)\n(attack a)\n(overcome a c)",
+            "(feast c a)\n(overcome c d)\n(feast a b)\n(succumb a)\n(feast c d)\n(succumb c)\n(attack d)\n(overcome d b)\n(attack c)\n(overcome c d)\n(attack a)\n(overcome a c)"
+        ],
+        "58": [
+            "(feast a b)\n(succumb a)\n(feast b d)\n(succumb b)\n(feast d c)\n(overcome d a)",
+            "(feast a b)\n(succumb a)\n(feast b d)\n(succumb b)\n(feast d c)\n(overcome d a)\n(attack b)",
+            "(feast a b)\n(succumb a)\n(feast b d)\n(succumb b)\n(feast d c)\n(overcome d a)\n(attack c)",
+            "(feast a b)\n(succumb a)\n(feast b d)\n(succumb b)\n(feast d c)\n(overcome d a)\n(attack b)\n(overcome b c)",
+            "(feast a b)\n(succumb a)\n(feast b d)\n(succumb b)\n(feast d c)\n(overcome d a)\n(attack b)\n(overcome b d)"
+        ],
+        "72": [
+            "(feast a d)\n(succumb a)\n(attack d)\n(overcome d b)",
+            "(feast a d)\n(succumb a)\n(attack d)\n(overcome d b)\n(attack a)",
+            "(feast a d)\n(succumb a)\n(attack d)\n(overcome d b)\n(attack a)\n(overcome a d)",
+            "(feast a d)\n(succumb a)\n(attack d)\n(overcome d b)\n(attack a)\n(succumb a)",
+            "(feast a d)\n(succumb a)\n(feast b c)\n(overcome b c)\n(attack d)\n(overcome d b)"
+        ],
+        "59": [
+            "(feast b a)\n(overcome b c)\n(attack d)\n(overcome d a)\n(feast b c)\n(overcome b d)",
+            "(feast b a)\n(succumb b)\n(attack d)\n(overcome d a)\n(attack b)\n(overcome b d)",
+            "(feast b a)\n(overcome b c)\n(attack d)\n(overcome d a)\n(feast b c)\n(overcome b d)\n(attack c)",
+            "(feast b a)\n(succumb b)\n(attack d)\n(overcome d a)\n(attack b)\n(overcome b d)\n(attack c)",
+            "(feast b a)\n(succumb b)\n(attack a)\n(overcome a c)\n(attack d)\n(overcome d a)\n(attack b)\n(overcome b d)"
+        ],
+        "3": [
+            "(feast b c)\n(succumb b)\n(feast c d)\n(succumb c)\n(feast d a)\n(overcome d b)\n(attack a)\n(overcome a c)\n(feast d b)\n(overcome d a)",
+            "(feast b c)\n(succumb b)\n(feast c d)\n(overcome c b)\n(feast d a)\n(succumb d)\n(attack a)\n(overcome a c)\n(attack d)\n(overcome d a)",
+            "(feast b c)\n(succumb b)\n(feast c d)\n(succumb c)\n(feast d a)\n(succumb d)\n(attack a)\n(overcome a c)\n(attack d)\n(overcome d a)",
+            "(feast b c)\n(succumb b)\n(feast c d)\n(succumb c)\n(feast d a)\n(overcome d b)\n(attack a)\n(overcome a c)\n(feast d b)\n(overcome d a)\n(attack b)",
+            "(feast b c)\n(succumb b)\n(feast c d)\n(succumb c)\n(feast d a)\n(succumb d)\n(attack a)\n(overcome a c)\n(attack d)\n(overcome d a)\n(attack b)"
+        ],
+        "78": [
+            "(feast c d)\n(overcome c a)\n(feast d b)\n(overcome d c)\n(attack b)\n(overcome b d)",
+            "(feast c d)\n(overcome c a)\n(feast c a)\n(overcome c a)\n(feast d b)\n(overcome d c)\n(attack b)\n(overcome b d)",
+            "(feast c d)\n(overcome c a)\n(feast d b)\n(overcome d b)\n(feast d b)\n(overcome d c)\n(attack b)\n(overcome b d)",
+            "(feast c d)\n(overcome c a)\n(feast d b)\n(succumb d)\n(attack d)\n(overcome d c)\n(attack b)\n(overcome b d)",
+            "(feast c d)\n(overcome c a)\n(feast d b)\n(overcome d c)\n(attack b)\n(overcome b d)\n(feast b d)\n(overcome b d)"
+        ],
+        "88": [
+            "(feast d b)\n(succumb d)\n(feast b c)\n(succumb b)\n(attack a)\n(overcome a b)\n(attack d)\n(overcome d c)",
+            "(feast d b)\n(succumb d)\n(feast b c)\n(succumb b)\n(attack d)\n(overcome d c)\n(attack a)\n(overcome a b)",
+            "(feast d b)\n(overcome d a)\n(feast b c)\n(succumb b)\n(feast d a)\n(overcome d c)\n(attack a)\n(overcome a b)",
+            "(feast d b)\n(succumb d)\n(feast b c)\n(succumb b)\n(attack a)\n(overcome a b)\n(attack c)\n(overcome c a)\n(attack d)\n(overcome d c)",
+            "(feast d b)\n(succumb d)\n(feast b c)\n(succumb b)\n(attack a)\n(overcome a b)\n(attack c)\n(succumb c)\n(attack d)\n(overcome d c)"
+        ],
+        "92": [
+            "(feast d c)\n(succumb d)\n(feast c b)\n(succumb c)\n(attack a)\n(overcome a c)\n(attack b)\n(overcome b d)",
+            "(feast d c)\n(succumb d)\n(feast c b)\n(succumb c)\n(attack b)\n(overcome b d)\n(attack a)\n(overcome a c)",
+            "(feast d c)\n(succumb d)\n(feast c b)\n(succumb c)\n(attack a)\n(overcome a b)\n(feast a b)\n(overcome a c)\n(attack b)\n(overcome b d)",
+            "(feast d c)\n(succumb d)\n(feast c b)\n(succumb c)\n(attack a)\n(overcome a c)\n(attack b)\n(overcome b a)\n(feast b a)\n(overcome b d)",
+            "(feast d c)\n(succumb d)\n(feast c b)\n(succumb c)\n(attack a)\n(overcome a c)\n(attack b)\n(overcome b d)\n(feast a c)\n(overcome a c)"
+        ],
+        "61": [
+            "(attack a)\n(overcome a d)\n(attack c)\n(overcome c a)",
+            "(feast d b)\n(overcome d b)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c a)",
+            "(attack c)\n(succumb c)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c a)",
+            "(attack a)\n(succumb a)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c a)",
+            "(feast d b)\n(succumb d)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c a)"
+        ],
+        "82": [
+            "(feast a c)\n(succumb a)\n(feast c b)\n(overcome c a)\n(attack d)\n(overcome d c)",
+            "(feast a c)\n(succumb a)\n(feast c b)\n(overcome c a)\n(attack d)\n(overcome d c)\n(attack b)",
+            "(feast a c)\n(succumb a)\n(feast c b)\n(overcome c a)\n(attack b)\n(succumb b)\n(attack d)\n(overcome d c)",
+            "(feast a c)\n(succumb a)\n(feast c b)\n(overcome c a)\n(attack d)\n(overcome d b)\n(feast d b)\n(overcome d c)",
+            "(feast a c)\n(succumb a)\n(feast c b)\n(overcome c a)\n(attack d)\n(overcome d c)\n(attack b)\n(overcome b d)"
+        ],
+        "5": [
+            "(attack d)\n(overcome d c)",
+            "(feast c b)\n(overcome c b)\n(attack d)\n(overcome d c)",
+            "(feast c b)\n(succumb c)\n(attack d)\n(overcome d c)",
+            "(attack d)\n(succumb d)\n(attack d)\n(overcome d c)",
+            "(attack d)\n(overcome d c)\n(feast d c)\n(overcome d c)"
+        ],
+        "42": [
+            "(feast b a)\n(overcome b c)\n(attack a)\n(overcome a b)\n(attack d)\n(overcome d a)",
+            "(feast b a)\n(overcome b a)\n(feast b a)\n(overcome b c)\n(attack a)\n(overcome a b)\n(attack d)\n(overcome d a)",
+            "(feast b a)\n(overcome b d)\n(feast b d)\n(overcome b c)\n(attack a)\n(overcome a b)\n(attack d)\n(overcome d a)",
+            "(attack c)\n(succumb c)\n(feast b a)\n(overcome b c)\n(attack a)\n(overcome a b)\n(attack d)\n(overcome d a)",
+            "(feast b a)\n(succumb b)\n(attack b)\n(overcome b c)\n(attack a)\n(overcome a b)\n(attack d)\n(overcome d a)"
+        ],
+        "25": [
+            "(feast d b)\n(overcome d c)\n(feast b a)\n(overcome b d)",
+            "(feast d b)\n(succumb d)\n(feast b a)\n(overcome b d)",
+            "(feast d b)\n(overcome d c)\n(feast b a)\n(overcome b d)\n(attack a)",
+            "(feast d b)\n(succumb d)\n(feast b a)\n(overcome b d)\n(attack a)",
+            "(feast d b)\n(succumb d)\n(feast b a)\n(overcome b d)\n(attack c)"
+        ],
+        "26": [
+            "(attack a)\n(overcome a b)\n(feast c d)\n(overcome c a)",
+            "(attack a)\n(overcome a b)\n(feast c d)\n(overcome c a)\n(attack d)",
+            "(feast c d)\n(overcome c d)\n(attack a)\n(overcome a b)\n(feast c d)\n(overcome c a)",
+            "(attack a)\n(succumb a)\n(attack a)\n(overcome a b)\n(feast c d)\n(overcome c a)",
+            "(attack b)\n(succumb b)\n(attack a)\n(overcome a b)\n(feast c d)\n(overcome c a)"
+        ],
+        "31": [
+            "(feast b d)\n(overcome b a)",
+            "(feast b d)\n(overcome b a)\n(attack d)",
+            "(feast b d)\n(succumb b)\n(attack b)\n(overcome b a)",
+            "(feast b d)\n(overcome b a)\n(feast b a)\n(overcome b a)",
+            "(feast a c)\n(overcome a c)\n(feast b d)\n(overcome b a)"
+        ],
+        "94": [
+            "(feast b c)\n(succumb b)\n(feast c a)\n(succumb c)\n(attack d)\n(overcome d c)\n(attack b)\n(overcome b d)\n(attack a)\n(overcome a b)",
+            "(feast b c)\n(succumb b)\n(feast c a)\n(succumb c)\n(attack a)\n(succumb a)\n(attack d)\n(overcome d c)\n(attack b)\n(overcome b d)\n(attack a)\n(overcome a b)",
+            "(feast b c)\n(succumb b)\n(feast c a)\n(overcome c b)\n(feast c b)\n(succumb c)\n(attack d)\n(overcome d c)\n(attack b)\n(overcome b d)\n(attack a)\n(overcome a b)",
+            "(feast b c)\n(succumb b)\n(feast c a)\n(overcome c d)\n(feast c d)\n(succumb c)\n(attack d)\n(overcome d c)\n(attack b)\n(overcome b d)\n(attack a)\n(overcome a b)",
+            "(feast b c)\n(succumb b)\n(feast c a)\n(succumb c)\n(attack d)\n(overcome d a)\n(feast d a)\n(overcome d c)\n(attack b)\n(overcome b d)\n(attack a)\n(overcome a b)"
+        ],
+        "48": [
+            "(feast c b)\n(succumb c)\n(feast b a)\n(overcome b c)\n(feast a d)\n(overcome a b)",
+            "(feast c b)\n(succumb c)\n(feast b a)\n(succumb b)\n(feast a d)\n(overcome a b)",
+            "(feast c b)\n(succumb c)\n(feast b a)\n(overcome b c)\n(feast a d)\n(overcome a b)\n(attack d)",
+            "(feast c b)\n(succumb c)\n(feast b a)\n(succumb b)\n(feast a d)\n(overcome a b)\n(attack c)",
+            "(feast c b)\n(succumb c)\n(feast b a)\n(succumb b)\n(feast a d)\n(overcome a b)\n(attack d)"
+        ],
+        "23": [
+            "(feast a d)\n(succumb a)\n(feast d c)\n(overcome d a)\n(attack b)\n(overcome b c)",
+            "(feast a d)\n(succumb a)\n(feast d c)\n(overcome d a)\n(attack b)\n(overcome b c)\n(feast b c)\n(overcome b c)",
+            "(feast a d)\n(succumb a)\n(feast d c)\n(overcome d a)\n(attack b)\n(overcome b c)\n(feast d a)\n(overcome d a)",
+            "(feast a d)\n(succumb a)\n(feast d c)\n(overcome d a)\n(attack b)\n(overcome b d)\n(feast b d)\n(overcome b c)",
+            "(feast a d)\n(succumb a)\n(feast d c)\n(overcome d a)\n(attack b)\n(succumb b)\n(attack b)\n(overcome b c)"
+        ],
+        "14": [
+            "(feast a b)\n(succumb a)\n(feast b c)\n(succumb b)\n(feast c d)\n(overcome c b)\n(attack d)\n(overcome d a)\n(feast c b)\n(overcome c d)\n(attack b)\n(overcome b c)",
+            "(feast a b)\n(succumb a)\n(feast b c)\n(succumb b)\n(feast c d)\n(succumb c)\n(attack d)\n(overcome d a)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)",
+            "(feast a b)\n(succumb a)\n(feast b c)\n(succumb b)\n(feast c d)\n(overcome c b)\n(attack a)\n(succumb a)\n(attack d)\n(overcome d a)\n(feast c b)\n(overcome c d)\n(attack b)\n(overcome b c)",
+            "(feast a b)\n(succumb a)\n(feast b c)\n(succumb b)\n(feast c d)\n(succumb c)\n(attack a)\n(succumb a)\n(attack d)\n(overcome d a)\n(attack c)\n(overcome c d)\n(attack b)\n(overcome b c)",
+            "(feast a b)\n(succumb a)\n(feast b c)\n(succumb b)\n(feast c d)\n(overcome c b)\n(attack d)\n(overcome d a)\n(feast c b)\n(overcome c b)\n(feast c b)\n(overcome c d)\n(attack b)\n(overcome b c)"
+        ],
+        "44": [
+            "(feast a c)\n(succumb a)\n(feast c b)\n(succumb c)\n(feast b d)\n(overcome b c)\n(attack a)\n(overcome a d)\n(feast b c)\n(overcome b a)",
+            "(feast a c)\n(succumb a)\n(feast c b)\n(succumb c)\n(feast b d)\n(succumb b)\n(attack a)\n(overcome a d)\n(attack b)\n(overcome b a)",
+            "(feast a c)\n(succumb a)\n(feast c b)\n(succumb c)\n(feast b d)\n(overcome b c)\n(attack a)\n(overcome a d)\n(feast b c)\n(overcome b a)\n(attack c)",
+            "(feast a c)\n(succumb a)\n(feast c b)\n(succumb c)\n(feast b d)\n(succumb b)\n(attack a)\n(overcome a d)\n(attack b)\n(overcome b a)\n(attack c)",
+            "(feast a c)\n(succumb a)\n(feast c b)\n(succumb c)\n(feast b d)\n(overcome b c)\n(attack a)\n(overcome a b)\n(feast a b)\n(overcome a d)\n(feast b c)\n(overcome b a)"
+        ],
+        "76": [
+            "(feast c d)\n(succumb c)\n(feast a b)\n(succumb a)\n(attack b)\n(overcome b a)\n(attack d)\n(overcome d c)",
+            "(feast a b)\n(succumb a)\n(feast c d)\n(succumb c)\n(attack b)\n(overcome b a)\n(attack d)\n(overcome d c)",
+            "(feast a b)\n(succumb a)\n(attack b)\n(overcome b a)\n(feast c d)\n(overcome c b)\n(attack d)\n(overcome d c)",
+            "(feast a b)\n(succumb a)\n(attack b)\n(overcome b a)\n(feast c d)\n(succumb c)\n(attack d)\n(overcome d c)",
+            "(feast c d)\n(succumb c)\n(attack d)\n(overcome d c)\n(feast a b)\n(overcome a d)\n(attack b)\n(overcome b a)"
+        ],
+        "36": [
+            "(feast b d)\n(overcome b a)\n(feast d c)\n(succumb d)\n(attack c)\n(overcome c b)",
+            "(feast b d)\n(overcome b a)\n(feast d c)\n(succumb d)\n(attack c)\n(overcome c b)\n(attack d)",
+            "(feast b d)\n(succumb b)\n(feast d c)\n(succumb d)\n(attack b)\n(overcome b a)\n(attack c)\n(overcome c b)",
+            "(feast b d)\n(overcome b a)\n(feast d c)\n(succumb d)\n(feast b a)\n(overcome b a)\n(attack c)\n(overcome c b)",
+            "(feast b d)\n(overcome b a)\n(feast d c)\n(succumb d)\n(attack d)\n(succumb d)\n(attack c)\n(overcome c b)"
+        ],
+        "10": [
+            "(feast d a)\n(succumb d)\n(feast c b)\n(succumb c)\n(attack a)\n(overcome a d)\n(attack b)\n(overcome b c)",
+            "(feast c b)\n(succumb c)\n(feast d a)\n(succumb d)\n(attack a)\n(overcome a d)\n(attack b)\n(overcome b c)",
+            "(feast c b)\n(succumb c)\n(attack b)\n(overcome b c)\n(feast d a)\n(overcome d b)\n(attack a)\n(overcome a d)",
+            "(feast c b)\n(succumb c)\n(attack b)\n(overcome b c)\n(feast d a)\n(succumb d)\n(attack a)\n(overcome a d)",
+            "(feast d a)\n(succumb d)\n(attack a)\n(overcome a d)\n(feast c b)\n(overcome c a)\n(attack b)\n(overcome b c)"
+        ],
+        "66": [
+            "(feast a c)\n(succumb a)\n(feast c d)\n(overcome c a)\n(attack b)\n(overcome b c)",
+            "(feast a c)\n(succumb a)\n(feast c d)\n(overcome c a)\n(attack b)\n(overcome b c)\n(attack d)",
+            "(feast a c)\n(succumb a)\n(feast c d)\n(overcome c a)\n(attack b)\n(overcome b c)\n(attack d)\n(overcome d b)",
+            "(feast a c)\n(succumb a)\n(feast c d)\n(overcome c a)\n(attack b)\n(overcome b c)\n(attack d)\n(succumb d)",
+            "(feast a c)\n(succumb a)\n(feast c d)\n(overcome c a)\n(attack b)\n(overcome b c)\n(feast b c)\n(overcome b c)"
+        ],
+        "38": [
+            "(feast a d)\n(succumb a)\n(feast d b)\n(succumb d)\n(feast b c)\n(overcome b d)\n(attack a)\n(overcome a b)\n(attack c)\n(overcome c a)",
+            "(feast a d)\n(succumb a)\n(feast d b)\n(succumb d)\n(feast b c)\n(succumb b)\n(attack a)\n(overcome a b)\n(attack c)\n(overcome c a)",
+            "(feast a d)\n(succumb a)\n(feast d b)\n(succumb d)\n(feast b c)\n(succumb b)\n(attack a)\n(overcome a b)\n(attack c)\n(overcome c a)\n(attack d)",
+            "(feast a d)\n(succumb a)\n(feast d b)\n(succumb d)\n(feast b c)\n(succumb b)\n(attack b)\n(overcome b d)\n(attack a)\n(overcome a b)\n(attack c)\n(overcome c a)",
+            "(feast a d)\n(succumb a)\n(feast d b)\n(succumb d)\n(feast b c)\n(overcome b a)\n(feast b a)\n(overcome b d)\n(attack a)\n(overcome a b)\n(attack c)\n(overcome c a)"
+        ],
+        "11": [
+            "(feast a d)\n(succumb a)\n(attack d)\n(overcome d a)\n(feast b c)\n(overcome b d)",
+            "(feast a d)\n(succumb a)\n(attack d)\n(overcome d a)\n(feast b c)\n(overcome b d)\n(attack c)",
+            "(feast b c)\n(succumb b)\n(feast a d)\n(overcome a c)\n(attack d)\n(overcome d a)\n(attack b)\n(overcome b d)",
+            "(feast a d)\n(succumb a)\n(attack d)\n(succumb d)\n(attack d)\n(overcome d a)\n(feast b c)\n(overcome b d)",
+            "(feast a d)\n(succumb a)\n(feast b c)\n(overcome b c)\n(attack d)\n(overcome d a)\n(feast b c)\n(overcome b d)"
+        ],
+        "91": [
+            "(feast b a)\n(succumb b)\n(feast a d)\n(succumb a)\n(feast d c)\n(succumb d)\n(attack a)\n(overcome a d)\n(attack c)\n(overcome c b)",
+            "(feast b a)\n(succumb b)\n(feast a d)\n(overcome a b)\n(feast d c)\n(succumb d)\n(feast a b)\n(overcome a d)\n(attack c)\n(overcome c b)",
+            "(feast b a)\n(succumb b)\n(feast a d)\n(succumb a)\n(feast d c)\n(succumb d)\n(attack c)\n(overcome c b)\n(attack a)\n(overcome a d)",
+            "(feast b a)\n(succumb b)\n(feast a d)\n(succumb a)\n(feast d c)\n(succumb d)\n(attack c)\n(overcome c b)\n(attack a)\n(overcome a c)\n(feast a c)\n(overcome a d)",
+            "(feast b a)\n(succumb b)\n(feast a d)\n(succumb a)\n(feast d c)\n(succumb d)\n(attack c)\n(overcome c b)\n(attack a)\n(overcome a d)\n(feast a d)\n(overcome a d)"
+        ],
+        "53": [
+            "(feast d a)\n(succumb d)\n(feast a b)\n(succumb a)\n(feast b c)\n(succumb b)\n(attack a)\n(overcome a c)\n(attack d)\n(overcome d b)",
+            "(feast d a)\n(succumb d)\n(feast a b)\n(overcome a d)\n(feast b c)\n(succumb b)\n(feast a d)\n(overcome a c)\n(attack d)\n(overcome d b)",
+            "(feast d a)\n(succumb d)\n(feast a b)\n(succumb a)\n(feast b c)\n(succumb b)\n(attack d)\n(overcome d b)\n(attack a)\n(overcome a c)",
+            "(feast d a)\n(succumb d)\n(feast a b)\n(succumb a)\n(feast b c)\n(succumb b)\n(attack a)\n(overcome a b)\n(feast a b)\n(overcome a c)\n(attack d)\n(overcome d b)",
+            "(feast d a)\n(succumb d)\n(feast a b)\n(overcome a d)\n(feast b c)\n(succumb b)\n(feast a d)\n(overcome a b)\n(feast a b)\n(overcome a c)\n(attack d)\n(overcome d b)"
+        ],
+        "35": [
+            "(feast c a)\n(succumb c)\n(feast a d)\n(succumb a)\n(feast d b)\n(overcome d c)",
+            "(feast c a)\n(succumb c)\n(feast a d)\n(succumb a)\n(feast d b)\n(overcome d c)\n(attack a)",
+            "(feast c a)\n(succumb c)\n(feast a d)\n(succumb a)\n(feast d b)\n(overcome d c)\n(attack b)",
+            "(feast c a)\n(succumb c)\n(feast a d)\n(succumb a)\n(feast d b)\n(overcome d c)\n(attack a)\n(overcome a b)",
+            "(feast c a)\n(succumb c)\n(feast a d)\n(succumb a)\n(feast d b)\n(overcome d c)\n(attack a)\n(overcome a d)"
+        ],
+        "9": [
+            "(feast c d)\n(succumb c)\n(feast d a)\n(succumb d)\n(attack a)\n(overcome a c)\n(attack b)\n(overcome b a)\n(attack d)\n(overcome d b)",
+            "(feast c d)\n(succumb c)\n(feast d a)\n(overcome d a)\n(feast d a)\n(succumb d)\n(attack a)\n(overcome a c)\n(attack b)\n(overcome b a)\n(attack d)\n(overcome d b)",
+            "(feast c d)\n(succumb c)\n(feast d a)\n(overcome d c)\n(feast d c)\n(succumb d)\n(attack a)\n(overcome a c)\n(attack b)\n(overcome b a)\n(attack d)\n(overcome d b)",
+            "(feast c d)\n(succumb c)\n(feast d a)\n(overcome d b)\n(attack a)\n(overcome a c)\n(feast d b)\n(succumb d)\n(attack b)\n(overcome b a)\n(attack d)\n(overcome d b)",
+            "(feast c d)\n(succumb c)\n(feast d a)\n(overcome d b)\n(feast d b)\n(succumb d)\n(attack a)\n(overcome a c)\n(attack b)\n(overcome b a)\n(attack d)\n(overcome d b)"
+        ],
+        "62": [
+            "(feast b c)\n(succumb b)\n(feast c d)\n(succumb c)\n(attack d)\n(overcome d c)\n(attack a)\n(overcome a d)\n(attack b)\n(overcome b a)",
+            "(feast b c)\n(succumb b)\n(feast c d)\n(succumb c)\n(attack a)\n(overcome a b)\n(attack d)\n(overcome d c)\n(feast a b)\n(overcome a d)\n(attack b)\n(overcome b a)",
+            "(feast b c)\n(succumb b)\n(feast c d)\n(succumb c)\n(attack a)\n(succumb a)\n(attack d)\n(overcome d c)\n(attack a)\n(overcome a d)\n(attack b)\n(overcome b a)",
+            "(feast b c)\n(succumb b)\n(feast c d)\n(overcome c b)\n(feast c b)\n(succumb c)\n(attack d)\n(overcome d c)\n(attack a)\n(overcome a d)\n(attack b)\n(overcome b a)",
+            "(feast b c)\n(succumb b)\n(attack a)\n(overcome a b)\n(feast c d)\n(succumb c)\n(attack d)\n(overcome d c)\n(feast a b)\n(overcome a d)\n(attack b)\n(overcome b a)"
+        ],
+        "74": [
+            "(feast a b)\n(succumb a)\n(feast b d)\n(overcome b a)",
+            "(feast a b)\n(succumb a)\n(feast b d)\n(overcome b a)\n(feast d c)",
+            "(feast a b)\n(succumb a)\n(feast b d)\n(succumb b)\n(attack b)\n(overcome b a)",
+            "(feast a b)\n(succumb a)\n(feast b d)\n(overcome b a)\n(feast b a)\n(overcome b a)",
+            "(feast a b)\n(succumb a)\n(feast b d)\n(overcome b d)\n(feast b d)\n(overcome b a)"
+        ],
+        "85": [
+            "(feast b a)\n(succumb b)\n(feast a c)\n(overcome a b)\n(attack c)\n(overcome c d)\n(feast a b)\n(overcome a c)",
+            "(feast b a)\n(succumb b)\n(feast a c)\n(succumb a)\n(attack c)\n(overcome c d)\n(attack a)\n(overcome a c)",
+            "(feast b a)\n(succumb b)\n(feast a c)\n(overcome a b)\n(attack c)\n(overcome c d)\n(feast a b)\n(overcome a c)\n(attack b)",
+            "(feast b a)\n(succumb b)\n(feast a c)\n(succumb a)\n(attack c)\n(overcome c d)\n(attack a)\n(overcome a c)\n(attack b)",
+            "(feast b a)\n(succumb b)\n(feast a c)\n(succumb a)\n(attack a)\n(overcome a b)\n(attack c)\n(overcome c d)\n(feast a b)\n(overcome a c)"
+        ],
+        "83": [
+            "(feast b c)\n(succumb b)\n(feast c a)\n(overcome c d)\n(attack a)\n(overcome a b)\n(feast c d)\n(overcome c a)\n(attack d)\n(overcome d c)",
+            "(feast b c)\n(succumb b)\n(feast c a)\n(succumb c)\n(attack a)\n(overcome a b)\n(attack c)\n(overcome c a)\n(attack d)\n(overcome d c)",
+            "(feast b c)\n(succumb b)\n(feast c a)\n(overcome c d)\n(attack a)\n(overcome a b)\n(feast a b)\n(overcome a b)\n(feast c d)\n(overcome c a)\n(attack d)\n(overcome d c)",
+            "(feast b c)\n(succumb b)\n(feast c a)\n(overcome c d)\n(attack a)\n(overcome a b)\n(feast c d)\n(overcome c a)\n(attack d)\n(overcome d c)\n(feast d c)\n(overcome d c)",
+            "(feast b c)\n(succumb b)\n(feast c a)\n(overcome c d)\n(attack a)\n(overcome a b)\n(feast c d)\n(overcome c a)\n(attack d)\n(succumb d)\n(attack d)\n(overcome d c)"
+        ],
+        "97": [
+            "(feast a c)\n(succumb a)\n(feast c d)\n(succumb c)\n(attack a)\n(overcome a c)\n(attack d)\n(overcome d b)",
+            "(feast a c)\n(overcome a b)\n(feast c d)\n(succumb c)\n(feast a b)\n(overcome a c)\n(attack d)\n(overcome d b)",
+            "(feast a c)\n(succumb a)\n(feast c d)\n(succumb c)\n(attack d)\n(overcome d b)\n(attack a)\n(overcome a c)",
+            "(feast a c)\n(succumb a)\n(feast c d)\n(succumb c)\n(attack a)\n(overcome a b)\n(feast a b)\n(overcome a c)\n(attack d)\n(overcome d b)",
+            "(feast a c)\n(overcome a b)\n(feast c d)\n(succumb c)\n(feast a b)\n(overcome a b)\n(feast a b)\n(overcome a c)\n(attack d)\n(overcome d b)"
+        ],
+        "55": [
+            "(feast d b)\n(succumb d)\n(feast b c)\n(succumb b)\n(feast c a)\n(overcome c d)\n(attack a)\n(overcome a b)\n(feast c d)\n(overcome c a)\n(attack d)\n(overcome d c)",
+            "(feast d b)\n(succumb d)\n(feast b c)\n(succumb b)\n(feast c a)\n(succumb c)\n(attack a)\n(overcome a b)\n(attack c)\n(overcome c a)\n(attack d)\n(overcome d c)",
+            "(feast d b)\n(succumb d)\n(feast b c)\n(succumb b)\n(feast c a)\n(overcome c d)\n(attack a)\n(overcome a b)\n(feast a b)\n(overcome a b)\n(feast c d)\n(overcome c a)\n(attack d)\n(overcome d c)",
+            "(feast d b)\n(succumb d)\n(feast b c)\n(succumb b)\n(feast c a)\n(overcome c d)\n(attack a)\n(overcome a b)\n(feast c d)\n(overcome c a)\n(attack d)\n(overcome d c)\n(feast d c)\n(overcome d c)",
+            "(feast d b)\n(succumb d)\n(feast b c)\n(succumb b)\n(feast c a)\n(overcome c d)\n(attack a)\n(overcome a b)\n(feast c d)\n(overcome c a)\n(attack d)\n(succumb d)\n(attack d)\n(overcome d c)"
+        ],
+        "46": [
+            "(feast b d)\n(overcome b c)",
+            "(feast b d)\n(overcome b c)\n(attack d)",
+            "(feast b d)\n(succumb b)\n(attack b)\n(overcome b c)",
+            "(feast b d)\n(overcome b c)\n(feast b c)\n(overcome b c)",
+            "(feast b d)\n(overcome b d)\n(feast b d)\n(overcome b c)"
+        ],
+        "33": [
+            "(feast b a)\n(succumb b)\n(feast a c)\n(succumb a)\n(attack d)\n(overcome d c)\n(attack b)\n(overcome b d)\n(attack a)\n(overcome a b)",
+            "(feast b a)\n(succumb b)\n(feast a c)\n(succumb a)\n(attack a)\n(succumb a)\n(attack d)\n(overcome d c)\n(attack b)\n(overcome b d)\n(attack a)\n(overcome a b)",
+            "(feast b a)\n(succumb b)\n(feast a c)\n(overcome a d)\n(feast a d)\n(succumb a)\n(attack d)\n(overcome d c)\n(attack b)\n(overcome b d)\n(attack a)\n(overcome a b)",
+            "(feast b a)\n(overcome b d)\n(feast a c)\n(succumb a)\n(feast b d)\n(overcome b a)\n(attack d)\n(overcome d c)\n(feast b a)\n(overcome b d)\n(attack a)\n(overcome a b)",
+            "(feast b a)\n(overcome b d)\n(feast a c)\n(succumb a)\n(feast b d)\n(succumb b)\n(attack d)\n(overcome d c)\n(attack b)\n(overcome b d)\n(attack a)\n(overcome a b)"
+        ],
+        "16": [
+            "(feast d c)\n(overcome d a)\n(attack c)\n(overcome c b)",
+            "(feast d c)\n(overcome d a)\n(attack b)\n(overcome b d)\n(attack c)\n(overcome c b)",
+            "(feast d c)\n(overcome d a)\n(attack b)\n(succumb b)\n(attack c)\n(overcome c b)",
+            "(feast d c)\n(overcome d c)\n(feast d c)\n(overcome d a)\n(attack c)\n(overcome c b)",
+            "(attack a)\n(succumb a)\n(feast d c)\n(overcome d a)\n(attack c)\n(overcome c b)"
+        ],
+        "45": [
+            "(attack b)\n(overcome b c)\n(attack d)\n(overcome d b)",
+            "(feast c a)\n(overcome c a)\n(attack b)\n(overcome b c)\n(attack d)\n(overcome d b)",
+            "(feast c a)\n(succumb c)\n(attack b)\n(overcome b c)\n(attack d)\n(overcome d b)",
+            "(attack b)\n(succumb b)\n(attack b)\n(overcome b c)\n(attack d)\n(overcome d b)",
+            "(attack d)\n(succumb d)\n(attack b)\n(overcome b c)\n(attack d)\n(overcome d b)"
+        ]
+    }
+}

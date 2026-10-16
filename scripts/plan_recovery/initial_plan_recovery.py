@@ -12,6 +12,9 @@ from evaluate_plan_per_action import EvaluatePlanPerAction
 from utils import get_config_dir, get_instance_from_config, set_configuration, \
     parse_plan
 
+import subprocess
+import tempfile
+
 # Run the file from its directory
 current_dir = os.getcwd()
 project_dir = os.path.abspath(os.path.join(current_dir, os.pardir, os.pardir))
@@ -19,27 +22,45 @@ parent_dir = os.path.abspath(os.path.join(project_dir, os.pardir))
 
 llm_project_dir = os.path.join(parent_dir, "LLM-Planning-PlanBench/")
 
-def find_state(s, states) -> int:
+def find_state(s, states, start: int = 0) -> int:
     """
-    Check if a certain state is in the plan, and if it is, return its index
-    :param s: the state to search for
-    :param states: the plan states to search in
-    :return: the index of the state in the plan (or -2 if not found)
+    Index of the first state in states[start:] that equals s (as a set of facts), or -2 if none.
     """
-    index = -2
+    target = frozenset(s)
+    for k in range(start, len(states)):
+        if frozenset(states[k]) == target:
+            return k
+    return -2
 
-    for state in states:
-        is_state = True
-        # Check if all preds in s are in this state
-        for pred in s:
-            if pred not in state:
-                is_state = False
-        if is_state:
-            index = states.index(state)
-            break
+def get_planner_timeout_per_domain(domain):
+    """
+    Get the timeout for planning an instance based on the domain.
+    :param domain: the domain name
+    :return: the timeout in seconds
+    """
+    timeouts = {
+        "logistics": 600,  # 10 minutes
+        "blocksworld": 600,  # 10 minutes
+        "blocksworld_3": 300,  # 5 minutes
+        "elevator": 1800,  # 30 minutes
+        "satellite": 1800,  # 30 minutes
+    }
+    return timeouts.get(domain, 600)
 
-    # print(f"State: {s} found at index {index}")
-    return index
+
+def find_matching_paren(text: str, start_idx: int) -> int:
+    """
+    Given the index of an opening '(' in text, find the index of its matching ')'.
+    """
+    depth = 0
+    for i in range(start_idx, len(text)):
+        if text[i] == '(':
+            depth += 1
+        elif text[i] == ')':
+            depth -= 1
+            if depth == 0:
+                return i
+    raise ValueError("No matching closing parenthesis found")
 
 
 class InitialPlanRecovery:
@@ -76,10 +97,10 @@ class InitialPlanRecovery:
         self.correct_part = []
         self.complementary_plan = []
         _, _, self.improved_plan = self.improve_plan(self.curr_plan, find_state(self.goal, self.curr_plan.simulate_states()), is_curr=True)
-        print("=== DEBUG ===")
-        print("self.correct_part:", self.correct_part)
-        print("self.complementary_plan:", self.complementary_plan)
-        print("Are they overlapping?:", any(x in self.complementary_plan for x in self.correct_part))
+        # print("=== DEBUG ===")
+        # print("self.correct_part:", self.correct_part)
+        # print("self.complementary_plan:", self.complementary_plan)
+        # print("Are they overlapping?:", any(x in self.complementary_plan for x in self.correct_part))
 
         self.candidate_plan = self.find_candidate_plan()
         self.search_steps_to_validity(self.candidate_plan)
@@ -94,9 +115,9 @@ class InitialPlanRecovery:
         self.improved_subseq_candidate_plan = self.subseq_candidate_plan
         # _, self.subseq_candidate_comp_plan, self.improved_subseq_candidate_plan = self.improve_plan(self.subseq_candidate_plan, find_state(self.goal, self.subseq_candidate_plan))
 
-        print(f"Instance: {self.instance_id}")
-        print(f"GT plan: {self.gt_plan}")
-        print(f"Curr plan: {self.curr_plan.get_plan()} (valid: {self.curr_plan.is_valid})")
+        # print(f"Instance: {self.instance_id}")
+        # print(f"GT plan: {self.gt_plan}")
+        # print(f"Curr plan: {self.curr_plan.get_plan()} (valid: {self.curr_plan.is_valid})")
 
     def find_candidate_plan(self) -> Plan:
         """
@@ -252,30 +273,28 @@ class InitialPlanRecovery:
             else:
                 executable = plan.analysis.get("executable")
                 last_act = plan.analysis.get("action")
+                last_act_pos = plan.analysis.get("action_index") or 0
+                # if last_act_pos is None:
+                #     last_act_pos = 0
+                # print(f"DEBUG: Last action: {last_act}, last action position: {last_act_pos}, executable: {executable}")
+                # print(f"DEBUG: Plan states: {len(plan.states)}, plan list: {len(plan_list)}, last action position: {last_act_pos}")
 
-                if executable:  # the sequence of actions can be executed (not necessarily to the goal state)
+                assert len(plan.states) == (len(plan_list) if executable else last_act_pos) + 1
+
+                if plan.states:
                     last_state_ind, last_state = self.compare_plan_states(plan)
-                    print(f"DEBUG CORRECT: Plan is executable")
-                    # last_state = self.curr_plan.states[-1]
                 else:
-                    # plan is not executable from this point (unmet dependencies)
-                    print(f"DEBUG CORRECT: curr plan: {self.curr_plan.get_plan()} and GT plan: {self.gt_plan}")
-                    print(f"DEBUG CORRECT: Plan is not executable from this point, last action: {last_act}")
-                    if last_act:
-                        last_act_index = plan_list.index(last_act[0])
-                        last_state_ind, last_state = self.compare_plan_states(plan, last_act_index)
-                    else: # no last action found, simulation failed (should not happen)
-                        last_state = self.init
-                        last_state_ind = 0
-
-                print(f"DEBUG: Last state index: {last_state_ind}, last state: {last_state}")
+                    # no states at all: simulation failed before producing even the initial state
+                    last_state_ind, last_state = 0, self.init
+                # print(f"DEBUG: Last state index: {last_state_ind}, last state: {last_state}")
 
                 correct_part = plan_list[:last_state_ind]
-                print(f"DEBUG Correct part: {correct_part}")
+                # print(f"DEBUG Correct part: {correct_part}")
                 complementary_plan = self.generate_subplan(init=last_state, goal=self.goal)
                 if is_curr:
                     self.correct_part = self.curr_plan.get_plan()[:self.curr_plan.states.index(last_state)]
-                    self.complementary_plan = self.generate_subplan(init=last_state, goal=self.goal)
+                    # self.complementary_plan = self.generate_subplan(init=last_state, goal=self.goal)
+                    self.complementary_plan = complementary_plan
 
                 full_plan_list = deepcopy(correct_part) + deepcopy(complementary_plan)
                 improved_plan = Plan(full_plan_list, plan.gt_plan, False, self.config_name, self.instance_id, unique_id=f"{plan.unique_id}_improved")
@@ -284,7 +303,6 @@ class InitialPlanRecovery:
                     print(f"WARNING: Improved plan is not valid, but should be. "
                           f"\n Improved plan: {improved_plan.get_plan()} (valid: {improved_plan.is_valid})")
 
-        # TODO UNCOMMENT after debugging correct part and complementary plan
         # Run evaluation on the improved plan
         if not improved_plan.is_valid:
             self.evaluator.evaluate_plan(improved_plan)
@@ -292,49 +310,28 @@ class InitialPlanRecovery:
             self.evaluator.evaluate_valid_plan(improved_plan)
 
         print(f"Improved plan: {improved_plan.get_plan()} (valid: {improved_plan.is_valid}) "
-              f"for curr_plan? {plan.get_plan() == self.curr_plan.get_plan()} "
+              f"for curr_plan {plan.get_plan() == self.curr_plan.get_plan()} "
               f"\n where correct part: {correct_part} \n and complementary plan: {complementary_plan}")
 
         return deepcopy(correct_part), deepcopy(complementary_plan), improved_plan
 
-    def compare_plan_states(self, plan: Plan, plan_index: int = -1) -> (int, list[str]):
+    def compare_plan_states(self, plan: Plan) -> tuple[int, list[str]]:
         """
-        Compare the plan states to the ground truth states to find the divergence point; if there is a divergence,
-        check whether the next state is somewhere else in the plan, and continue from there; if not, regenerate the plan
-        from the last state that is executable.
-        :param plan: the plan generated by the LLM
-        :param plan_index: (optional) index to specify where the plan is not executable anymore, to not look or states from
-        that point onwards.
-        :return: the last state that is reachable in the plan
+        Find the longest prefix of the GT state trace that appears, in order, in the plan's state trace.
+        Simulation stops at the first violation, so plan.states only contains reachable states.
+        :return: (index in the plan's state trace, that state); index i means the first i actions are the correct part.
         """
-        gt_states = self.gt.states
-        executable_plan = plan.get_plan()[:plan_index]
-        curr_states = plan.states
+        curr_states = [frozenset(s) for s in plan.states]
+        if not curr_states:
+            return 0, []
 
         i = 0
-        # print(
-        #     f"DEBUG STATE: length of executable plan: {len(executable_plan)} and number of states: {len(plan.states)} \n"
-        #     f"DEBUG STATE: length of GT {len(self.gt_plan)} and number of states {len(gt_states)} \n")
-        print(f"DEBUG SIM: Plan States: {curr_states} \n And GT states: {gt_states} \n")
-
-        for state in gt_states:
-            # Check the index of the state in the plan
-            index = find_state(state, curr_states)
-            # print(f"DEBUG STATE: State: {state} found at index {index} in plan")
-            # If state from GT is found in the generated plan, and we're not at the end of the generated plan, go on
-            if index != -2:
-                i = index
-            elif len(executable_plan) >= i:
-                # Next state does not exist in the plan, so regenerate the plan from the last state that is executable
-                return i, curr_states[i]
-            else:
-                # Continue to the next state in the GT plan because maybe it is in the plan
-                # return plan.states[i]
-                continue
-
-        return i, curr_states[i]
-        # return self.goal
-        # return plan.states[len(gt_states) - 1]  # if all states are in the plan, return the last state in the gt plan
+        for gt_state in self.gt.states:
+            nxt = find_state(gt_state, curr_states, start=i)
+            if nxt == -2:
+                break
+            i = nxt
+        return i, plan.states[i]
 
     def search_subseqs(self, plan: Plan) -> Plan:
         """
@@ -371,22 +368,44 @@ class InitialPlanRecovery:
         """
         FD_PATH = os.path.join(llm_project_dir, "planner_tools/downward")
         problem_file = self.amend_problem_file(init, goal)
-        if init != self.init:
-            with open(problem_file, "r") as f:
-                print(f"Amended problem file: {f.read()}")
-        cmd = f"timeout 20s {FD_PATH}/fast-downward.py {self.domain_file} {problem_file} --search \"astar(lmcut())\" > /dev/null"
-        os.system(cmd)
-        plan_file = "sas_plan"
-        try:
-            with open(plan_file) as f:
-                plan = [line.rstrip() for line in f][:-1]
-                readable_plan = '\n'.join(plan)
-                # print(f"Generated plan: {readable_plan.split('\n')}")
-            os.remove(plan_file)
-            return parse_plan(readable_plan)
-        except FileNotFoundError:
-            print("No plan found for this instance")
-            return []
+        # if init != self.init:
+        #     with open(problem_file, "r") as f:
+        #         print(f"Amended problem file: {f.read()}")
+
+        # Fast Downward needs absolute paths, since it's a new cwd
+        domain_file_abs = os.path.abspath(self.domain_file)
+        problem_file_abs = os.path.abspath(problem_file)
+        fd_script = os.path.join(FD_PATH, "fast-downward.py")
+
+        timeout = get_planner_timeout_per_domain(self.config_name)
+        with tempfile.TemporaryDirectory() as tmpdir:
+            cmd = [
+                "timeout", f"{timeout}s",
+                fd_script,
+                domain_file_abs, problem_file_abs,
+                "--search", "astar(lmcut())"
+            ]
+            result = subprocess.run(
+                cmd,
+                cwd=tmpdir,
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.DEVNULL,
+            )
+
+            if result.returncode == 124:
+                print("Planner timed out for this instance")
+                return []
+
+            plan_file = os.path.join(tmpdir, "sas_plan")
+            try:
+                with open(plan_file) as f:
+                    plan = [line.rstrip() for line in f][:-1]
+                    readable_plan = '\n'.join(plan)
+                    # print(f"DEBUG PLANNER: A subplan was generated")
+                return parse_plan(readable_plan)
+            except FileNotFoundError:
+                print("No plan found for this instance") # TODO set to ground truth?
+                return []
 
     def amend_problem_file(self, init: list[str], goal: list[str]):
         """
@@ -396,50 +415,29 @@ class InitialPlanRecovery:
         :return: the new problem file
         """
         with open(self.problem_file, "r") as f:
-            lines = f.readlines()
+            text = f.read()
 
-        print(f"old init: {self.init}")
-        print(f"new init: {init}")
+        # print(f"old init: {self.init}")
+        # print(f"new init: {init}")
+        #
+        # print(f"old goal: {self.goal}")
+        # print(f"new goal: {goal}")
 
-        print(f"old goal: {self.goal}")
-        print(f"new goal: {goal}")
+        # Replace :init block
+        init_start = text.index("(:init")
+        init_end = find_matching_paren(text, init_start)
+        new_init_block = "(:init\n" + "".join(f"  {pred}\n" for pred in init) + ")"
+        text = text[:init_start] + new_init_block + text[init_end + 1:]
 
-        new_lines = []
-        inside_init = False
-        inside_goal = False
-
-        for i, line in enumerate(lines):
-            if "(:init" in line:
-                inside_init = True
-                new_lines.append("(:init\n")
-                for pred in init:
-                    new_lines.append(f"{pred}\n")
-                new_lines.append(")\n")
-                continue  # Skip adding this line
-
-            if "(:goal" in line:
-                inside_goal = True
-                new_lines.append("(:goal\n  (and\n")
-                for pred in goal:
-                    new_lines.append(f"{pred}\n")
-                new_lines.append("))\n)\n")
-                continue  # Skip adding this line
-
-            if inside_init:
-                if line.strip() == ")":  # end of (:init) block
-                    inside_init = False
-                continue  # Skip all lines of old init
-            elif inside_goal:
-                if line.strip() == "))":  # end of (:goal (and)) block
-                    inside_goal = False
-                continue  # Skip lines of old goal
-            else:
-                # If not inside an init or goal block, copy the line
-                new_lines.append(line)
+        # Replace :goal block (re-find start, since text shifted after the :init replacement)
+        goal_start = text.index("(:goal")
+        goal_end = find_matching_paren(text, goal_start)
+        new_goal_block = "(:goal\n  (and\n" + "".join(f"  {pred}\n" for pred in goal) + "  )\n)"
+        text = text[:goal_start] + new_goal_block + text[goal_end + 1:]
 
         new_problem_file = self.problem_file.replace(".pddl", "_amended.pddl")
         with open(new_problem_file, "w") as f:
-            f.writelines(new_lines)
+            f.write(text)
 
         return new_problem_file
 
